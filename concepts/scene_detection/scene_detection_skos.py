@@ -1,10 +1,11 @@
 import pandas as pd
+import numpy as np
 
 from rdflib import ConjunctiveGraph, Namespace, URIRef, Literal, RDF, SKOS, FOAF
 from rdflib.resource import Resource
 
 NHAF = Namespace("https://digitaalerfgoed.poolparty.biz/nhaf/")
-TOPCONCEPT = NHAF.term("7325bb27-69b0-4c36-9f0c-914ba5d49faf")
+TOPCONCEPT = NHAF.term("11aa07a8-4ed7-4ae0-9e1d-457c907b7f33")
 
 
 def main():
@@ -15,7 +16,7 @@ def main():
     """
 
     df = pd.read_csv("scene_detection/SceneDetection20230510_UTF8.csv")
-    df = df.replace({pd.np.nan: None})
+    df = df.replace({np.nan: None})
 
     g = ConjunctiveGraph()
 
@@ -42,8 +43,8 @@ def main():
             concept.add(FOAF.depiction, URIRef(d["Afbeelding url"]))
 
         # PoolParty stuff
-        concept.add(SKOS.topConceptOf, TOPCONCEPT)
-        g.add((TOPCONCEPT, SKOS.hasTopConcept, concept.identifier))  # inverse
+        concept.add(SKOS.broader, TOPCONCEPT)
+        g.add((TOPCONCEPT, SKOS.narrower, concept.identifier))  # inverse
 
     g.serialize("scene_detection/SceneDetection20230510_UTF8.ttl", format="turtle")
 
