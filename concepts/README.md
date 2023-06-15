@@ -23,10 +23,12 @@ Dit is een set of [1.591 termen](catalogus-de-boer/deboer-concepts.csv), toegeke
 - zijn niet verbonden met externe concepten
 - zijn toegekend aan reportages (en via die route aan alle individuele foto's binnen die reportages)
 - zijn soms ambigu ('mijnen' voor zowel zee- als staatsmijnen, 'graven' voor zowel graafwerkzaamheden als laatste rustplaatsen)
+- komen soms dubbel voor, zie lijstje op [https://api.triplydb.com/s/FJ0Myfn52](https://api.triplydb.com/s/FJ0Myfn52)
 - kunnen zowel algemene concepten beschrijven ('kerk', 'schoolvoetbal', 'chocolade') als specifieke locaties, personen en organisaties ('Ruigoord', 'Wiesman', 'Voetbal Telstar')
 
 In dit project willen we de termen
 
 - zoveel mogelijk hiërarchisch ordenen (we doen dit in de [PoolParty](https://digitaalerfgoed.poolparty.biz/nhaf.html)-instantie van de [RCE](https://netwerkdigitaalerfgoed.nl/nieuws/lets-poolparty-samenwerken-aan-een-thesaurus/))
 - verbinden met de [AAT](https://www.getty.edu/vow/AATHierarchy?find=&logic=AND&note=&subjectid=300000000) - meer hierover op [catalogus-de-boer/README.md](catalogus-de-boer/README.md)
+- dubbel voorkomende termen samenvoegen (met behoud van links naar reportages)
 
