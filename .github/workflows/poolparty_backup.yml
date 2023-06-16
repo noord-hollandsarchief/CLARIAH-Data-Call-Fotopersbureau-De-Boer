@@ -15,7 +15,7 @@ jobs:
 
     - name: Download file with curl
       run: |
-        curl -o ${{ github.workspace }}/concepts/thesaurus.trig -u ${{ secrets.POOLPARTY_USERNAME }}:${{ secrets.POOLPARTY_PASSWORD }} -H "Content-Type: application/json" -d '{
+        curl -o ${{ github.workspace }}/concepts/thesaurus.trig -u "${{ secrets.POOLPARTY_USERNAME }}:${{ secrets.POOLPARTY_PASSWORD }}" -H "Content-Type: application/json" -d '{
           "prettyPrint": true,
           "format": "TriG",
           "modules": [ "concepts" ]
