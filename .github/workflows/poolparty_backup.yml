@@ -20,12 +20,6 @@ jobs:
           "format": "TriG",
           "modules": [ "concepts" ]
         }' https://digitaalerfgoed.poolparty.biz/PoolParty/api/projects/nhaf/export
-
-    - name: Check if file is different
-      id: file-diff
-      run: |
-        git diff --exit-code --quiet -- concepts/thesaurus.trig
-        echo "is_different=$(echo $?)" >> $GITHUB_OUTPUT
         
     - name: Check if there are any changes
       id: verify_diff
