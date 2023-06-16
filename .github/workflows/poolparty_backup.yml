@@ -25,7 +25,7 @@ jobs:
       id: file-diff
       run: |
         git diff --exit-code --quiet -- concepts/thesaurus.trig
-        echo "::set-output name=is_different::$(echo $?)"
+        echo "is_different=$(echo $?)" >> $GITHUB_OUTPUT
         
     - name: Check if there are any changes
       id: verify_diff
