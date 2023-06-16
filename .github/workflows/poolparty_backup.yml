@@ -1,0 +1,42 @@
+name: Backup Thesaurus
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 8 * * *'
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download file with curl
+      run: |
+        curl -o ${{ github.workspace }}/concepts/thesaurus.trig -u ${{ secrets.POOLPARTY_USERNAME }}:${{ secrets.POOLPARTY_PASSWORD }} -H "Content-Type: application/json" -d '{
+          "prettyPrint": true,
+          "format": "TriG",
+          "modules": [ "concepts" ]
+        }' https://digitaalerfgoed.poolparty.biz/PoolParty/api/projects/nhaf/export
+
+    - name: Check if file is different
+      id: file-diff
+      run: |
+        git diff --exit-code --quiet -- concepts/thesaurus.trig
+        echo "::set-output name=is_different::$(echo $?)"
+        
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+    - name: Commit and push
+      if: steps.verify_diff.outputs.changed == 'true'
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git add thesaurus/concepts.trig
+        git commit -m 'Scheduled PoolParty Thesaurus Backup'
+        git push
