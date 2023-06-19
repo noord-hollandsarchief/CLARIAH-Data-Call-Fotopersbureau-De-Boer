@@ -1,5 +1,13 @@
 # Verbinden met AAT 
 
+De Art & Architecture Thesaurus (AAT), is een thesaurus voor cultuur- en erfgoedterminologie van het Amerikaanse Getty Center. Deze thesaurus wordt wereldwijd toegepast voor het toegankelijk maken van cultureel erfgoed: niet alleen voor kunst- en architectuurcollecties, maar ook voor collecties op het gebied van kunstnijverheid, archeologie, archiefmaterialen en materiële cultuur. (tekst van [Wikipedia](https://nl.wikipedia.org/wiki/Art_%26_Architecture_Thesaurus#Andere_gecontroleerde_terminologiebronnen)).
+
+- [AAT 'homepage'](https://www.getty.edu/research/tools/vocabularies/aat/index.html)
+- [AAT hiërarchie](https://www.getty.edu/vow/AATHierarchy?find=&logic=AND&note=&subjectid=300000000)
+- [AAT 'semantic view'](http://vocab.getty.edu/aat/)
+ 
+## Automatisch verbindingen leggen
+
 Om verbindingen met AAT termen te kunnen leggen zijn op [https://triplydb.com/getty/aat/sparql/aat](https://triplydb.com/getty/aat/sparql/aat) in vier keer (hoog de `offset` steeds met 10000 op) alle 37.039 Nederlandse preflabels opgehaald met de volgende query:
 
 ```
@@ -20,7 +28,9 @@ SELECT * WHERE {
 offset 0 limit 10000
 ```
 
-Daarna zijn ook de 26.159 altlabels opgehaald (in drie keer), door in de query `skos-xl:prefLabel` te vervangen door `skos-xl:altLabel`.
+Daarna zijn ook de 26.159 altlabels opgehaald (in drie keer), door in de query `skos-xl:prefLabel` te vervangen door `skos-xl:altLabel`. Ik vond het wel leuk om te weten dat er dus 
+
+Alle 63.198 labels heb ik in een database opgenomen en daar heb ik de trefwoorden van De Boer tegenaan gehouden.
 
 Alternatief had ik de endpoint per term kunnen aanroepen, met een query als hieronder, maar dan had ik de endpoint 1591 ipv 7 keer moeten aanroepen (zoveel trefwoorden gebruikte De Boer).
 
@@ -32,3 +42,7 @@ SELECT ?term ?preforalt ?label WHERE {
   FILTER(?label = "gemeenteraad"@nl)
 }
 ```
+
+## Aantal verbonden termen
+
+Daarna zijn veel relaties nog handmatig gelegd. In totaal zijn er nu 500+ termen verbonden met de AAT. De laatste stand van zaken bekijk je op [https://api.triplydb.com/s/_pgDTKkMD](https://api.triplydb.com/s/_pgDTKkMD). In Poolparty kan je makkelijk nog meer relaties naar de AAT leggen.
