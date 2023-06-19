@@ -34,4 +34,5 @@ In dit project willen we de termen
 - dubbel voorkomende termen samenvoegen (met behoud van links naar reportages)
 - ambigue termen splitsen?
 - indien specifieke locaties, overhevelen naar geografische thesaurus en hier verwijderen?
+- 'skos:related' links leggen, wellicht automatisch door te kijken naar welke termen frequent vaak samen voorkomen op de 2M foto's
 
