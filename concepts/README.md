@@ -23,7 +23,7 @@ Dit is een set van [1.591 termen](catalogus-de-boer/deboer-concepts.csv), toegek
 - zijn niet verbonden met externe concepten
 - zijn toegekend aan reportages (en via die route aan alle individuele foto's binnen die reportages)
 - zijn soms ambigu ('mijnen' voor zowel zee- als staatsmijnen, 'graven' voor zowel graafwerkzaamheden als laatste rustplaatsen)
-- zijn soms synoniem voor een andere term ('religie' en 'godsdienst')
+- zijn soms synoniem voor een andere term ('religie' en 'godsdienst', 'wandschildering' en 'muurschildering', etc.); op [https://api.triplydb.com/s/SjFr0wxyK](https://api.triplydb.com/s/SjFr0wxyK) een lijst van 52 termen die dezelfde AAT match hebben als een andere term
 - komen soms dubbel voor, zie lijstje op [https://api.triplydb.com/s/FJ0Myfn52](https://api.triplydb.com/s/FJ0Myfn52)
 - kunnen zowel algemene concepten beschrijven ('kerk', 'schoolvoetbal', 'chocolade') als specifieke locaties, personen en organisaties ('Ruigoord', 'Wiesman', 'Voetbal Telstar')
 
