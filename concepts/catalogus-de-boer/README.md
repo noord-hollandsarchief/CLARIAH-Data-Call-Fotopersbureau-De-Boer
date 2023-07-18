@@ -46,3 +46,14 @@ SELECT ?term ?preforalt ?label WHERE {
 ## Aantal verbonden termen
 
 Daarna zijn veel relaties nog handmatig gelegd. In totaal zijn er nu 500+ termen verbonden met de AAT. De laatste stand van zaken bekijk je op [https://api.triplydb.com/s/_pgDTKkMD](https://api.triplydb.com/s/_pgDTKkMD). In Poolparty kan je makkelijk nog meer relaties naar de AAT leggen.
+
+# Verbinden met de GTAA
+
+De GTAA is een [thesaurus van het Nederlands Instituut voor Beeld & Geluid](https://www.beeldengeluid.nl/kennis/kennisthemas/metadata/gemeenschappelijke-thesaurus-audiovisuele-archieven) en fungeert daar intern als termenlijst voor het classificeren van audio en beeldmateriaal. De thesaurus is opgedeeld in verschillende schema's, waarvan de lijst van Onderwerpen (https://data.beeldengeluid.nl/gtaa/Onderwerpen) mogelijk de interessantste is om naast de lijst van termen uit het Fotopersbureau De Boer te leggen. De verwachting is immers dat het beeldmateriaal uit het NHA van vergelijkbare aard is als de rapportages in de archieven van Beeld & Geluid, waarmee logischerwijs de gebruikte onderwerpstrefwoorden ook zouden moeten overlappen. 
+
+Onze onderwerpstrefwoorden van De Boer koppelen aan de GTAA zou relevant zijn op twee fronten:
+1. We maken onze NHA-collectie, via de LOD-principes, direct vergelijkbaar met andere collecties waarin geen AAT-verwijzingen zijn opgenomen, namelijk die van Beeld & Geluid en o.a. het Nationaal Archief.
+2. Mogelijk kan onze collectie hiermee ingeladen worden in de [CLARIAH Media Suite](https://mediasuite.clariah.nl/), waarna het voor een gebruiker/onderzoeker mogelijk is om de hierin beschikbare tools te gebruiken om de collectie verder uit te diepen, te annoteren en te analyseren.
+
+## Automatisch verbindingen leggen
+Met relatief weinig moeite zou een link gelegd kunnen worden tussen de onderwerpen als we gebruik maken van het [OpenRefine Reconciliation API Endpoint](https://termennetwerk.netwerkdigitaalerfgoed.nl/reconciliation) van het [Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/). 
