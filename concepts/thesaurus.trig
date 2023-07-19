@@ -219,10 +219,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/03500ae2-8450-4761-cd5f-23b4ecfd2a99>
     a skos:Concept;
     skos:prefLabel "Bisschoppelijke Missieschool"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:35.567Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:43.389Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/0359ab43-10b3-88a9-afd2-3ca368008430>
     a skos:Concept;
@@ -1159,8 +1159,8 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/11c0a8d6-0a96-11ee-be56-0242ac120002>
     a skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
     skos:prefLabel "Bebouwde Omgeving"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-06-16T12:32:41.045Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:05:43.962Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0b2f4-0a96-11ee-be56-0242ac120002>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/96759b8b-8ef7-86bf-7bbb-dbcc1324f18e>,
@@ -1307,7 +1307,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/daa224d1-f039-ba02-f4b2-cbfcae4205a9>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/a5232bd5-dd9a-2d9f-4370-f34b6b034151>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3a8f11d8-c305-9502-c0f9-c81bb0b67e6f>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/f281b7d5-5a9d-b628-06a1-6b52929dd992>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e702b375-dfd2-6ad3-8c25-8633aa2f1467>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/fe4aa4f4-d2b1-0ea0-828d-690db936367e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3dbef967-a1ff-9709-d1b8-fc968c9e4121>,
@@ -1362,7 +1361,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/8278f53a-9633-c962-c08c-7a0216189ed2>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0566acbc-4dbe-88f8-3542-589774cfaa5e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/cb732495-0201-07ea-ad01-1180e0f849b3>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/7734294b-f2b5-0a23-92bd-f0a55b11d119>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/b0f67d71-438e-da95-e022-94d65887f15a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/72230b8d-b694-4e7a-8849-177a725ddb51>,
@@ -1450,17 +1448,13 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>
     a skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
     skos:prefLabel "Organisaties"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-06-20T10:20:04.283Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:12:21.474Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0b5ba-0a96-11ee-be56-0242ac120002>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/202a5627-697a-51f7-67fc-742ca153dfc2>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3cf59cc8-31ad-5253-00f7-addd911db86d>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/55c0cb14-e5c3-6846-2ff8-dfc6d3a7aba1>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/ef7e1cae-149b-d5af-1ee4-1df5cb30295b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c14dc064-a29f-87dd-a761-c1e9a478db66>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/e398007b-eb6b-f54c-dbc9-be3dbdf9fa2e>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/52c21f5f-3d6f-2b17-89d2-319549b66c46>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/23b8730e-fb0d-f761-0faf-38e2fd0d1520>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d328a62a-43b8-9c18-2dff-aaa7763230f1>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f11855ab-328c-77e0-1733-e71e3c381dc5>,
@@ -1473,31 +1467,20 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/9c2a9d9c-513b-0898-6e24-472f1f90871e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/bcfddc86-136f-ad78-aa7b-3a0a36760a81>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/a636fb2c-d3e5-df4a-38ad-3d99fb5a46bc>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/03500ae2-8450-4761-cd5f-23b4ecfd2a99>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f7068860-acee-96a5-0dfb-f3b021819b6a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/5f44b2e7-7335-56a9-177a-8a3c54ffcb4d>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/a5ad287b-fc20-81ad-d600-bd548ae99fca>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/b6e12f74-7586-56a0-604a-34b9fc015537>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/48ef9439-f4e0-120c-833f-162d815a977b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d1fa4c81-53d0-f861-ed26-5d5ea50f5b7f>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3954f354-e4db-ead1-30d5-68cc998bbf30>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/5c20ce00-8308-1200-7a6c-ab14e4ae5e2b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c34e68d9-c6bc-833c-75c1-55a347cbed46>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/a8764264-f26a-5142-4f26-0b72cc80eb65>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/28b9e36d-8985-bb8d-8833-9fb64271e4e1>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/2c2b24e5-7c91-b2a6-f013-1226096a2b66>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d791ac27-f9df-6e70-ee72-984f28f7ffad>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/2c04323c-4f1e-8a6a-6dfe-c27bb602d2ca>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/75a3ee76-6360-9a58-3f6c-5f082e18afba>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3de677cc-9ed7-fefc-ddc6-72a5bf50292b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c5726407-298d-f6f5-562f-5eabedc5ea48>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/f6665359-4ea9-b74e-17d8-3bbee8c269f7>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3112d73f-9c40-5ac9-f4e3-1488b97521d8>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3c46e7ca-be57-fe83-329c-d02d4b64c1dc>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/e7e6de0e-1747-9137-5c6d-ea657dc7e9fc>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/d3258425-b8ee-2e7c-6255-3de6c22e9f12>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/9837891c-d074-57c9-4b00-8acaa7d86af1>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/8a1c3427-2827-3d13-413f-99e3f18d8279>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/1cc9f3c9-3921-9ccf-f98c-93100f531a67>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/21b0ce06-5340-d438-acf4-0274d20890df>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0f8b5d9c-2b89-6532-1bf7-2619d45496a8>,
@@ -1509,12 +1492,9 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/9a6aa34b-c966-e200-7a6a-eb13ef262378>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/bb065c1e-5d7a-37c2-aa2e-724a5ef86d1f>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/8f0aa8d1-df21-7d86-fa3c-96d54d8fadac>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/77e0edca-8530-1fdf-9a48-0ff2bdc6b185>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e73aa065-5f9a-1b8c-bcbe-6777fa44529d>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/7aba89e5-4981-abae-d5f7-d7d3b29799e7>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/9e1c5f8f-19c3-5c99-82a3-a50375585886>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/3de8a355-6b38-2c74-b79f-0515c216a32a>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/bea75dbf-ead2-6190-6c6f-2406e6b2a44c>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/33dcf8a4-0eea-667a-4896-87ca7866ac50>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c8993ead-f7c5-49b0-02bd-b6717cc14e97>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/26b43019-734f-1ffb-9976-220fa92bb690>,
@@ -1523,7 +1503,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/44d42396-2df8-7772-4357-8c40e6d83bc7>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/bae3136a-15ae-3541-e3c4-44eb1d02aa26>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/609d428b-06c0-ea74-a265-bcaa73384e94>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/8fc9b8fe-a36c-2bbc-0b11-8785c4083aaf>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e11cad05-1fa5-ed8b-86d2-90e3b7e791a8>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/653a2fcb-2db0-45e7-b41d-3725ffc758f4>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/2608bba4-1eb9-9531-a679-45fdfd1a77ed>,
@@ -1532,26 +1511,20 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/e2a7638b-b0b7-3029-cb7c-1dc3a4c03c13>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/8b4c3089-9bf3-3b4f-0dc8-de00b4b7de0a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/833c7196-63b9-761f-6fb7-ea1611a273e4>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/3f0ba8e5-4ae7-56db-049e-649fdfd3ecd9>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d129965d-b643-300d-bfa8-fb352dfd8a19>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/1a880d23-739a-cee0-1d16-dd58bc69c8de>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/ce9bd983-5575-20bb-48f4-3db3c2b88762>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/6e686b31-5e19-5d49-136d-9ade4cc2297d>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/c4fed69a-a37e-a6f2-b744-9b1ac9d6897d>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/da594be4-c7da-8ddc-8e84-4bcb23a81bbf>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/7bf8656b-3cdd-9b70-0ddb-01225b131ad3>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/12f9dfa5-212a-5dbc-f8a4-69ac04bfdaf6>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d49af19b-4a8a-2bfa-8d4a-f46a77f38bb3>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d322ce5b-176e-6981-2a53-d4d3b4a969be>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/729af146-b76c-0caf-2612-042829786a45>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e44f6d77-1239-5a6d-4667-0c59b562489e>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/529caf80-2687-bd5e-4baf-85b96f78ed7e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/30e3efc2-02fa-34d3-558a-1c7e01d06dac>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/4aac6976-094b-093c-aa20-f45b4028b468>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/16e8a887-6459-eab4-ba07-de01f7420d6f>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/491ecdeb-7c8d-d856-8c9d-e61a6b4b64cc>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/eee0795e-4a79-8a1b-1c27-2b570ab9cdab>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/4801917b-8ada-fb84-6a58-c5fe5c8f8cd4>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f09b4aa1-d531-ee1e-83f8-e562a83b0f84>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/04c2f823-c52b-d371-73e0-c3b2513788c6>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/7cfd8f6b-6233-c2d3-b821-1e7bb6d93dd3>,
@@ -1559,14 +1532,10 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/c3391f44-0220-8e27-bcbf-10695bf15e5b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/6a3b621c-b72d-c3c1-9b94-2ab2c8f932c4>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/dc6a1284-4d72-2e69-744d-5d1dbebb84fd>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/7a2573b2-6398-6623-5d07-5b069372390b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/b391d0c2-a060-fbb3-ed2f-2b4a94512a28>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/9d1d4e26-cb5f-4d12-e2bf-55e12e7c82b7>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/963a3244-eaf3-1bca-63d6-acee3a419d32>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c3b1b544-21dd-85d4-0fdd-3a89e142a828>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/8a5cddd8-4718-4906-7355-e148deb769d9>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/8049d531-b475-b19f-e68f-765e1229bc26>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/43653480-79ac-014a-5a40-c7f640aee3fe>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/5dabce50-0eeb-8674-d7fc-e551f60ac719>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0c12d40d-14e7-16dd-f1ba-5380d16a5fd0>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/4a7b0a72-fb2b-93e8-a15f-0363b0720c3d>,
@@ -1576,13 +1545,10 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/9a348e3d-383d-553a-09b4-38d1b2f24f3a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/197912d8-1e97-f2eb-2ebd-bb3b8e620168>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/b930c85d-329b-6c2c-4193-608211ef72de>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/d109c140-f0a3-fda3-2b2b-afb673a5f395>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0d674163-029a-0def-9157-d3e534cc8a45>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/afd62f20-24d6-c9be-c3d7-ab154cf515f6>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/09858081-54da-f249-a6ab-99ea6e8f3f89>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/2da19013-1c95-4cd1-6ba4-f85d828f94e4>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/d42272f5-3ad2-f983-e358-1b7e6083cdae>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/83225a98-dae7-7ec7-7a91-1b9b3a885811>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e34be20d-ebd7-cdf7-cf75-1e4b1ee2f093>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/5abe047f-b30a-c3ef-c31c-1ab32e90418e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/508359c7-bd7e-60be-9d1e-a725ea756142>,
@@ -1598,7 +1564,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/97452949-4b80-5a25-ff5b-cc5107c0bcd4>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/baf229a2-3195-e3fc-ec43-6c1278c8a2be>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/66bbdb44-5452-94bc-5871-37d5b422a233>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/27ab1891-f78a-18ff-5071-e788f3fc7e15>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/705969aa-138b-bfcc-af11-149860746e5b>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/cb63958c-9a3b-29e4-140b-f67262204351>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/ec6c0bd9-571c-5660-2d54-a1d26a9d5d1e>,
@@ -1606,7 +1571,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/8a02f7a8-907c-bea9-2900-0c1e17520457>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/6fc9c21a-1b53-2ee4-1474-a5e1dd09a405>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/28eb7d1d-05df-069f-6554-8ec88533ff24>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/16cc418c-d373-6bcf-1f4f-ee7751e8fa24>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0ac822a7-f1f9-3fa2-35e6-917e5f118ea6>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/ee84baf6-dda8-66d2-ec33-e43a3aebf947>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/0f151def-e615-b769-b28a-51229639bb8d>,
@@ -1624,8 +1588,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/fd9c4df4-947e-728f-f46f-a45e95a9cb65>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/66f8ae7e-1b35-147a-2d14-5fe61e30125e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/cbf00fe0-ea19-b860-3494-7a6db7095467>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/600403d0-30b2-e90e-47f6-59f831e33354>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/789cb4e8-e06a-f789-137e-5ab3a228300c>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/98af5abd-b8b4-e682-cb9e-8623b577e2ba>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/9f1dbc41-a7ff-bdd0-422e-3315f5e5a0a5>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/5cef9ca5-465e-87c8-65ed-7cf25e644360>,
@@ -1666,18 +1628,14 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/4b54feca-ffef-6a18-7ac2-676fd558794d>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f3e65752-cd56-faaa-2d86-0fcad82050af>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/74c39df4-2774-8911-f839-0cc7e0682b8f>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/c57c2571-f33b-ae32-7df7-c7d2715569bd>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/72f8c337-714d-0d51-eb60-1490fb43b478>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f902e9ce-785b-a79b-a419-b3afb1fc1cf6>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/6fc526eb-11f5-6f7f-b02b-391ffd21051d>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/48d14110-e35a-7b89-0cfb-cdb46dc1b03a>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/5d49cb9f-f6fb-721e-18bd-0127af9e8ffb>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/06e2e005-3b4e-0cb6-6af9-70e363094472>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f42b74ef-7567-8afa-9af7-281f2c326282>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/49539355-8850-ff7f-3fa6-9b7171a4d27d>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/03b047f6-4877-59cc-c282-80310c546212>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/fbf98686-695f-dec8-4028-96a543486ebd>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/d46f4f03-335e-3381-0716-dba8c643b21f>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/8f066bdd-f82b-e4d7-723e-ba7c4e98e1df>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/13dd0e67-1f67-1f7d-7271-d35a3c4e993f>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/a79cb732-8abd-bc46-a0e8-3c3773fe024c>,
@@ -1685,8 +1643,6 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/84714e09-b9a7-ee4c-d5f6-46959d98c1dc>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e46b7ec8-630a-88c2-b75a-d3584626dc56>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d6746ba0-439b-3144-c2a9-35613212e62b>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/43892b07-37e7-18e4-fbbd-3a7d5f58696a>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/1aca0a89-dcf1-bb05-faf2-71d08a638c24>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/1c0187d5-4506-982d-aebe-53c66794d25a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/aab7a3b7-4a21-19ec-90fc-d4e8d59c31e1>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/420e76d4-7f96-3219-5df3-7dadffe5678d>,
@@ -1706,7 +1662,9 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/2a245622-f63c-ed3e-d742-72db12a7fc64>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/826a6f91-2ece-2bf5-642a-b1e22b0cbb5a>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/a3e6556d-7749-1465-6760-bc9a4b36f7b7>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/a3a96bc8-423a-437a-aab5-10be403026c4>;
+      <https://digitaalerfgoed.poolparty.biz/nhaf/a3a96bc8-423a-437a-aab5-10be403026c4>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879>;
     skos:closeMatch <http://vocab.getty.edu/aat/300234770>;
     <http://www.w3.org/2008/05/skos#prefLabel> "Organisaties"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300234770>;
@@ -1923,8 +1881,8 @@
     a skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
     skos:prefLabel "Objecten"@nl;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-07-13T12:09:24.389Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:57:43.672Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/20fee8d7-dfef-978c-acc0-4e51b0804538>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d82754ee-8f12-b68f-8b32-8cf5f5d8ff31>,
@@ -2002,6 +1960,8 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/e14d897f-fabb-56ab-e1b4-cc6aaa0bc1c5>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/bf021bc9-3806-adf8-c728-6661d9c0e259>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/639f06be-d090-98bb-8a73-b07f2549cc50>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/f281b7d5-5a9d-b628-06a1-6b52929dd992>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/d109c140-f0a3-fda3-2b2b-afb673a5f395>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/f4d017d2-600e-6ed9-012f-906d3b121e76>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/9c52c76c-49dd-f851-14e0-b8b66ebc2970>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/cd9566f9-cd66-bd97-1fd0-cd5485f63f98>,
@@ -2416,10 +2376,11 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/1363cae2-dba6-2698-7412-26e8385ae62e>
     a skos:Concept;
     skos:prefLabel "Wegenwacht"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:07.708Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:03:26.237Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/1368816a-3c94-e79b-b3d8-67cedb05b74d>
     a skos:Concept;
@@ -2595,10 +2556,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/16cc418c-d373-6bcf-1f4f-ee7751e8fa24>
     a skos:Concept;
     skos:prefLabel "NRM"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:57.997Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:02:06.166Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/16e6a5a8-d727-d935-c520-6ac43f21a601>
     a skos:Concept;
@@ -2905,10 +2866,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/1aca0a89-dcf1-bb05-faf2-71d08a638c24>
     a skos:Concept;
     skos:prefLabel "Vesting rijwielfabriek Gebr. Dik, Schagchelstraat Haarlem"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:39.020Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:28.061Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/1ad0bf9f-7eee-27f2-9f75-342d25e76d2a>
     a skos:Concept;
@@ -3654,12 +3615,11 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/27ab1891-f78a-18ff-5071-e788f3fc7e15>
     a skos:Concept;
     skos:prefLabel "Neelissen J.P.A."@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-06-19T14:34:25.160Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:48.725Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:altLabel "Aannemingsbedrijf J.P.A. Nelissen"@nl;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0aec6-0a96-11ee-be56-0242ac120002>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0aec6-0a96-11ee-be56-0242ac120002> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/27acddaa-953c-595e-93ba-25cded4b8d2d>
     a skos:Concept;
@@ -3713,10 +3673,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/28b9e36d-8985-bb8d-8833-9fb64271e4e1>
     a skos:Concept;
     skos:prefLabel "C.I.O.S."@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:06.389Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:06.269Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/28c5e59a-097e-df75-3665-d2eb584141ac>
     a skos:Concept;
@@ -3860,10 +3820,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/2c2b24e5-7c91-b2a6-f013-1226096a2b66>
     a skos:Concept;
     skos:prefLabel "Colpitt"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:26:50.038Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:44.663Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/2c502f9c-9b95-4d4e-c65c-2a1827b2c1e7>
     a skos:Concept;
@@ -5117,10 +5077,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/3f0ba8e5-4ae7-56db-049e-649fdfd3ecd9>
     a skos:Concept;
     skos:prefLabel "Haarlemse Scheepsbouw Mij"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:14.619Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:07.696Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/3f27bace-7ff8-4c31-a0a1-29f3597a0266>
     a skos:Concept;
@@ -5367,10 +5327,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/43653480-79ac-014a-5a40-c7f640aee3fe>
     a skos:Concept;
     skos:prefLabel "Leger des Heils"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:17.872Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:28.922Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/437f50f5-ffa9-2eb6-676e-ce8629973086>
     a skos:Concept;
@@ -5384,10 +5344,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/43892b07-37e7-18e4-fbbd-3a7d5f58696a>
     a skos:Concept;
     skos:prefLabel "Vesting Rijwielen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:20.952Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:02:05.439Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/4394c2ac-bafc-bb9c-e330-33abb1ffc6e5>
     a skos:Concept;
@@ -5672,10 +5632,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/4801917b-8ada-fb84-6a58-c5fe5c8f8cd4>
     a skos:Concept;
     skos:prefLabel "Kath. Arbeiders Bond"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:05.610Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:42.667Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/6fc526eb-11f5-6f7f-b02b-391ffd21051d> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/48547825-f950-ebea-1c58-f3197ee11f14>
     a skos:Concept;
@@ -6218,8 +6178,8 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/51e7a518-a4c2-23de-f76e-89baa1ce159d>
     a skos:Concept;
     skos:prefLabel "Verjaardagen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:15:33.801Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:modified "2023-07-18T12:32:28.599Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0bc22-0a96-11ee-be56-0242ac120002>;
     skos:closeMatch <http://vocab.getty.edu/aat/300069093> .
@@ -6235,18 +6195,18 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/529caf80-2687-bd5e-4baf-85b96f78ed7e>
     a skos:Concept;
     skos:prefLabel "Hijssen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:07.071Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:53:12.552Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/e709c590-5ab3-47c8-a5a5-b09c5ab2f8fe> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/52c21f5f-3d6f-2b17-89d2-319549b66c46>
     a skos:Concept;
     skos:prefLabel "ANWB"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:47.188Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:36.750Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/52ef2d7d-33a2-0692-e077-71dde4b7acf9>
     a skos:Concept;
@@ -6395,10 +6355,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/55c0cb14-e5c3-6846-2ff8-dfc6d3a7aba1>
     a skos:Concept;
     skos:prefLabel "Ambachtsschool"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:47.917Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:27.835Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/55f17692-11e7-502d-20b4-d53f3fed6306>
     a skos:Concept;
@@ -6730,10 +6690,11 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/597dfad8-78db-6d3a-daf3-2b8a6ea50502>
     a skos:Concept;
     skos:prefLabel "Fabrieken, fabricage, ateliers"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:18:57.527Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:28:23.984Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0a8d6-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0a8d6-0a96-11ee-be56-0242ac120002>;
+    skos:closeMatch <https://vocab.getty.edu/aat/300006231> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/5984855c-d3bd-e9fc-4c65-7151993b545a>
     a skos:Concept;
@@ -7011,10 +6972,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/5d49cb9f-f6fb-721e-18bd-0127af9e8ffb>
     a skos:Concept;
     skos:prefLabel "Veenstra machines"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:13.091Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:36.432Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/5d64533a-7252-ec46-cdd0-4584027ff8db>
     a skos:Concept;
@@ -7187,10 +7148,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/600403d0-30b2-e90e-47f6-59f831e33354>
     a skos:Concept;
     skos:prefLabel "R.K. Arbeiders Bond"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:28.227Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:12:12.745Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/6fc526eb-11f5-6f7f-b02b-391ffd21051d> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/602040a9-2ead-cb25-a0c4-1ecb67dc1b8c>
     a skos:Concept;
@@ -8044,8 +8005,8 @@
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:32.386Z"^^xsd:dateTime;
     skos:prefLabel "Organisaties"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-06-14T18:40:12.219Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:05:39.724Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/ce36bdc3-256e-4f62-b4bb-18c885db88b6>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/1da309e9-56e8-882f-b48d-b88bd69e3fab>,
@@ -8059,7 +8020,8 @@
       <https://digitaalerfgoed.poolparty.biz/nhaf/d818ce63-45c9-31a8-3ee5-7b24db86536d>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/dc1a1f0b-9c28-29ed-e798-195e5d3f07aa>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/e80b1ae8-0312-380a-333e-f8de176c77c1>,
-      <https://digitaalerfgoed.poolparty.biz/nhaf/f98728e0-b7a0-5cd8-328e-b529fb4b1989> .
+      <https://digitaalerfgoed.poolparty.biz/nhaf/f98728e0-b7a0-5cd8-328e-b529fb4b1989>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/6e35bc7a-d83d-b9f7-3d81-25000d65a2d4>
     a skos:Concept;
@@ -8187,11 +8149,14 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/6fc526eb-11f5-6f7f-b02b-391ffd21051d>
     a skos:Concept;
     skos:prefLabel "Vakbonden"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
-    dcterms:modified "2023-06-20T10:17:59.208Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:53:05.451Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>;
-    skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/ecaf736d-7bbe-a2e0-14fd-f930ccce61ad>;
+    skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/ecaf736d-7bbe-a2e0-14fd-f930ccce61ad>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/4801917b-8ada-fb84-6a58-c5fe5c8f8cd4>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/600403d0-30b2-e90e-47f6-59f831e33354>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/789cb4e8-e06a-f789-137e-5ab3a228300c>;
     skos:closeMatch <http://vocab.getty.edu/aat/300026023> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/6fc9c21a-1b53-2ee4-1474-a5e1dd09a405>
@@ -8350,10 +8315,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/729af146-b76c-0caf-2612-042829786a45>
     a skos:Concept;
     skos:prefLabel "Huishoudschool"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:55.985Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:36.223Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/729f19dd-ed0b-e608-c04d-7ad386244d97>
     a skos:Concept;
@@ -8572,10 +8537,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/75a3ee76-6360-9a58-3f6c-5f082e18afba>
     a skos:Concept;
     skos:prefLabel "Conrad Stork"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:01.263Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:02:24.631Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/7646c5d7-e17a-bb0d-7098-457eeb588e30>
     a skos:Concept;
@@ -8695,10 +8660,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/77e0edca-8530-1fdf-9a48-0ff2bdc6b185>
     a skos:Concept;
     skos:prefLabel "Figee"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:16.683Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:40.968Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/786ed2e7-8e62-3081-5b35-78acbfe23c28>
     a skos:Concept;
@@ -8719,10 +8684,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/789cb4e8-e06a-f789-137e-5ab3a228300c>
     a skos:Concept;
     skos:prefLabel "R.K. Middenstands Bond"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:18.217Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:12:21.476Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/6fc526eb-11f5-6f7f-b02b-391ffd21051d> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/78ff9cab-bdc5-bf22-0626-9e89fdfd3b97>
     a skos:Concept;
@@ -8857,10 +8822,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/7a2573b2-6398-6623-5d07-5b069372390b>
     a skos:Concept;
     skos:prefLabel "Kruyer's machine fabriek Haarlem"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:09.504Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:13.728Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/7a4a8969-b64c-13da-326f-b279850cd1a8>
     a skos:Concept;
@@ -8907,10 +8872,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/7aba89e5-4981-abae-d5f7-d7d3b29799e7>
     a skos:Concept;
     skos:prefLabel "Fokker"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:01.948Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:01.641Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/7adca65d-4e7f-0cad-d7cc-fb40bb6d74aa>
     a skos:Concept;
@@ -9430,10 +9395,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/83225a98-dae7-7ec7-7a91-1b9b3a885811>
     a skos:Concept;
     skos:prefLabel "Meuwissen industrie Haarlem"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:49.590Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:57.221Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/833093f5-a533-9057-b783-7a7afc9c9194>
     a skos:Concept;
@@ -9595,10 +9560,16 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037>
     a skos:Concept;
     skos:prefLabel "Scholen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:18:42.121Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:09:00.118Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0a8d6-0a96-11ee-be56-0242ac120002>;
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>;
+    skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/55c0cb14-e5c3-6846-2ff8-dfc6d3a7aba1>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/03500ae2-8450-4761-cd5f-23b4ecfd2a99>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/28b9e36d-8985-bb8d-8833-9fb64271e4e1>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/729af146-b76c-0caf-2612-042829786a45>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/963a3244-eaf3-1bca-63d6-acee3a419d32>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/d42272f5-3ad2-f983-e358-1b7e6083cdae>;
     skos:closeMatch <http://vocab.getty.edu/aat/300006495> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/8579613d-7143-5588-7cda-e9c613fafea6>
@@ -9764,10 +9735,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/8a1c3427-2827-3d13-413f-99e3f18d8279>
     a skos:Concept;
     skos:prefLabel "Dierenbescherming"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:45.053Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:00.320Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/8a2272ff-0afc-f10f-463a-5b2747480097>
     a skos:Concept;
@@ -9789,10 +9760,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/8a5cddd8-4718-4906-7355-e148deb769d9>
     a skos:Concept;
     skos:prefLabel "Leger des Heils"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:19.009Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:57.732Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/8a66bbec-9a82-febf-9c48-8263007cfb12>
     a skos:Concept;
@@ -10103,10 +10074,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/8fc9b8fe-a36c-2bbc-0b11-8785c4083aaf>
     a skos:Concept;
     skos:prefLabel "Van Gelder & Zonen papierfabriek Velsen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:26:35.932Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:11.640Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/8fd6c8dd-4c38-33ba-d84f-1684d5fb9aa6>
     a skos:Concept;
@@ -10503,10 +10474,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/963a3244-eaf3-1bca-63d6-acee3a419d32>
     a skos:Concept;
     skos:prefLabel "Landbouw Hogeschool Wageningen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:31.605Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:50.807Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/96759b8b-8ef7-86bf-7bbb-dbcc1324f18e>
     a skos:Concept;
@@ -10595,10 +10566,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/9837891c-d074-57c9-4b00-8acaa7d86af1>
     a skos:Concept;
     skos:prefLabel "Desch Verpakkingen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:50.440Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:24.213Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/98544708-d288-3cb6-b811-06d503b43b5d>
     a skos:Concept;
@@ -11579,10 +11550,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/a8764264-f26a-5142-4f26-0b72cc80eb65>
     a skos:Concept;
     skos:prefLabel "Cementbouw NV Heemstede"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:47.976Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:59:56.001Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/a88f7d65-45d8-7151-2d02-40cc976e0710>
     a skos:Concept;
@@ -11773,10 +11744,11 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/ac70e13b-798d-173b-1b98-f661b896f2b0>
     a skos:Concept;
     skos:prefLabel "Redding, reddingsbrigade, reddingswezen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:26:39.872Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:02:33.251Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/ac71c5b9-f968-a5c1-0b11-9b820552b35e>
     a skos:Concept;
@@ -12326,6 +12298,27 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0bc22-0a96-11ee-be56-0242ac120002> .
   
+  <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879>
+    a skos:Concept;
+    dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:created "2023-07-19T07:55:31.526Z"^^xsd:dateTime;
+    skos:prefLabel "non-profit organisaties"@nl;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:03:26.236Z"^^xsd:dateTime;
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>;
+    skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/ef7e1cae-149b-d5af-1ee4-1df5cb30295b>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/e398007b-eb6b-f54c-dbc9-be3dbdf9fa2e>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/52c21f5f-3d6f-2b17-89d2-319549b66c46>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/b6e12f74-7586-56a0-604a-34b9fc015537>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/8a1c3427-2827-3d13-413f-99e3f18d8279>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/bea75dbf-ead2-6190-6c6f-2406e6b2a44c>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/c4fed69a-a37e-a6f2-b744-9b1ac9d6897d>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/8a5cddd8-4718-4906-7355-e148deb769d9>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/43653480-79ac-014a-5a40-c7f640aee3fe>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/ac70e13b-798d-173b-1b98-f661b896f2b0>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/1363cae2-dba6-2698-7412-26e8385ae62e>;
+    skos:closeMatch <https://vocab.getty.edu/aat/300253162> .
+  
   <https://digitaalerfgoed.poolparty.biz/nhaf/b3c6e84f-4efa-e417-8976-1b42eebdfc99>
     a skos:Concept;
     skos:prefLabel "Trouwerij"@nl;
@@ -12478,10 +12471,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/b6e12f74-7586-56a0-604a-34b9fc015537>
     a skos:Concept;
     skos:prefLabel "Bond zonder naam"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:53.307Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:50.716Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/b79ca7d2-91a9-2fe3-50aa-586355c47513>
     a skos:Concept;
@@ -12891,10 +12884,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/bea75dbf-ead2-6190-6c6f-2406e6b2a44c>
     a skos:Concept;
     skos:prefLabel "Greenpeace"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:30.352Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:13.871Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/beb0a4d2-9eab-8caa-d111-f83c1bad4585>
     a skos:Concept;
@@ -13349,10 +13342,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/c4fed69a-a37e-a6f2-b744-9b1ac9d6897d>
     a skos:Concept;
     skos:prefLabel "Hervormde jeugdraad"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:34.829Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:11:21.953Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/c50e0dac-0e8a-779e-7803-712174fe125c>
     a skos:Concept;
@@ -13392,10 +13385,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/c57c2571-f33b-ae32-7df7-c7d2715569bd>
     a skos:Concept;
     skos:prefLabel "Union Chocolade Fabriek"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:26:58.911Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:05.890Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/c5928baa-18f2-c179-98d9-d9a6fcda7f98>
     a skos:Concept;
@@ -14105,10 +14098,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/d109c140-f0a3-fda3-2b2b-afb673a5f395>
     a skos:Concept;
     skos:prefLabel "Machines V."@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:11.605Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:57:47.030Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0b2f4-0a96-11ee-be56-0242ac120002> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/d129965d-b643-300d-bfa8-fb352dfd8a19>
     a skos:Concept;
@@ -14231,10 +14224,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/d3258425-b8ee-2e7c-6255-3de6c22e9f12>
     a skos:Concept;
     skos:prefLabel "Dart Rijwielen Fabriek"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:15.208Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:35.395Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/d328a62a-43b8-9c18-2dff-aaa7763230f1>
     a skos:Concept;
@@ -14314,10 +14307,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/d42272f5-3ad2-f983-e358-1b7e6083cdae>
     a skos:Concept;
     skos:prefLabel "Mendel college"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:43.398Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:12:04.683Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/8541fd08-0bc3-e115-32f0-66d82c72e037> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/d42cc1d4-f396-c952-73bf-678f74fd7fd6>
     a skos:Concept;
@@ -14361,10 +14354,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/d46f4f03-335e-3381-0716-dba8c643b21f>
     a skos:Concept;
     skos:prefLabel "Reproductie luchtfoto fabriek Verheul"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:12.588Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:19.966Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/d49af19b-4a8a-2bfa-8d4a-f46a77f38bb3>
     a skos:Concept;
@@ -14827,10 +14820,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/da594be4-c7da-8ddc-8e84-4bcb23a81bbf>
     a skos:Concept;
     skos:prefLabel "Hilarius"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:28:10.248Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:07:40.524Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/da6e0635-19d0-88d7-5b2e-2d53f2afefbe>
     a skos:Concept;
@@ -15297,10 +15290,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/e398007b-eb6b-f54c-dbc9-be3dbdf9fa2e>
     a skos:Concept;
     skos:prefLabel "A.M.V.J. /  Y.M.C.A."@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:30:09.583Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:23.087Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/e3ccdca3-c5c0-3867-ea6b-2c60b5717d82>
     a skos:Concept;
@@ -15512,13 +15505,14 @@
     dcterms:created "2023-07-13T09:54:07.670Z"^^xsd:dateTime;
     skos:prefLabel "Processen en technieken"@nl;
     dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
-    dcterms:modified "2023-07-13T11:35:07.459Z"^^xsd:dateTime;
+    dcterms:modified "2023-07-19T06:53:09.841Z"^^xsd:dateTime;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0bc22-0a96-11ee-be56-0242ac120002>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/7c46f21e-c71f-5fe4-36ab-dfadaa1d63eb>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/da8bfb3b-78e0-fd55-7db4-a2c4ebd8211e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/2407be09-1796-7c16-6e59-e36b6e8a2237>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/ac9f95b1-a620-f579-b493-22d462ed76f3>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c1c06618-44d2-014a-6958-6681e5bc2e5d>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/529caf80-2687-bd5e-4baf-85b96f78ed7e>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/c2211159-d2a5-1336-ab7c-b0d8e88ebec9>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/d0ea0543-8c75-a6c3-0d14-95c0109fe670>,
       <https://digitaalerfgoed.poolparty.biz/nhaf/1cab53e3-bcfd-9a2e-708e-cf0e8a2561fc>,
@@ -15605,10 +15599,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/e7e6de0e-1747-9137-5c6d-ea657dc7e9fc>
     a skos:Concept;
     skos:prefLabel "Dam Chips"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:29:01.379Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:00:29.931Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/e80b1ae8-0312-380a-333e-f8de176c77c1>
     a skos:Concept;
@@ -15988,10 +15982,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/ef7e1cae-149b-d5af-1ee4-1df5cb30295b>
     a skos:Concept;
     skos:prefLabel "Amnesty International"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:30:10.297Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:10:32.457Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/b3b730a0-db1c-48a7-8fa5-d64a514b7879> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/ef866f46-d636-66b6-fd20-ceb62cca68ed>
     a skos:Concept;
@@ -16225,10 +16219,11 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/f281b7d5-5a9d-b628-06a1-6b52929dd992>
     a skos:Concept;
     skos:prefLabel "Machines en fabrieken"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:19:17.467Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T06:13:01.172Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0a8d6-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0b2f4-0a96-11ee-be56-0242ac120002>;
+    skos:closeMatch <https://vocab.getty.edu/aat/300379148> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/f2baccce-af2a-28d7-906c-2225d9b28843>
     a skos:Concept;
@@ -18102,10 +18097,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/f6665359-4ea9-b74e-17d8-3bbee8c269f7>
     a skos:Concept;
     skos:prefLabel "Costain Blankevoort"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:27:44.370Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:02:36.532Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/f6876290-a31d-be25-9f48-714bd581b8cb>
     a skos:Concept;
@@ -18333,6 +18328,37 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/be424045-4fb4-f372-922d-4dc3b9935229> .
   
+  <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a>
+    a skos:Concept;
+    dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:created "2023-07-19T06:30:52.620Z"^^xsd:dateTime;
+    skos:prefLabel "Fabrieken (organisaties)"@nl;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T08:07:36.369Z"^^xsd:dateTime;
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002>;
+    skos:narrower <https://digitaalerfgoed.poolparty.biz/nhaf/a8764264-f26a-5142-4f26-0b72cc80eb65>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/2c2b24e5-7c91-b2a6-f013-1226096a2b66>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/75a3ee76-6360-9a58-3f6c-5f082e18afba>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/f6665359-4ea9-b74e-17d8-3bbee8c269f7>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/e7e6de0e-1747-9137-5c6d-ea657dc7e9fc>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/d3258425-b8ee-2e7c-6255-3de6c22e9f12>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/9837891c-d074-57c9-4b00-8acaa7d86af1>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/77e0edca-8530-1fdf-9a48-0ff2bdc6b185>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/7aba89e5-4981-abae-d5f7-d7d3b29799e7>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/8fc9b8fe-a36c-2bbc-0b11-8785c4083aaf>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/3f0ba8e5-4ae7-56db-049e-649fdfd3ecd9>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/da594be4-c7da-8ddc-8e84-4bcb23a81bbf>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/7a2573b2-6398-6623-5d07-5b069372390b>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/83225a98-dae7-7ec7-7a91-1b9b3a885811>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/16cc418c-d373-6bcf-1f4f-ee7751e8fa24>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/c57c2571-f33b-ae32-7df7-c7d2715569bd>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/5d49cb9f-f6fb-721e-18bd-0127af9e8ffb>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/fbf98686-695f-dec8-4028-96a543486ebd>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/d46f4f03-335e-3381-0716-dba8c643b21f>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/43892b07-37e7-18e4-fbbd-3a7d5f58696a>,
+      <https://digitaalerfgoed.poolparty.biz/nhaf/1aca0a89-dcf1-bb05-faf2-71d08a638c24>;
+    skos:closeMatch <https://vocab.getty.edu/aat/300379421> .
+  
   <https://digitaalerfgoed.poolparty.biz/nhaf/faa411ec-382f-26ad-ec27-5f8767bfb692>
     a skos:Concept;
     skos:prefLabel "Dock"@en, "Kade"@nl;
@@ -18413,10 +18439,10 @@
   <https://digitaalerfgoed.poolparty.biz/nhaf/fbf98686-695f-dec8-4028-96a543486ebd>
     a skos:Concept;
     skos:prefLabel "Verheul Carosseriefabriek Waddinxveen"@nl;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
-    dcterms:modified "2023-06-16T10:26:46.369Z"^^xsd:dateTime;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:modified "2023-07-19T07:01:54.486Z"^^xsd:dateTime;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9>;
-    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/11c0acbe-0a96-11ee-be56-0242ac120002> .
+    skos:broader <https://digitaalerfgoed.poolparty.biz/nhaf/faa3ff68-d356-4e21-9a65-91497927809a> .
   
   <https://digitaalerfgoed.poolparty.biz/nhaf/fbfd51c6-1ad2-65ec-f291-43dd5d9660da>
     a skos:Concept;
