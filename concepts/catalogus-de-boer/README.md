@@ -10,7 +10,7 @@ De Art & Architecture Thesaurus (AAT), is een thesaurus voor cultuur- en erfgoed
 
 Om verbindingen met AAT termen te kunnen leggen zijn op [https://triplydb.com/getty/aat/sparql/aat](https://triplydb.com/getty/aat/sparql/aat) in vier keer (hoog de `offset` steeds met 10000 op) alle 37.039 Nederlandse preflabels opgehaald met de volgende query:
 
-```
+```SPARQL
 PREFIX dataset: <http://vocab.getty.edu/dataset/>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -34,7 +34,7 @@ Alle 63.198 labels heb ik in een database opgenomen en daar heb ik de trefwoorde
 
 Alternatief had ik de endpoint per term kunnen aanroepen, met een query als hieronder, maar dan had ik de endpoint 1591 ipv 7 keer moeten aanroepen (zoveel trefwoorden gebruikte De Boer).
 
-```
+```SPARQL
 PREFIX skos-xl: <http://www.w3.org/2008/05/skos-xl#>
 SELECT ?term ?preforalt ?label WHERE {
   ?nllabel skos-xl:literalForm ?label .
@@ -56,4 +56,44 @@ Onze onderwerpstrefwoorden van De Boer koppelen aan de GTAA zou relevant zijn op
 2. Mogelijk kan onze collectie hiermee ingeladen worden in de [CLARIAH Media Suite](https://mediasuite.clariah.nl/), waarna het voor een gebruiker/onderzoeker mogelijk is om de hierin beschikbare tools te gebruiken om de collectie verder uit te diepen, te annoteren en te analyseren.
 
 ## Automatisch verbindingen leggen
-Met relatief weinig moeite zou een link gelegd kunnen worden tussen de onderwerpen als we gebruik maken van het [OpenRefine Reconciliation API Endpoint](https://termennetwerk.netwerkdigitaalerfgoed.nl/reconciliation) van het [Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/). 
+Met relatief weinig moeite zou een link gelegd kunnen worden tussen de onderwerpen als we gebruik maken van het [OpenRefine Reconciliation API Endpoint](https://termennetwerk.netwerkdigitaalerfgoed.nl/reconciliation) van het [Termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/). Om de data in OpenRefine te krijgen kunnen we een query schrijven die voor elk concept het label geeft en de hoofdcategorie waar het concept zich in bevindt: https://api.triplydb.com/s/VCEbGH8I2
+
+```SPARQL
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?uri ?label ?category WHERE {  
+  ?uri a skos:Concept ;
+      skos:prefLabel ?label ;
+      skos:broader* ?category_uri .
+  
+  ?category_uri skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nhaf/01617d03-bcd9-4720-9392-bf6bd92227b9> ;
+      skos:prefLabel ?category .
+} ORDER BY ?category ?label
+```
+
+Als voorbeeld de eerste 5 regels van het resultaat (totaal 1619 regels):
+
+|uri                                                                            |label            |category    |
+|-------------------------------------------------------------------------------|-----------------|------------|
+|https://digitaalerfgoed.poolparty.biz/nhaf/6596e345-6d9e-d086-edb2-0d34f7a5b76f|1 mei viering    |Activiteiten|
+|https://digitaalerfgoed.poolparty.biz/nhaf/e6c7073d-7cdc-fd32-c0a4-a6499a96e062|Aanbieden        |Activiteiten|
+|https://digitaalerfgoed.poolparty.biz/nhaf/8483c868-f3b2-ed45-564e-5fb3319e4d47|Aankomst         |Activiteiten|
+|https://digitaalerfgoed.poolparty.biz/nhaf/870f328b-5199-caa1-51bd-371b4ab4aa9c|Aanvaring schepen|Activiteiten|
+
+Voor OpenRefine zijn de reconciliatie-API URLs:
+* GTAA Onderwerpen: https://termennetwerk-api.netwerkdigitaalerfgoed.nl/reconcile/https://data.beeldengeluid.nl/id/datadownload/0031
+* GTAA Namen: https://termennetwerk-api.netwerkdigitaalerfgoed.nl/reconcile/https://data.beeldengeluid.nl/id/datadownload/0030
+
+Belangrijk hier is dat de optie `Reconcile against no particular type` aangeklikt wordt. 
+
+Een totaal van 399 concepten kon met 100% overlap tussen de labels gematcht worden met de GTAA Onderwerpen. Daarnaast konden 106 concepten met 50-99% overlap verbonden worden. In veel gevallen zijn de onderwerpen van de GTAA specifieker dan de bredere termen van De Boer, zoals `Fietsen, fietspaden, fietsers` dat aan GTAA `fietspaden` en `fietsen` gekoppeld kan worden. Deze concepten zouden eigenlijk uitgesplitst moeten worden in de De Boer thesaurus, of via een `skos:narrowMatch` alsnog verbonden kunnen worden aan de GTAA. 
+
+Koppelen van de resterende 1114 concepten aan de GTAA Namen levert 89 concepten op met 50-100% overlap op pref- of alternatieve labels. Hier staan concepten in zoals `Vleeshal`, `Velsertunnel` en `Kraantje Lek`. 
+
+In totaal zijn hiermee 594 concepten gekoppeld aan GTAA concepten. Een overzicht is te vinden in `gtaa/concepts_link_gtaa.csv`. De links zijn in de thesaurus toegevoegd als `skos:closeMatch` relatie.
+
+
+
+
