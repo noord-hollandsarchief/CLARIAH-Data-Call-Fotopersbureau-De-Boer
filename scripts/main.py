@@ -22,6 +22,7 @@ from rdflib.container import Seq
 import pandas as pd
 
 HANDLE = Namespace("https://hdl.handle.net/21.12102/")
+RANH = Namespace("https://maior-images.memorix.nl/ranh/iiif/")
 PNV = Namespace("https://w3id.org/pnv#")
 WD = Namespace("http://www.wikidata.org/entity/")
 GTAA = Namespace("http://data.beeldengeluid.nl/gtaa/")
@@ -97,8 +98,24 @@ def process_photos(csv_path: str, g: Graph):
 
             negative2photo[negative_number][photo_number] = photo.identifier
 
-        # IIIF
-        # assets? #TODO
+    # IIIF
+    df = pd.read_csv(
+        "export/ReportageFotosAssetUUIDs20231128.csv", sep=";", encoding="utf-8"
+    )
+    for _, row in df.iterrows():
+        full_image_uri = RANH.term(
+            row["Linked media-uuid"] + "/full/full/0/default.jpg"
+        )
+        thumb_image_uri = RANH.term(
+            row["Linked media-uuid"] + "/full/,250/0/default.jpg"
+        )
+        image = Resource(g, RANH.term(row["Linked media-uuid"]))
+        image.add(RDF.type, SDO.ImageObject)
+        image.add(SDO.contentUrl, full_image_uri)
+        image.add(SDO.thumbnailUrl, thumb_image_uri)
+        image.add(SDO.name, Literal(row["Linked media-name"]))
+
+        g.add((HANDLE.term(row["uuid"]), SDO.image, image.identifier))
 
         # OCR
         # photo.add(SDO.text, Literal(row["OCR"]))
