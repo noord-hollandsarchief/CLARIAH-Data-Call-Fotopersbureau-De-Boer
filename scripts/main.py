@@ -100,6 +100,8 @@ def process_photos(csv_path: str, g: Graph):
         "export/ReportageFotosAssetUUIDs20231128.csv", sep=";", encoding="utf-8"
     )
     for _, row in df.iterrows():
+        if pd.isna(row["Linked media-uuid"]):
+            continue
         full_image_uri = RANH.term(
             row["Linked media-uuid"] + "/full/full/0/default.jpg"
         )
