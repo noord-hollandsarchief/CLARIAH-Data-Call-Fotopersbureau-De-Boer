@@ -77,7 +77,6 @@ def process_photos(csv_path: str, g: Graph):
     Args:
         g (Graph): rdflib graph object
     """
-    negative2photo = defaultdict(dict)
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8")
 
@@ -95,8 +94,6 @@ def process_photos(csv_path: str, g: Graph):
             negative_number = negative_number.replace("]", "")  # TODO
         if negative_number:
             photo.add(SDO.isPartOf, HANDLE.term(negative_number))
-
-            negative2photo[negative_number][photo_number] = photo.identifier
 
     # IIIF
     df = pd.read_csv(
@@ -129,13 +126,8 @@ def process_photos(csv_path: str, g: Graph):
         # if n == 100:
         #     break
 
-    for k, v in negative2photo.items():
-        negative2photo[k] = dict(sorted(v.items()))
 
-    return negative2photo
-
-
-def process_negatives(csv_path: str, g: Graph, negative2photo: dict = {}):
+def process_negatives(csv_path: str, g: Graph):
     """
 
     Columns:
@@ -184,11 +176,6 @@ def process_negatives(csv_path: str, g: Graph, negative2photo: dict = {}):
         if not pd.isna(row["metadata de Boer-metadata De Boer-uuid"]):
             for i in row["metadata de Boer-metadata De Boer-uuid"].split("|"):
                 g.add((HANDLE.term("report/" + i), SDO.result, negative.identifier))
-
-        # Photos
-        if negative_number in negative2photo:
-            seq = Seq(g, BNode(), list(negative2photo[negative_number].values()))
-            negative.add(SDO.hasPart, seq.uri)
 
 
 def process_reports(csv_path: str, g: Graph):
@@ -631,22 +618,20 @@ def process_gtaa(g: Graph, mapping_file):
         mapping = json.load(f)
 
     for wd_id, gtaa_ids in mapping.items():
-        for i in gtaa_ids:
-            g.add((WD.term(wd_id), OWL.sameAs, GTAA.term(i)))
+        # find resource and add gtaa to NHA resource
+        for s in g.subjects(OWL.sameAs, WD.term(wd_id)):
+            for i in gtaa_ids:
+                g.add((s, OWL.sameAs, GTAA.term(i)))
 
 
 def main():
     g = Graph()
 
     # 0. Foto's
-    negative2photo = process_photos("export/0_Reportagefotos20231128.csv", g)
+    process_photos("export/0_Reportagefotos20231128.csv", g)
 
     # 1. Negatiefvellen
-    process_negatives(
-        "export/1_Negatiefvellen20231128_inclUUIDMetadataDeBoer.csv",
-        g,
-        negative2photo=negative2photo,
-    )
+    process_negatives("export/1_Negatiefvellen20231128_inclUUIDMetadataDeBoer.csv", g)
 
     # 2. Metadata De Boer (rapportages)
     process_reports("export/2_MetadataDeBoer20231128.csv", g)
