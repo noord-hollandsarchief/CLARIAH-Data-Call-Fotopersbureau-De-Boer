@@ -19,7 +19,7 @@ jobs:
           "prettyPrint": true,
           "format": "TriG",
           "modules": [ "concepts" ]
-        }' https://digitaalerfgoed.poolparty.biz/PoolParty/api/projects/nhaf/export
+        }' https://digitaalerfgoed.poolparty.biz/PoolParty/api/projects/nha/export
         
     - name: Check if there are any changes
       id: verify_diff
