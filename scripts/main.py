@@ -1,6 +1,7 @@
 import json
 from itertools import count
 
+
 from rdflib import (
     Dataset,
     Graph,
@@ -9,6 +10,7 @@ from rdflib import (
     URIRef,
     RDF,
     RDFS,
+    SKOS,
     XSD,
     SDO,
     OWL,
@@ -25,21 +27,31 @@ PNV = Namespace("https://w3id.org/pnv#")
 WD = Namespace("http://www.wikidata.org/entity/")
 GTAA = Namespace("http://data.beeldengeluid.nl/gtaa/")
 ROAR = Namespace("https://w3id.org/roar#")
+GEO = Namespace("http://www.opengis.net/ont/geosparql#")
+NHAT = Namespace("https://digitaalerfgoed.poolparty.biz/nha/")
+RICO = Namespace("https://www.ica.org/standards/RiC/ontology#")
+AAT = Namespace("http://vocab.getty.edu/aat/")
+
+location_type2concept = {
+    "Adres": "https://vocab.getty.edu/aat/300386983",
+    "Gemeente": "http://vocab.getty.edu/aat/300387330",
+    "Land": "http://vocab.getty.edu/aat/300387392",
+    "Object": "http://vocab.getty.edu/aat/300422821",
+    "Park": "http://vocab.getty.edu/aat/300008187",
+    "Plaats": "http://vocab.getty.edu/aat/300387331",
+    "Regio": "http://vocab.getty.edu/aat/300182722",
+    "Straat": "http://vocab.getty.edu/aat/300008247",
+    "Water": "http://vocab.getty.edu/aat/300266059",
+    "Wegen": "http://vocab.getty.edu/aat/300008217",
+    "Wijk": "http://vocab.getty.edu/aat/300000762",
+}
 
 
-def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000):
+def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000):
     """
     Columns:
         - uuid
-        - modified_by-uuid
-        - modified_by-username
-        - modified_by-displayname
-        - modified_by-email
-        - modified_by-active
-        - modified_by-admin
-        - modified_time
         - Objectnummer
-        - Twijfel metadata
         - Omschrijving
         - Gepubliceerde foto
         - Expliciete foto
@@ -47,29 +59,11 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000)
         - Export naar VH (Project 2)
         - Geëxporteerd naar VH (Project 2)
         - Serienaam VH (Project 2)
-        - OCR *
+        - OCR
         - OCR origineel
         - Aanbieden voor OCR
         - Naar krant-en-fotos.nl
         - Toon op web
-        # - file-count
-        # - thumbnail
-        # - t2_serie_name
-        # - t3_description
-        # - t3_entry_number
-        # - t3_log_page_id
-        # - t3_vh_entry_number
-        # - t3_catalog_card
-        # - vh_keywords_title
-        # - vh_keywords_correct
-        # - ai_keywords_title
-        # - t6_link
-        # - t6_link_thumbnail
-        # - t6_photo_id
-        # - t6_paper_id
-        # - t6_score
-        # - t6_match
-
     """
 
     file_counter = count(1)
@@ -82,8 +76,16 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000)
         encoding="utf-8",
         low_memory=False,
     )
+    df_keywords = pd.read_csv(
+        "export/0_UUIDRepFotosMetAiTrefwoorden20231218.csv",
+        sep=";",
+        encoding="utf-8",
+        low_memory=False,
+    )
+    df_keywords.drop("AI keyword (connected by AI)-ordering", axis=1, inplace=True)
 
     df = pd.merge(df_photos, df_assets, how="left", on="uuid")
+    df = pd.merge(df, df_keywords, how="left", on="uuid")
 
     for n, row in df.iterrows():
         n += 1
@@ -94,12 +96,9 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000)
         photo.add(RDF.type, SDO.Photograph)
         photo.add(SDO.identifier, Literal(row["Objectnummer"]))
 
-        # # Report
-        # negative_number, photo_number = row["Objectnummer"].rsplit("_", 1)  # TODO
-        # if "]" in negative_number:
-        #     negative_number = negative_number.replace("]", "")  # TODO
-        # if negative_number:
-        #     photo.add(SDO.isPartOf, HANDLE.term(negative_number))
+        # OCR
+        # if not pd.isna(row["OCR"]):
+        #     photo.add(SDO.text, Literal(row["OCR"]))
 
         # IIIF
         if pd.isna(row["Linked media-uuid"]):
@@ -115,14 +114,20 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000)
 
         g.add((HANDLE.term(row["uuid"]), SDO.image, image.identifier))
 
-        # OCR
-        # photo.add(SDO.text, Literal(row["OCR"]))
-        # process_photo_OCR(g, row["OCR_origineel"], photo) #TODO
+        # AI keywords
+        if not pd.isna(row["AI keyword (connected by AI)-Trefwoord-uuid"]):
+            keywords = row["AI keyword (connected by AI)-Trefwoord-uuid"].split("|")
+            percentages = row["AI keyword (connected by AI)-Percentage"].split("|")
 
-        # Krant en foto
-        # process_photo_keywords(g, row["ai_keywords_title"], photo)
+            for keyword, percentage in zip(keywords, percentages):
+                role = Resource(g, BNode())
+                role.add(RDF.type, SDO.Role)
+                role.add(SDO.about, NHAT.term(keyword))
+                role.add(
+                    RICO.certainty, Literal(int(percentage) / 100, datatype=XSD.float)
+                )
 
-        # HisVis keywords
+                photo.add(SDO.about, role.identifier)
 
         # Serialize in smaller bits
         if (split_by and n % split_by == 0) or n == len(df):
@@ -136,6 +141,8 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 10_000)
                 f"nha_photos_{str(next(file_counter)).zfill(3)}.trig", format="trig"
             )
             g = Graph(identifier=graph_identifier)  # new empty graph
+
+            break
 
 
 def process_negatives(csv_path: str, g: Graph, g_reports: Graph):
@@ -224,6 +231,8 @@ def process_reports(csv_path: str, g: Graph):
         if not pd.isna(row["Invoernummer onderwerpskaarten"]):
             for i in row["Invoernummer onderwerpskaarten"].split("|"):
                 report.add(SDO.identifier, Literal(i))
+        elif not pd.isna(row["Logboek pagina ID"]):
+            report.add(SDO.identifier, Literal(row["Logboek pagina ID"]))
 
         if not pd.isna(row["Beschrijving"]):
             report.add(SDO.name, Literal(row["Beschrijving"]))
@@ -254,7 +263,8 @@ def process_reports(csv_path: str, g: Graph):
         except:
             print(row["Datum"])
 
-        # report.add(SDO.isPartOf, Literal(row["Deelcollectie"]))  # TODO
+        # Collection
+        report.add(SDO.isPartOf, Literal(row["Deelcollectie"]))  # TODO
 
     # Photos
     df = pd.read_csv(
@@ -281,7 +291,7 @@ def process_reports(csv_path: str, g: Graph):
 
     ## Persons
     df = pd.read_csv(
-        "export/UUIDMetadataMetPersonenObs20231128.csv",
+        "export/2_UUIDMetadataMetPersonenObs20231128.csv",
         sep=";",
         encoding="utf-8",
         low_memory=False,
@@ -301,16 +311,16 @@ def process_reports(csv_path: str, g: Graph):
 
     ## Locations
     df = pd.read_csv(
-        "export/UUIDMetadataMetLocaties20231128.csv",
+        "export/2_UUIDMetadataMetLocaties20231214.csv",
         sep=";",
         encoding="utf-8",
         low_memory=False,
     )
 
     for _, row in df.iterrows():
-        if pd.isna(row["Locaties-uuid"]):
+        if pd.isna(row["Locaties-Locatie-uuid"]):
             continue
-        for i in row["Locaties-uuid"].split("|"):
+        for i in row["Locaties-Locatie-uuid"].split("|"):
             g.add(
                 (
                     HANDLE.term("report/" + row["uuid"]),
@@ -319,21 +329,18 @@ def process_reports(csv_path: str, g: Graph):
                 )
             )
 
-    ## Subjects
-    # df = pd.read_csv(
-    #     "export/UUIDMetadataMetCataloguskaart20231128.csv", sep=";", encoding="utf-8", low_memory=False
-    # )
-    # for _, row in df.iterrows():
-    #     if pd.isna(row["Catalogus kaart-uuid"]):
-    #         continue
-    #     for i in row["Catalogus kaart-uuid"].split("|"):
-    #         g.add(
-    #             (
-    #                 HANDLE.term("report/" + row["uuid"]),
-    #                 SDO.about,
-    #                 HANDLE.term("subject/" + i),
-    #             )
-    #         )
+    # Subjects
+    df = pd.read_csv(
+        "export/2_UUIDMetadataMetCataloguskaart20231214.csv",
+        sep=";",
+        encoding="utf-8",
+        low_memory=False,
+    )
+    for _, row in df.iterrows():
+        if pd.isna(row["Catalogus kaart-Catalogus kaart-uuid"]):
+            continue
+        for i in row["Catalogus kaart-Catalogus kaart-uuid"].split("|"):
+            g.add((HANDLE.term("report/" + row["uuid"]), SDO.about, NHAT.term(i)))
 
 
 def process_catalog_cards(csv_path: str, g: Graph):
@@ -414,18 +421,6 @@ def process_locations(g: Graph):
         - BAG Nummeraanduiding ID
         - BAG Nummeraanduiding URL
         - Coordinates-uuid
-        - Coordinates-modified_time
-        - Coordinates-ordering
-        - Coordinates-address
-        - Coordinates-lat
-        - Coordinates-lng
-        - Coordinates-zoom
-        - Coordinates-wkt
-        - Coordinates-geodata"
-
-    Columns:
-        - uuid
-        - Coordinates-uuid
         - Coordinates-modified_by-uuid
         - Coordinates-modified_by-username
         - Coordinates-modified_by-displayname
@@ -439,50 +434,69 @@ def process_locations(g: Graph):
         - Coordinates-lng
         - Coordinates-zoom
         - Coordinates-wkt
-        - Coordinates-geodata"
-
-
+        - Coordinates-geodata
 
     Args:
         g (Graph): _description_
     """
+    for key, value in location_type2concept.items():
+        concept = Resource(g, URIRef(value))
+        concept.add(RDF.type, SKOS.Concept)
+        concept.add(SKOS.prefLabel, Literal(key))
 
     df = pd.read_csv(
-        "export/4_Locaties20231128.csv", sep=";", encoding="utf-8", low_memory=False
+        "export/4_LocatiesMetCoordinaten20231213.csv",
+        sep=";",
+        encoding="utf-8",
+        low_memory=False,
     )
 
     for _, row in df.iterrows():
         location = Resource(g, HANDLE.term("location/" + row["uuid"]))
         location.add(RDF.type, SDO.Place)
+        location.add(SDO.additionalType, URIRef(location_type2concept[row["Soort"]]))
 
-        # "Land";"Gemeente";"Plaats";"Straat";"Huisnummer";"Huisletter";"Huisnummertoevoeging";"Postcode";"Object";"Wijk";"Water";"Regio";"Park";"Wegen"
+        address = Resource(g, BNode())
+        address.add(RDF.type, SDO.PostalAddress)
 
-        name = None
-        for i in [
-            row["Wegen"],
-            row["Park"],
-            row["Regio"],
-            row["Water"],
-            row["Wijk"],
-            row["Object"],
-            row["Postcode"],
-            row["Huisnummertoevoeging"],
-            row["Huisletter"],
-            row["Huisnummer"],
-            row["Straat"],
-            row["Plaats"],
-            row["Gemeente"],
-            row["Land"],
-        ]:
-            if not pd.isna(i):
-                name = i
-                break
+        if not pd.isna(row["Land"]):
+            address.add(SDO.addressCountry, Literal(row["Land"]))
 
-        if name:
-            location.add(SDO.name, Literal(name))
+        if not pd.isna(row["Plaats"]):
+            address.add(SDO.addressLocality, Literal(row["Plaats"]))
+
+        if not pd.isna(row["Straat"]):
+            if (
+                not pd.isna(row["Huisnummer"])
+                and not pd.isna(row["Huisletter"])
+                and not pd.isna(row["Huisnummertoevoeging"])
+            ):
+                street = f"{row['Straat']} {row['Huisnummer']}{row['Huisletter']} {row['Huisnummertoevoeging']}"
+            elif not pd.isna(row["Huisnummer"]) and not pd.isna(row["Huisletter"]):
+                street = f"{row['Straat']} {row['Huisnummer']}{row['Huisletter']}"
+            elif not pd.isna(row["Huisnummer"]):
+                street = f"{row['Straat']} {row['Huisnummer']}"
+            else:
+                street = row["Straat"]
+
+            address.add(SDO.streetAddress, Literal(street))
+
+        # Name
+        if row["Soort"] == "Adres" and not pd.isna(row["Straat"]):
+            location.add(SDO.name, Literal(street))
+        else:
+            location.add(SDO.name, Literal(row.get(row["Soort"], "?")))
 
         if not pd.isna(row["WikiData ID"]):
             location.add(OWL.sameAs, WD.term(row["WikiData ID"]))
+
+        # Geometry
+        if not pd.isna(row["Coordinates-wkt"]):
+            geo = Resource(g, BNode())
+            geo.add(RDF.type, GEO.term("Geometry"))
+            geo.add(GEO.asWKT, Literal(row["Coordinates-wkt"], datatype=GEO.wktLiteral))
+
+            location.add(GEO.hasGeometry, geo)
 
 
 def process_person_observations(g: Graph, g_reconstructions: Graph):
@@ -564,7 +578,7 @@ def process_person_observations(g: Graph, g_reconstructions: Graph):
 
     # Reconstructions
     df = pd.read_csv(
-        "export/UUIDPersoonObsMetRec20231128.csv",
+        "export/5_UUIDPersoonObsMetRec20231128.csv",
         sep=";",
         encoding="utf-8",
         low_memory=False,
@@ -646,7 +660,8 @@ def process_person_reconstructions(g: Graph):
             person.add(SDO.deathPlace, Literal(row["Overlijdensplaats"]))
 
         if not pd.isna(row["Beroep"]):
-            person.add(SDO.hasOccupation, Literal(row["Beroep"]))
+            for i in row["Beroep"].split("|"):
+                person.add(SDO.hasOccupation, Literal(i))
 
         if not pd.isna(row["Wikidata ID"]):
             person.add(OWL.sameAs, WD.term(row["Wikidata ID"]))
@@ -690,19 +705,6 @@ def process_person_reconstructions(g: Graph):
         person.add(PNV.hasName, pn)
 
 
-def process_hisvis(g: Graph):
-    df = pd.read_csv(
-        "export/7_UUIDRepFotosMetAiTrefwoorden20231128.csv",
-        sep=";",
-        encoding="utf-8",
-        low_memory=False,
-    )
-
-    for _, row in df.iterrows():
-        # concept = SKOS.Concept(HANDLE.term(row["uuid"]))
-        pass
-
-
 def process_gtaa(g: Graph, mapping_file):
     with open(mapping_file) as f:
         mapping = json.load(f)
@@ -720,7 +722,7 @@ def main():
     # 0. Foto's
     g_identifier = HANDLE.term("photos/")
     print("Processing photos...")
-    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=10_000)
+    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
 
     # # 1. Negatiefvellen
     # g = ds.graph(identifier=HANDLE.term("negatives/"))
@@ -730,7 +732,7 @@ def main():
     #     "export/1_NegatiefvellenAndUUIDMetadata20231211.csv", g, g_reports
     # )
 
-    # 2. Metadata De Boer (rapportages)
+    # 2. Metadata De Boer (reportages)
     g = ds.graph(identifier=HANDLE.term("reports/"))
     print("Processing reports...")
     process_reports("export/2_MetadataDeBoer20231128.csv", g)
@@ -756,11 +758,6 @@ def main():
     print("Processing person reconstructions...")
     process_person_reconstructions(g)
 
-    # 7. AI-trefwoorden
-    g = ds.graph(identifier=HANDLE.term("hisvis/"))
-    print("Processing hisvis...")
-    # process_hisvis(g)
-
     # 8. GTAA
     g = ds.graph(identifier=HANDLE.term("reports/"))  # same graph as reports
     print("Processing gtaa...")
@@ -774,6 +771,10 @@ def main():
     ds.bind("prov", PROV)
     ds.bind("nha", HANDLE)
     ds.bind("ranh", RANH)
+    ds.bind("rico", RICO)
+    ds.bind("skos", SKOS)
+    ds.bind("xsd", XSD)
+    ds.bind("nhat", NHAT)
     ds.bind("report", HANDLE.term("report/"))
     ds.bind("catalog", HANDLE.term("catalog/"))
     ds.bind("location", HANDLE.term("location/"))
@@ -781,11 +782,15 @@ def main():
     ds.bind("personreconstruction", HANDLE.term("person/reconstruction/"))
     ds.bind("subject", HANDLE.term("subject/"))
     ds.bind("gtaa", GTAA)
+    ds.bind("geo", GEO)
+    ds.bind("aat", AAT)
 
     print()
     print("Serializing...")
 
     for g in ds.graphs():
+        if str(g.identifier) == "urn:x-rdflib:default":
+            continue
         name = g.identifier.split(HANDLE.term(""))[1].replace("/", "")
 
         print(f"Serializing {name}...")
