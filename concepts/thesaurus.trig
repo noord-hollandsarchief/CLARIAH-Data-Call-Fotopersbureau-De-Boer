@@ -62,13 +62,13 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:22.511Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Materialen"@nl;
-    skos:closeMatch <http://vocab.getty.edu/aat/300010358>, <http://vocab.getty.edu/aat/300264091>,
-      <http://data.beeldengeluid.nl/gtaa/30012>;
-    dcterms:modified "2023-10-27T13:10:44.258Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0b0c4-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300010358>, <http://vocab.getty.edu/aat/300264091>, <http://data.beeldengeluid.nl/gtaa/30012>;
+    dcterms:modified "2023-12-20T10:57:47.129Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/01509d8a-25b2-a3c0-fc1b-4b501c7604a9> a
       skos:Concept;
@@ -144,13 +144,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0199e8d2-824a-b19a-be6a-5ee3beb624b5> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Picture taken in a forest or park"@en, "Foto's waarin een bos- en/of parklandschap / natuurgebied centraal staat"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Forest park"@en, "Bos park"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25261>;
-    dcterms:modified "2023-10-27T13:05:23.839Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f56fdd65-2265-79ec-c621-2dbf71b0a981>,
+      <https://digitaalerfgoed.poolparty.biz/nha/d522e73e-453c-1c9e-ce0e-25f574e4195d>,
+      <http://data.beeldengeluid.nl/gtaa/25261>;
+    dcterms:modified "2023-12-20T10:56:44.423Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/e6499640-e8ec-4855-b222-21e7d9d25e28.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/01ad88e3-95cd-d3ec-8680-2e35f2accc08> a
@@ -208,23 +210,25 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0238f05d-4980-4919-8546-636b0bfd6573> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Spoorwegen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008591>, <http://data.beeldengeluid.nl/gtaa/25166>;
-    dcterms:modified "2023-07-20T15:31:19.396Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f6be45a0-f9b1-b8fb-4ece-1751cabe0550>,
+      <http://vocab.getty.edu/aat/300008591>, <http://data.beeldengeluid.nl/gtaa/25166>;
+    dcterms:modified "2023-12-20T10:57:42.213Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0261181d-00de-fbd5-7889-882d29340de3> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "parade with floats"@en, "Foto's van een optocht met of zonder praalwagens"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Parade"@en, "Optocht"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/19d24d3d-edf3-dceb-0182-0b1836a0ea4f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069283>, <http://data.beeldengeluid.nl/gtaa/26446>;
-    dcterms:modified "2023-10-27T13:10:44.612Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e6b222b6-462d-ae5e-6861-2b887f584ef3>,
+      <http://vocab.getty.edu/aat/300069283>, <http://data.beeldengeluid.nl/gtaa/26446>;
+    dcterms:modified "2023-12-20T10:56:45.257Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/01f25d2e-6917-868c-225f-4573a3153dd2.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0281c1c6-42e5-028c-1fea-a21689f00889> a
@@ -516,14 +520,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/06511001-cfb1-2434-97ad-88a8bc6badb6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Photos of dunes."@en, "Foto's van een duinlandschap. Heeft mogelijk overeenkomsten met het label 'strand'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Dunes"@en, "Duinen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/19dd0c73-e0c7-50d8-4a0b-32b470ecf44a>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008750>, <http://data.beeldengeluid.nl/gtaa/28608>;
-    dcterms:modified "2023-10-27T13:10:46.171Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0c60a81b-7b15-0dad-daab-a0e05ea7dd57>,
+      <http://vocab.getty.edu/aat/300008750>, <http://data.beeldengeluid.nl/gtaa/28608>;
+    dcterms:modified "2023-12-20T10:56:46.145Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/336364f9-e0f3-c6c3-f77b-f951eb8e244f.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/065e42c3-29c6-5ca9-02d9-81fba36bd9ed> a
@@ -597,21 +602,23 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/06f2327c-71c1-1502-73c7-7ace0d63ed0d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bloemen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0aad4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25289>;
-    dcterms:modified "2023-07-20T15:28:49.061Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/acde7e0b-44fd-2607-d8a3-e2888b4aacf2>,
+      <http://data.beeldengeluid.nl/gtaa/25289>;
+    dcterms:modified "2023-12-20T10:57:26.741Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0705b5de-5b35-0a2f-9adc-2f5f54c40c8b> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Militairen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/909fd2cb-67bd-42ca-ae83-59f9d9a2bc67>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27782>;
-    dcterms:modified "2023-07-20T15:29:13.583Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/7ab5c31c-f58c-5305-d70b-74ee936db03c>,
+      <http://data.beeldengeluid.nl/gtaa/27782>;
+    dcterms:modified "2023-12-20T10:57:11.106Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/07366490-c220-1d77-a453-778cb8a70524> a
       skos:Concept;
@@ -718,13 +725,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/086db4c8-b874-7d48-1944-e81f0030d0d6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Picture of an excavation. "@en, "Foto's van een (archeologische) opgraving"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Excavation"@en, "Opgraving"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/29237>, <http://vocab.getty.edu/aat/300266151>;
-    dcterms:modified "2023-12-20T10:09:24.209Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/fcc58a23-d801-1b48-f0db-ff0f77cdc363>,
+      <http://data.beeldengeluid.nl/gtaa/29237>, <http://vocab.getty.edu/aat/300266151>;
+    dcterms:modified "2023-12-20T10:56:47.013Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/ae279565-2f5b-c4dd-0396-7180d8e9afec.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/08c18c62-5d8f-0b52-8d89-685c4a64f783> a
@@ -781,7 +789,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0988d5f4-bb6f-b657-7e61-630e9eeb5d04> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "picture focusing on one or multiple boats"@en, "Foto's waarin één of meerdere vaartuigen (boot / schip) centraal staan. Heeft mogelijk overeenkomsten met het label 'scheepswerf'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Boats"@en, "Boten"@nl;
@@ -789,8 +797,10 @@
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/02f9b8eb-0589-ec17-0761-8169a98791f7>,
       <https://digitaalerfgoed.poolparty.biz/nha/1deda0df-3044-4c88-6734-f142d36e45ec>,
       <https://digitaalerfgoed.poolparty.biz/nha/f6876290-a31d-be25-9f48-714bd581b8cb>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300178749>, <http://data.beeldengeluid.nl/gtaa/28142>;
-    dcterms:modified "2023-10-27T13:10:47.625Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/fac79ab6-2b81-2401-d759-6097680890ba>,
+      <https://digitaalerfgoed.poolparty.biz/nha/845ba975-4438-b010-20e6-acf985e09c2a>,
+      <http://vocab.getty.edu/aat/300178749>, <http://data.beeldengeluid.nl/gtaa/28142>;
+    dcterms:modified "2023-12-20T10:56:48.802Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/e186519b-f52b-da5a-3def-2dbdb4a36aa2.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/09b7d398-6816-8fa4-fcaa-8f9b4d61fd26> a
@@ -838,14 +848,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0a6565e5-5dc8-bf4c-dedb-a9e47e6c6858> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Tentoonstellingen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/3ef31801-70ec-e29d-dd02-0439e2d73644>,
       <https://digitaalerfgoed.poolparty.biz/nha/d8e36db8-5269-4582-3d76-689c9904b13f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300054766>, <http://data.beeldengeluid.nl/gtaa/27108>;
-    dcterms:modified "2023-07-20T15:28:25.157Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e15f3c52-5da4-d870-00e8-a29b1f5045af>,
+      <http://vocab.getty.edu/aat/300054766>, <http://data.beeldengeluid.nl/gtaa/27108>;
+    dcterms:modified "2023-12-20T10:57:36.729Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0a6ff6a0-a427-b9b2-d41d-1f55a308a583> a
       skos:Concept;
@@ -892,13 +903,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0b183ba6-f519-f1b0-0ddc-567830ca44d9> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People skating on ice"@en, "Mensen die schaatsen op natuurijs of een ijsbaan"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Ice skating"@en, "Schaatsen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28710>, <http://vocab.getty.edu/aat/300222802>;
-    dcterms:modified "2023-10-27T13:10:48.041Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/17e96439-69df-9814-c7a6-001a995393ce>,
+      <http://data.beeldengeluid.nl/gtaa/28710>, <http://vocab.getty.edu/aat/300222802>;
+    dcterms:modified "2023-12-20T10:56:49.503Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/bc9195d1-12e3-f120-e75c-8ef6cdc7f499.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0b76b956-6fd1-a35d-fc7a-2e30d13f4c31> a
@@ -940,15 +952,16 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0c304df9-a4c1-8f22-57bf-65b5e7edcbe6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's die binnen in een gebouw, ruimte, of van het interieur zijn genomen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Binnen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/fa9afba5-b396-4cc8-86d3-aaaba7e1fa11>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/9219934b-ea10-0d9d-58c5-793ed8068935>,
       <https://digitaalerfgoed.poolparty.biz/nha/9e9bc5f1-d892-9c81-a462-f268b6f8816d>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300124520>;
-    dcterms:modified "2023-12-20T10:31:59.469Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e2c255af-e3ff-619f-530d-e64dee9f6bd2>,
+      <http://vocab.getty.edu/aat/300124520>;
+    dcterms:modified "2023-12-20T10:56:50.220Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/e50eeebe-8543-9368-7af7-ca27e9f2cac6.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0c3e611e-6846-464d-92ad-a8f807654c90> a
@@ -962,12 +975,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0c60a81b-7b15-0dad-daab-a0e05ea7dd57> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Duinen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008750>, <http://data.beeldengeluid.nl/gtaa/28608>;
-    dcterms:modified "2023-07-20T15:30:40.148Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/06511001-cfb1-2434-97ad-88a8bc6badb6>,
+      <http://vocab.getty.edu/aat/300008750>, <http://data.beeldengeluid.nl/gtaa/28608>;
+    dcterms:modified "2023-12-20T10:56:46.148Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0c68c7c6-df20-bf3b-cee6-783f3e77f527> a
       skos:Concept;
@@ -1030,7 +1044,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/0d318ca1-f640-1c05-106d-5aa22a4ad30e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vriendn>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Ziekenhuizen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
@@ -1038,8 +1052,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/afd62f20-24d6-c9be-c3d7-ab154cf515f6>,
       <https://digitaalerfgoed.poolparty.biz/nha/969715f5-7127-0f78-ffb6-9096f7b1bcec>,
       <https://digitaalerfgoed.poolparty.biz/nha/826a6f91-2ece-2bf5-642a-b1e22b0cbb5a>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300006676>, <http://data.beeldengeluid.nl/gtaa/28258>;
-    dcterms:modified "2023-08-03T15:16:59.118Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/4e69c87b-3925-1869-c7c2-227208f46c74>,
+      <http://vocab.getty.edu/aat/300006676>, <http://data.beeldengeluid.nl/gtaa/28258>;
+    dcterms:modified "2023-12-20T10:57:05.041Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/0d3d2bea-ee8b-52e6-c772-a0223e2a10d3> a
       skos:Concept;
@@ -1288,7 +1303,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bebouwde Omgeving"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
@@ -1546,15 +1561,16 @@
       <https://digitaalerfgoed.poolparty.biz/nha/0d88b2e8-490e-bca4-5953-c075b59dbab3>,
       <https://digitaalerfgoed.poolparty.biz/nha/0d318ca1-f640-1c05-106d-5aa22a4ad30e>,
       <https://digitaalerfgoed.poolparty.biz/nha/91ea3207-a9c4-3d4b-4177-47bd0695e581>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264550>;
-    dcterms:modified "2023-12-20T10:36:58.029Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>,
+      <http://vocab.getty.edu/aat/300264550>;
+    dcterms:modified "2023-12-20T10:57:44.583Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Bebouwde Omgeving"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264550>;
     <http://www.w3.org/2008/05/skos#broader> <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0aad4-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Levende Organismen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002>;
@@ -1565,15 +1581,16 @@
       <https://digitaalerfgoed.poolparty.biz/nha/20232080-ec9d-b22a-aea3-6d14a190d3ad>,
       <https://digitaalerfgoed.poolparty.biz/nha/b8d4d1c2-467a-e321-320c-9d6e3ce81150>,
       <https://digitaalerfgoed.poolparty.biz/nha/77570c53-9757-df30-d13e-09c52053f31e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300265673>;
-    dcterms:modified "2023-07-20T10:05:44.673Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>,
+      <http://vocab.getty.edu/aat/300265673>;
+    dcterms:modified "2023-12-20T10:57:46.552Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Levende Organismen"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300265673>;
     <http://www.w3.org/2008/05/skos#broader> <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0acbe-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vriendn>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Organisaties"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002>;
@@ -1610,15 +1627,16 @@
       <https://digitaalerfgoed.poolparty.biz/nha/dce6ad1b-e1e6-4c18-8ffb-58733e2bd0ef>,
       <https://digitaalerfgoed.poolparty.biz/nha/6b06962e-f7dc-42b5-b787-abf969d2c433>,
       <https://digitaalerfgoed.poolparty.biz/nha/872bd040-b6df-432a-8c3d-dd432727ee9e>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25176>, <http://vocab.getty.edu/aat/300234770>;
-    dcterms:modified "2023-10-27T16:13:37.593Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>,
+      <http://data.beeldengeluid.nl/gtaa/25176>, <http://vocab.getty.edu/aat/300234770>;
+    dcterms:modified "2023-12-20T10:57:48.613Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Organisaties"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300234770>;
     <http://www.w3.org/2008/05/skos#broader> <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0b0c4-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Materialen"@nl;
@@ -1650,15 +1668,16 @@
       <https://digitaalerfgoed.poolparty.biz/nha/0a0997de-6453-e80b-0a04-750bbbf706c3>,
       <https://digitaalerfgoed.poolparty.biz/nha/4fa13fe5-fe7c-c102-8128-e728c3cf18a3>,
       <https://digitaalerfgoed.poolparty.biz/nha/49569948-3ba5-7c1f-6313-dd34868c7dac>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264091>, <http://data.beeldengeluid.nl/gtaa/30012>;
-    dcterms:modified "2023-07-20T15:30:13.390Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/01063279-c4e5-4be3-91ed-5355143361e0>,
+      <http://vocab.getty.edu/aat/300264091>, <http://data.beeldengeluid.nl/gtaa/30012>;
+    dcterms:modified "2023-12-20T10:57:47.129Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Materialen"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264091>;
     <http://www.w3.org/2008/05/skos#topConceptOf> <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vereeckenl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Objecten"@nl;
@@ -1809,30 +1828,32 @@
       <https://digitaalerfgoed.poolparty.biz/nha/7ebaa270-c5a9-8e22-978c-0b2c2a6620c9>,
       <https://digitaalerfgoed.poolparty.biz/nha/04bd46bc-114f-0890-b3f1-9fdb5f63ed6a>,
       <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264092>;
-    dcterms:modified "2023-09-04T13:46:50.332Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>,
+      <http://vocab.getty.edu/aat/300264092>;
+    dcterms:modified "2023-12-20T10:57:47.856Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Objecten"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264092>;
     <http://www.w3.org/2008/05/skos#topConceptOf> <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Actoren"@nl;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/11c0acbe-0a96-11ee-be56-0242ac120002>,
       <https://digitaalerfgoed.poolparty.biz/nha/11c0aad4-0a96-11ee-be56-0242ac120002>,
       <https://digitaalerfgoed.poolparty.biz/nha/208a6e07-d64f-7e55-0883-9bcc799b637d>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264089>;
-    dcterms:modified "2023-06-16T12:32:10.077Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/ce36bdc3-256e-4f62-b4bb-18c885db88b6>,
+      <http://vocab.getty.edu/aat/300264089>;
+    dcterms:modified "2023-12-20T10:57:49.168Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Actoren"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264089>;
     <http://www.w3.org/2008/05/skos#topConceptOf> <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0b902-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Concepten"@nl;
@@ -1903,15 +1924,16 @@
       <https://digitaalerfgoed.poolparty.biz/nha/a3822f32-36d2-4a6a-afce-d5b7d1a84ca5>,
       <https://digitaalerfgoed.poolparty.biz/nha/6c87e39c-3cf6-46be-b2ef-a947aea45c4e>,
       <https://digitaalerfgoed.poolparty.biz/nha/4ebd73cf-7d78-ebab-ff67-89d12203db28>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264086>;
-    dcterms:modified "2023-07-20T10:09:54.995Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/fa9afba5-b396-4cc8-86d3-aaaba7e1fa11>,
+      <http://vocab.getty.edu/aat/300264086>;
+    dcterms:modified "2023-12-20T10:57:45.219Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Concepten"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264086>;
     <http://www.w3.org/2008/05/skos#topConceptOf> <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/11c0bc22-0a96-11ee-be56-0242ac120002> a
       skos:Concept, <http://www.w3.org/2008/05/skos#Concept>;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vriendn>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Activiteiten"@nl;
@@ -1991,8 +2013,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/d7e3c794-d3f7-48d6-a978-19edb18547df>,
       <https://digitaalerfgoed.poolparty.biz/nha/e709c590-5ab3-47c8-a5a5-b09c5ab2f8fe>,
       <https://digitaalerfgoed.poolparty.biz/nha/89e2df87-be0d-4b06-b25d-8732ac2405f6>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264090>;
-    dcterms:modified "2023-10-27T16:31:39.520Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>,
+      <http://vocab.getty.edu/aat/300264090>;
+    dcterms:modified "2023-12-20T10:57:43.685Z"^^xsd:dateTime;
     <http://www.w3.org/2008/05/skos#prefLabel> "Activiteiten"@nl;
     <http://www.w3.org/2008/05/skos#closeMatch> <http://vocab.getty.edu/aat/300264090>;
     <http://www.w3.org/2008/05/skos#topConceptOf> <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .
@@ -2062,12 +2085,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1292566b-928c-5eaa-6116-47903b46025e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Woonwijken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300000742>, <http://data.beeldengeluid.nl/gtaa/27423>;
-    dcterms:modified "2023-07-20T15:31:39.190Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/bdc7a6c2-432f-cb2c-de8f-275265effcdc>,
+      <http://vocab.getty.edu/aat/300000742>, <http://data.beeldengeluid.nl/gtaa/27423>;
+    dcterms:modified "2023-12-20T10:57:27.384Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/12ab16d1-2d0d-1e11-7cae-22a29ab9ce71> a
       skos:Concept;
@@ -2203,12 +2227,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/14ce338b-420f-39fd-96eb-93c8ed7859d2> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Cafe"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300005166>, <http://data.beeldengeluid.nl/gtaa/28517>;
-    dcterms:modified "2023-07-20T15:30:32.786Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1da309e9-56e8-882f-b48d-b88bd69e3fab>,
+      <http://vocab.getty.edu/aat/300005166>, <http://data.beeldengeluid.nl/gtaa/28517>;
+    dcterms:modified "2023-12-20T10:56:53.803Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/14ec562d-812e-93f7-ee94-787e5b576c4f> a
       skos:Concept;
@@ -2281,15 +2306,16 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/169266ec-658f-c05e-7560-27327865a82f> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Plays performed in a theatre setting"@en, "Toneelopvoering voor publiek / podium en/of theaterzaal / acteurs die toneelspelen met toeschouwers / toeschouwers in een theaterzaal. Heeft mogelijk overeenkomsten met het label 'historisch_toneelstuk' en 'amfitheater'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Theater"@en, "Theater"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/1047c920-6143-666f-7526-529d662fdfbc>,
       <https://digitaalerfgoed.poolparty.biz/nha/72f3d178-5079-6d8f-3052-c433bf564b98>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300312332>;
-    dcterms:modified "2023-10-27T13:10:50.496Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/adf12ad3-fdeb-fe84-3208-62948dbd129d>,
+      <http://vocab.getty.edu/aat/300312332>;
+    dcterms:modified "2023-12-20T10:56:51.159Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/0828a469-1c42-8a91-1524-bd5265a37faf.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/16b22ab5-60f6-bc88-8d5b-cf168edd2e1e> a
@@ -2409,12 +2435,13 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-10-31T11:22:30.601Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Schaatsen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28710>, <http://vocab.getty.edu/aat/300222802>;
-    dcterms:modified "2023-12-20T10:41:20.231Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0b183ba6-f519-f1b0-0ddc-567830ca44d9>,
+      <http://data.beeldengeluid.nl/gtaa/28710>, <http://vocab.getty.edu/aat/300222802>;
+    dcterms:modified "2023-12-20T10:56:49.505Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/180c0078-6182-6f6b-48de-9569f75f4138> a
       skos:Concept;
@@ -2538,7 +2565,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/19d24d3d-edf3-dceb-0182-0b1836a0ea4f> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of a funeral. Similar to memorial and cemetery. Here we only choose pictures that show a casket or burial itself.Overlap with memorial, parade, cemetery, flowers, church indoor"@en,
       "Foto's van een begrafenis / plechtigheid rondom een ter aarde bestelling. Heeft mogelijk overeenkomsten met de labels 'begraafplaats', 'herdenking', 'optocht', 'bloemen' en/of 'kerk_binnen'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
@@ -2549,21 +2576,23 @@
       <https://digitaalerfgoed.poolparty.biz/nha/20f2779d-9c21-0052-9289-52040fb4d54e>,
       <https://digitaalerfgoed.poolparty.biz/nha/acde7e0b-44fd-2607-d8a3-e2888b4aacf2>,
       <https://digitaalerfgoed.poolparty.biz/nha/c5928baa-18f2-c179-98d9-d9a6fcda7f98>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27975>, <http://vocab.getty.edu/aat/300263485>;
-    dcterms:modified "2023-10-27T13:10:50.937Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/47afbe47-7253-c665-04a5-010ab7762705>,
+      <http://data.beeldengeluid.nl/gtaa/27975>, <http://vocab.getty.edu/aat/300263485>;
+    dcterms:modified "2023-12-20T10:56:52.043Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/1e01e2d3-2ed1-aa03-f2de-fe108465a331.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/19dd0c73-e0c7-50d8-4a0b-32b470ecf44a> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "If the beach is the picture's main focus, we select beach. "@en,
       "Foto's van een kust- en/of strandlandschap / zand en/of branding. Heeft mogelijk overeenkomsten met het label 'duinen'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Beach"@en, "Strand"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/06511001-cfb1-2434-97ad-88a8bc6badb6>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008816>, <http://data.beeldengeluid.nl/gtaa/26854>;
-    dcterms:modified "2023-10-27T13:10:51.418Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/5c862c51-52fc-d746-b675-59d055ec8acd>,
+      <http://vocab.getty.edu/aat/300008816>, <http://data.beeldengeluid.nl/gtaa/26854>;
+    dcterms:modified "2023-12-20T10:56:52.894Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/75fe0dec-2fd8-b9ce-9d18-4d6e3b3aa7df.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/19e0ac84-4cf7-44a2-2547-5c115b219c3b> a
@@ -2653,12 +2682,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1aaf54c6-54b1-a8e0-6b33-7ad9a8e658fb> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Wielrennen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27759>;
-    dcterms:modified "2023-07-20T15:28:37.134Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/eb2b3fd4-a99b-1309-bf51-8cb79555f3e4>,
+      <http://data.beeldengeluid.nl/gtaa/27759>;
+    dcterms:modified "2023-12-20T10:57:39.854Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1aca0a89-dcf1-bb05-faf2-71d08a638c24> a
       skos:Concept;
@@ -2738,12 +2768,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1ca00c61-758e-bd5e-d2a3-1cb8daaa542a> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Waterpolo"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/be424045-4fb4-f372-922d-4dc3b9935229>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27357>;
-    dcterms:modified "2023-07-20T15:28:35.269Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e9228b5a-8ee7-012e-a672-39c0c4e5b414>,
+      <http://data.beeldengeluid.nl/gtaa/27357>;
+    dcterms:modified "2023-12-20T10:57:39.191Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1caa71ed-370a-5a70-26c0-497fdec7f5e6> a
       skos:Concept;
@@ -2835,15 +2866,17 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1da309e9-56e8-882f-b48d-b88bd69e3fab> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Area where drinks are served/consumed. "@en, "Binnen- of buitenkant van een café / bar / terras / het serveren of nuttigen van drankjes. Heeft mogelijk overeenkomsten met het label 'etende_mensen'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Bar"@en, "Cafe"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/3aa4807e-e06f-ea00-96b4-69f55fb450b3>,
       <https://digitaalerfgoed.poolparty.biz/nha/f4f08a49-64fe-3e88-1350-1341528c6b94>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300005166>, <http://data.beeldengeluid.nl/gtaa/28517>;
-    dcterms:modified "2023-10-27T13:10:52.393Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/6e46d55a-6517-9c9f-a4b1-1803ebd5c153>,
+      <https://digitaalerfgoed.poolparty.biz/nha/14ce338b-420f-39fd-96eb-93c8ed7859d2>,
+      <http://vocab.getty.edu/aat/300005166>, <http://data.beeldengeluid.nl/gtaa/28517>;
+    dcterms:modified "2023-12-20T10:56:54.727Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/1af9da4e-61cd-b68d-f5c6-4c104af00333.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1db164bd-f40e-80f0-7cf7-a60fb79be461> a
@@ -2984,14 +3017,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1f46c601-f2d8-cdc8-4fb6-f0902ab398dd> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s van een casino, met of zonder mensen. Heeft mogelijk overeenkomsten met het label ‘kaartspel’"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Casino"@en, "Casino"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/9a1710fc-278e-c11e-e3d5-5c4587324dd3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300007227>;
-    dcterms:modified "2023-10-27T13:10:53.367Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1fc3447b-3ee1-f4cf-30d7-4cf0d9ecaa8d>,
+      <http://vocab.getty.edu/aat/300007227>;
+    dcterms:modified "2023-12-20T10:56:55.660Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/894f0628-5317-3cb2-3618-25b916f6643e.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1f5124b9-a22a-6d80-66be-446526ea951f> a
@@ -3005,23 +3039,25 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/1f83148f-2618-e653-12bf-7395f3496f23> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of sculptures/statues"@en, "Foto's waarin een driedimensionaal beeldhouwwerk, sculptuur of standbeeld centraal staat"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Statue"@en, "Standbeeld"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/5059b072-8b5c-827a-9424-d69e55eb1a91>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300047600>, <http://data.beeldengeluid.nl/gtaa/27898>;
-    dcterms:modified "2023-10-27T13:10:53.828Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/790bf38a-928e-76e5-f901-07bd64f0a8d9>,
+      <http://vocab.getty.edu/aat/300047600>, <http://data.beeldengeluid.nl/gtaa/27898>;
+    dcterms:modified "2023-12-20T10:56:56.436Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/926fe01a-0d35-0292-d4db-1c14212c9cca.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1fade391-ead1-d294-ccdb-10b3468ca01a> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Tafeltennis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222758>, <http://data.beeldengeluid.nl/gtaa/26887>;
-    dcterms:modified "2023-07-20T15:28:22.945Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/97a2afcc-7548-3055-09d9-adfbe7044cd1>,
+      <http://vocab.getty.edu/aat/300222758>, <http://data.beeldengeluid.nl/gtaa/26887>;
+    dcterms:modified "2023-12-20T10:57:18.072Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/1fc3447b-3ee1-f4cf-30d7-4cf0d9ecaa8d> a
       skos:Concept;
@@ -3029,8 +3065,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Casino"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300007227>;
-    dcterms:modified "2023-06-16T10:20:11.382Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1f46c601-f2d8-cdc8-4fb6-f0902ab398dd>,
+      <http://vocab.getty.edu/aat/300007227>;
+    dcterms:modified "2023-12-20T10:56:55.663Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/201702a8-d3ec-0792-b2fa-fd24d087f73c> a
       skos:Concept;
@@ -3256,14 +3293,16 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/20f2779d-9c21-0052-9289-52040fb4d54e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Depicting a memorial site."@en, "Foto's van een herdenkingsceremonie / gedenktekens en -monumenten. Heeft mogelijk overeenkomsten met het label 'begrafenis'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Memorial"@en, "Herdenking"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/19d24d3d-edf3-dceb-0182-0b1836a0ea4f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
-    dcterms:modified "2023-12-20T10:09:37.945Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a728702c-c80f-89bc-2f73-c81def1157da>,
+      <https://digitaalerfgoed.poolparty.biz/nha/b2dd32ec-7e30-8de6-a0fb-fba6eb1315ab>,
+      <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
+    dcterms:modified "2023-12-20T10:56:58.069Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/916bc18e-9298-e487-fa86-739fe471bfc7.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/20fee8d7-dfef-978c-acc0-4e51b0804538> a
@@ -3784,12 +3823,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/2b7617b0-5927-e412-86d4-615fa5fd226f> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Boksen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300374825>, <http://data.beeldengeluid.nl/gtaa/27961>;
-    dcterms:modified "2023-07-20T15:27:28.693Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/474f47b9-8ef4-5ece-6c43-c5a1020b6bfd>,
+      <http://vocab.getty.edu/aat/300374825>, <http://data.beeldengeluid.nl/gtaa/27961>;
+    dcterms:modified "2023-12-20T10:57:04.241Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/2b85d0da-5a73-247a-eafd-dc2ee22d2e82> a
       skos:Concept;
@@ -3845,14 +3885,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/2cb3db88-c09c-75da-8e3a-1e7fcf184a3c> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People playing indoor soccer"@en, "Mensen die binnen voetbal spelen in een gymzaal / voetbalzaal. Heeft mogelijk overeenkomsten met het label 'voetbal'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Indoor soccer"@en, "Zaalvoetbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/c4db0acb-a485-a644-581f-ef8e352c3236>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28929>;
-    dcterms:modified "2023-10-27T13:05:10.516Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/47812f74-f74a-f908-ec18-e7ca7a181a12>,
+      <http://data.beeldengeluid.nl/gtaa/28929>;
+    dcterms:modified "2023-12-20T10:56:58.758Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/1aaf9678-513b-9228-d1b0-c65163cddd32.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/2cd8858b-b822-ae3b-6e04-4d171aee294f> a
@@ -4001,12 +4042,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/2f4ae1b4-a84c-c633-4785-0c80b191e539> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Tennis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222793>, <http://data.beeldengeluid.nl/gtaa/28155>;
-    dcterms:modified "2023-07-20T15:28:24.693Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/7ef0d313-4b9e-6c15-fb3c-95790a3d65b4>,
+      <http://vocab.getty.edu/aat/300222793>, <http://data.beeldengeluid.nl/gtaa/28155>;
+    dcterms:modified "2023-12-20T10:57:13.464Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/2f5595ee-d218-ba15-6d15-f0848cf82297> a
       skos:Concept;
@@ -4122,12 +4164,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/30dc5ce2-e4dd-065b-6ff7-7c5d8fa0a55c> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Tram"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/2d90eba1-5f3a-5ef9-4e01-d82498ebf14f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212893>, <http://data.beeldengeluid.nl/gtaa/27783>;
-    dcterms:modified "2023-07-20T15:31:27.029Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/3aac1041-0758-22f5-a471-c76600055fb6>,
+      <http://vocab.getty.edu/aat/300212893>, <http://data.beeldengeluid.nl/gtaa/27783>;
+    dcterms:modified "2023-12-20T10:57:01.562Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/30e26fc5-ef77-5a96-944d-6b572041ec7d> a
       skos:Concept;
@@ -4316,13 +4359,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/33bbb72c-0517-c446-cbb0-ca321400d900> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Circus"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/69cb73a4-a230-a8ea-ba7c-5db5cca0eb1a>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/2caf7e9d-f92e-8e48-425f-366558abdc3d>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28533>;
-    dcterms:modified "2023-07-20T15:27:31.022Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/5f261977-2ee0-3e45-8ad7-53ab45d2a466>,
+      <http://data.beeldengeluid.nl/gtaa/28533>;
+    dcterms:modified "2023-12-20T10:57:06.665Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/33dcf8a4-0eea-667a-4896-87ca7866ac50> a
       skos:Concept;
@@ -4635,12 +4679,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/36f39aa2-101f-3359-ad55-14ba0b4701e0> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Huldiging"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/1f04690d-ed50-4deb-bf3f-0f735f540e30>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28449>;
-    dcterms:modified "2023-07-20T15:27:48.468Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/716595d3-8302-c8ce-3dd7-cc094a31a170>,
+      <http://data.beeldengeluid.nl/gtaa/28449>;
+    dcterms:modified "2023-12-20T10:57:10.402Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/36f45562-bde2-241b-bd03-cfc61b9dd70b> a
       skos:Concept;
@@ -4704,13 +4749,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/38226bd1-158d-2be7-dd1e-154630710f05> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of fires, or building destroyed by fires. "@en, "Foto's van vuur en brand en/of afgebrande huizen / gebouwen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Fire"@en, "Brand"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300068986>, <http://data.beeldengeluid.nl/gtaa/25043>;
-    dcterms:modified "2023-10-27T13:10:56.114Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d5cb1934-e6ac-63ce-582d-18d4a85be49d>,
+      <http://vocab.getty.edu/aat/300068986>, <http://data.beeldengeluid.nl/gtaa/25043>;
+    dcterms:modified "2023-12-20T10:56:59.619Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/bd9a1101-464d-90c5-a526-3d41a14fd07b.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/385a8663-3acc-b1c3-f916-1224119a4ab1> a
@@ -4741,12 +4787,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/38d88d94-0882-920e-fe91-8795470f5b45> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Paarden"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/c9050676-0870-1222-a56e-b01509c68c25>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28775>;
-    dcterms:modified "2023-07-20T15:29:20.062Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e119f947-9a96-32da-27b3-ed3fdd0bd681>,
+      <http://data.beeldengeluid.nl/gtaa/28775>;
+    dcterms:modified "2023-12-20T10:57:36.053Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/38f4c4a4-a4fb-85ae-25cf-bd602ee9760a> a
       skos:Concept;
@@ -4847,26 +4894,28 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/3aa4807e-e06f-ea00-96b4-69f55fb450b3> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s van mensen die biljarten of snookeren. Heeft ook betrekking op foto's waarin sport met een biljarttafel centraal staat. Heeft mogelijk overeenkomsten met het label 'cafe'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Billiards"@en, "Biljart"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>,
       <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/1da309e9-56e8-882f-b48d-b88bd69e3fab>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25281>, <http://vocab.getty.edu/aat/300222754>;
-    dcterms:modified "2023-10-27T13:10:56.550Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/ef62a9c3-88d4-73df-9894-bea84f67ac7d>,
+      <http://data.beeldengeluid.nl/gtaa/25281>, <http://vocab.getty.edu/aat/300222754>;
+    dcterms:modified "2023-12-20T10:57:00.586Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/065e77c1-b8dd-118f-9cf9-432921c31fc4.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/3aac1041-0758-22f5-a471-c76600055fb6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of trams"@en, "Foto's waarin een tram centraal staat"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Tram"@en, "Tram"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212893>, <http://data.beeldengeluid.nl/gtaa/27783>;
-    dcterms:modified "2023-10-27T13:10:57.062Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/30dc5ce2-e4dd-065b-6ff7-7c5d8fa0a55c>,
+      <http://vocab.getty.edu/aat/300212893>, <http://data.beeldengeluid.nl/gtaa/27783>;
+    dcterms:modified "2023-12-20T10:57:01.559Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/8963897c-0b03-f527-b224-9d9a214a75c4.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/3abefda2-53cc-225d-0c51-18241d2a8875> a
@@ -5219,13 +5268,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/4056b08f-b889-75fd-d809-b3f0ecf3c1d0> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's van een kermis"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Fairground"@en, "Kermis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069042>;
-    dcterms:modified "2023-12-20T10:11:09.274Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/cb451e33-e25a-dd7a-00a2-792870d4d0c0>,
+      <http://vocab.getty.edu/aat/300069042>;
+    dcterms:modified "2023-12-20T10:57:02.556Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/10ac0340-dc90-c731-377f-a5c98d6d606b.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/40642b18-cb30-6ef1-26e4-f43b7eeeab50> a
@@ -5365,13 +5415,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/43642043-b5da-888a-ccc7-f6715167a42a> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "picture of clergymen (?)"@en, "Foto's van een geestelijke, predikant, dominee en/of priester"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Clergy"@en, "Geestelijken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/fd603119-f48c-43da-b084-fcc20598f8f5>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300025747>, <http://data.beeldengeluid.nl/gtaa/28025>;
-    dcterms:modified "2023-10-27T13:10:59.102Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9d647912-9dbc-e0f7-aced-23b196bfb0c6>,
+      <http://vocab.getty.edu/aat/300025747>, <http://data.beeldengeluid.nl/gtaa/28025>;
+    dcterms:modified "2023-12-20T10:57:03.425Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/db80c7c7-b933-a2e2-e16a-062a23f32908.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/43653480-79ac-014a-5a40-c7f640aee3fe> a
@@ -5386,12 +5437,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/437f50f5-ffa9-2eb6-676e-ce8629973086> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Groepsfoto's"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300124525>;
-    dcterms:modified "2023-07-20T13:38:43.032Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9b975476-aa14-6e4d-1d71-e7db3d82285e>,
+      <http://vocab.getty.edu/aat/300124525>;
+    dcterms:modified "2023-12-20T10:57:19.769Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/43892b07-37e7-18e4-fbbd-3a7d5f58696a> a
       skos:Concept;
@@ -5436,12 +5488,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/43e9680d-944c-db1a-9d7e-47ec761a4b3b> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Banketbakkers"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/909fd2cb-67bd-42ca-ae83-59f9d9a2bc67>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25427>, <http://vocab.getty.edu/aat/300263076>;
-    dcterms:modified "2023-07-20T15:28:46.613Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d818ce63-45c9-31a8-3ee5-7b24db86536d>,
+      <http://data.beeldengeluid.nl/gtaa/25427>, <http://vocab.getty.edu/aat/300263076>;
+    dcterms:modified "2023-12-20T10:57:33.719Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/43ee098b-00b7-1d68-95a3-04bd0f45f2a3> a
       skos:Concept;
@@ -5576,12 +5629,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/46308570-9fe4-06ad-6c7c-0a962497c1c5> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Hockey"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222795>, <http://data.beeldengeluid.nl/gtaa/28298>;
-    dcterms:modified "2023-07-20T15:27:45.517Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/6534e494-1fcd-1784-ba9f-2fd66f3b0e32>,
+      <http://vocab.getty.edu/aat/300222795>, <http://data.beeldengeluid.nl/gtaa/28298>;
+    dcterms:modified "2023-12-20T10:57:07.560Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/46d52848-33b4-f9d8-b46f-644f58f80bfc> a
       skos:Concept;
@@ -5618,13 +5672,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/474f47b9-8ef4-5ece-6c43-c5a1020b6bfd> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People boxing"@en, "Foto's waarop mensen aan het boksen zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Boxing"@en, "Boksen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300374825>, <http://data.beeldengeluid.nl/gtaa/27961>;
-    dcterms:modified "2023-10-27T13:10:59.595Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/2b7617b0-5927-e412-86d4-615fa5fd226f>,
+      <http://vocab.getty.edu/aat/300374825>, <http://data.beeldengeluid.nl/gtaa/27961>;
+    dcterms:modified "2023-12-20T10:57:04.238Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/6710f3b8-e3f3-e969-c44c-ca12cc89f87a.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/47640417-4863-f15a-42e9-b1336246d8ed> a
@@ -5647,12 +5702,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/47812f74-f74a-f908-ec18-e7ca7a181a12> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Zaalvoetbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28929>;
-    dcterms:modified "2023-07-20T15:28:39.426Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/2cb3db88-c09c-75da-8e3a-1e7fcf184a3c>,
+      <http://data.beeldengeluid.nl/gtaa/28929>;
+    dcterms:modified "2023-12-20T10:56:58.759Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/47ac9349-c86c-4843-bb8f-b1b1c3d1aad2> a
       skos:Concept;
@@ -5664,12 +5720,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/47afbe47-7253-c665-04a5-010ab7762705> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Begrafenissen, begrafenisplaatsen, etc"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27975>;
-    dcterms:modified "2023-07-20T15:27:24.632Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/19d24d3d-edf3-dceb-0182-0b1836a0ea4f>,
+      <http://data.beeldengeluid.nl/gtaa/27975>;
+    dcterms:modified "2023-12-20T10:56:52.045Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/47de47f7-c503-b5ae-741d-51856c89e471> a
       skos:Concept;
@@ -5924,7 +5981,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:35:47.083Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Activiteiten"@nl;
@@ -5946,8 +6003,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/dfda4e8b-b37e-63e8-7cd9-c560d66fe841>,
       <https://digitaalerfgoed.poolparty.biz/nha/e89b0b76-7bc1-060b-46c5-39d412802d32>,
       <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264090>, <http://vocab.getty.edu/aat/300404112>;
-    dcterms:modified "2023-12-20T10:11:09.275Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0bc22-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300264090>, <http://vocab.getty.edu/aat/300404112>;
+    dcterms:modified "2023-12-20T10:57:43.683Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/4bf7018a-78d1-484b-b9e1-929e4f374432> a
       skos:Concept;
@@ -6031,13 +6089,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/4e69c87b-3925-1869-c7c2-227208f46c74> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures taken in a hospital/dentist/medical lab setting"@en, "Binnen- of buitenkant van een ziekenhuisgebouw / verplegingstehuis / medische attributen / arts en/of verplegers"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Hospital"@en, "Ziekenhuis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/9571146c-71de-7477-b892-3c6f0dba1d7e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300006676>;
-    dcterms:modified "2023-10-27T13:11:00.505Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0d318ca1-f640-1c05-106d-5aa22a4ad30e>,
+      <http://vocab.getty.edu/aat/300006676>;
+    dcterms:modified "2023-12-20T10:57:05.039Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/dd53e375-c846-ae07-3fc0-9174061651d3.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/4e6ffcec-5dab-d210-0d5a-39c934fcfa8c> a
@@ -6122,13 +6181,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/50043426-3351-e935-7b5e-dd780f536c2f> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Honkbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
     skos:exactMatch <https://digitaalerfgoed.poolparty.biz/nha/c5763b1e-7e69-f9e9-fd5a-c3bcd2374481>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
-    dcterms:modified "2023-07-20T15:27:46.360Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/94fefc39-1f7c-45af-2b52-c4daf0ff5f02>,
+      <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
+    dcterms:modified "2023-12-20T10:57:15.304Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/501b417d-33a1-aed4-d944-59846f0970ae> a
       skos:Concept;
@@ -6454,12 +6514,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/5435fb8d-5ab9-2911-a6ea-c073e3072fc0> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bakkerij, bakkers"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300005291>, <http://data.beeldengeluid.nl/gtaa/25427>;
-    dcterms:modified "2023-07-20T15:30:26.577Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d818ce63-45c9-31a8-3ee5-7b24db86536d>,
+      <http://vocab.getty.edu/aat/300005291>, <http://data.beeldengeluid.nl/gtaa/25427>;
+    dcterms:modified "2023-12-20T10:57:33.253Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/54af4608-d6aa-9402-13db-15b34b65597e> a
       skos:Concept;
@@ -6480,13 +6541,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/54b7e786-c900-f102-4ff0-3cf505bdef33> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Scenery of a pond. "@en, "Foto's waarin een vijver, plas en/of meertje centraal staan. Let op: water dat duidelijk één bepaalde richting op stroomt krijgt het label 'waterweg'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Pond"@en, "Vijver plas"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008688>, <http://data.beeldengeluid.nl/gtaa/27261>;
-    dcterms:modified "2023-10-27T13:11:02.083Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/b9c8dd51-ba87-abf9-374d-acd89d819afe>,
+      <http://vocab.getty.edu/aat/300008688>, <http://data.beeldengeluid.nl/gtaa/27261>;
+    dcterms:modified "2023-12-20T10:57:05.849Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/3ee9ff67-c6ab-7cdf-15e9-a0e2fe431960.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5514e576-95e1-0794-ceca-ac353198a496> a
@@ -6527,13 +6589,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/55f17692-11e7-502d-20b4-d53f3fed6306> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Vogels"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/c9050676-0870-1222-a56e-b01509c68c25>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/917b43c0-7d92-7f86-469c-02222c1f1e50>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300266506>, <http://data.beeldengeluid.nl/gtaa/27822>;
-    dcterms:modified "2023-07-20T15:29:37.351Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/dd91e0e9-76cd-a126-68cb-962cd6a64696>,
+      <http://vocab.getty.edu/aat/300266506>, <http://data.beeldengeluid.nl/gtaa/27822>;
+    dcterms:modified "2023-12-20T10:57:34.509Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5698b816-65df-4900-80f0-e0fa8f89ca2e> a
       skos:Collection;
@@ -6942,7 +7005,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/59f6c55a-46bb-0d24-e0b9-fbfafe653be9> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vriendn>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Voetbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
@@ -6962,8 +7025,9 @@
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/c3391f44-0220-8e27-bcbf-10695bf15e5b>,
       <https://digitaalerfgoed.poolparty.biz/nha/576b13aa-c215-372f-49ac-09965ff26769>,
       <https://digitaalerfgoed.poolparty.biz/nha/308efe77-e938-4a7c-9b41-e5cdbe8a2cbe>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222801>, <http://data.beeldengeluid.nl/gtaa/27291>;
-    dcterms:modified "2023-08-04T15:09:29.832Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c4db0acb-a485-a644-581f-ef8e352c3236>,
+      <http://vocab.getty.edu/aat/300222801>, <http://data.beeldengeluid.nl/gtaa/27291>;
+    dcterms:modified "2023-12-20T10:57:28.603Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5a70a6c3-b493-5c5c-4151-a75f2b74ae27> a
       skos:Concept;
@@ -7105,8 +7169,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Strand en stranden"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008816>;
-    dcterms:modified "2023-06-16T10:18:42.878Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/19dd0c73-e0c7-50d8-4a0b-32b470ecf44a>,
+      <http://vocab.getty.edu/aat/300008816>;
+    dcterms:modified "2023-12-20T10:56:52.896Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5c94e360-aea5-33f8-fdc5-f952ac2e8b30> a
       skos:Concept;
@@ -7143,12 +7208,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/5d102517-d1fa-cada-9782-d6119532b79c> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Hardlopen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300239496>, <http://data.beeldengeluid.nl/gtaa/29684>;
-    dcterms:modified "2023-07-20T15:27:42.650Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c5d5be73-6728-d8d2-2487-788fca9a3138>,
+      <http://vocab.getty.edu/aat/300239496>, <http://data.beeldengeluid.nl/gtaa/29684>;
+    dcterms:modified "2023-12-20T10:57:29.895Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5d335af8-15b2-16ab-47d5-194310421c0e> a
       skos:Concept;
@@ -7302,14 +7368,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/5f261977-2ee0-3e45-8ad7-53ab45d2a466> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures taken of a circus activities. The outside of the circus tent is categorized as tent. "@en,
       "Foto's van een circus / circusact / circuspiste"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Circus"@en, "Circus"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28533>, <http://vocab.getty.edu/aat/300069235>;
-    dcterms:modified "2023-10-27T13:11:03.360Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/33bbb72c-0517-c446-cbb0-ca321400d900>,
+      <http://data.beeldengeluid.nl/gtaa/28533>, <http://vocab.getty.edu/aat/300069235>;
+    dcterms:modified "2023-12-20T10:57:06.662Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/5a3e0a35-a0a8-f07e-6ed6-6e0d5488213e.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5f31f945-9b3e-dcdf-cb6a-60d3c5b14af5> a
@@ -7428,12 +7495,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/60d7accc-3502-6842-ed15-f08f8d247e4e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Carnaval"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/a4b05f00-565f-489c-bfe1-ae0e452a5408>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069281>, <http://data.beeldengeluid.nl/gtaa/49473>;
-    dcterms:modified "2023-07-20T15:27:30.121Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e43a88db-3572-2ff8-b916-754e8df1f1bc>,
+      <http://vocab.getty.edu/aat/300069281>, <http://data.beeldengeluid.nl/gtaa/49473>;
+    dcterms:modified "2023-12-20T10:57:37.562Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/60dc5428-ca4e-c087-1fc2-76166916b3d2> a
       skos:Concept;
@@ -7635,21 +7703,23 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/642512e1-f596-ffde-8a17-620ba5408dd8> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Cricket"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222761>, <http://data.beeldengeluid.nl/gtaa/25464>;
-    dcterms:modified "2023-07-20T15:27:31.856Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f8c85b25-dcf2-b36d-56ce-c3258c3ec853>,
+      <http://vocab.getty.edu/aat/300222761>, <http://data.beeldengeluid.nl/gtaa/25464>;
+    dcterms:modified "2023-12-20T10:57:42.970Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/643f2814-0b43-f02a-7de4-ece8590867c3> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Handbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300211517>, <http://data.beeldengeluid.nl/gtaa/25834>;
-    dcterms:modified "2023-07-20T15:27:42.234Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/efe13355-3612-9157-fe75-85d00b97e208>,
+      <http://vocab.getty.edu/aat/300211517>, <http://data.beeldengeluid.nl/gtaa/25834>;
+    dcterms:modified "2023-12-20T10:57:40.642Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/645119a3-c8df-e654-fd07-3463e607890b> a
       skos:Concept;
@@ -7701,13 +7771,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/6534e494-1fcd-1784-ba9f-2fd66f3b0e32> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People playing field hockey"@en, "Mensen die hockey spelen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Field hockey"@en, "Hockey"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222795>, <http://data.beeldengeluid.nl/gtaa/28298>;
-    dcterms:modified "2023-10-27T13:11:03.931Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/46308570-9fe4-06ad-6c7c-0a962497c1c5>,
+      <http://vocab.getty.edu/aat/300222795>, <http://data.beeldengeluid.nl/gtaa/28298>;
+    dcterms:modified "2023-12-20T10:57:07.558Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/c775de9c-ba03-a401-411e-824b60c2fd44.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/653a2fcb-2db0-45e7-b41d-3725ffc758f4> a
@@ -7862,13 +7933,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/66d3272b-dc63-c875-b7a1-a15f38b87df4> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "people performing gymnastics indoor and outdoor"@en, "Mensen die gymnastiek beoefenen (zowel binnen als buiten) en waarop de labels 'circus' of 'dansende_mensen' niet van toepassing zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Gymnastics"@en, "Gymnastiek"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/28302>;
-    dcterms:modified "2023-10-27T13:11:04.942Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9e4b86e3-f8c9-2beb-64c6-892eb583fb7d>,
+      <https://digitaalerfgoed.poolparty.biz/nha/7f08c13c-8f02-8659-5387-f8579d186202>,
+      <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/28302>;
+    dcterms:modified "2023-12-20T10:57:09.522Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/5d3f4e8f-916f-26ac-48af-81526203843f.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/66e86d17-8bdb-96f5-9fcd-5f8f7e51e578> a
@@ -8252,7 +8325,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:32.386Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Organisaties"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/ce36bdc3-256e-4f62-b4bb-18c885db88b6>;
@@ -8266,8 +8339,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/e80b1ae8-0312-380a-333e-f8de176c77c1>,
       <https://digitaalerfgoed.poolparty.biz/nha/f98728e0-b7a0-5cd8-328e-b529fb4b1989>,
       <https://digitaalerfgoed.poolparty.biz/nha/8541fd08-0bc3-e115-32f0-66d82c72e037>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25176>, <http://vocab.getty.edu/aat/300025948>;
-    dcterms:modified "2023-12-20T10:31:06.945Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0acbe-0a96-11ee-be56-0242ac120002>,
+      <http://data.beeldengeluid.nl/gtaa/25176>, <http://vocab.getty.edu/aat/300025948>;
+    dcterms:modified "2023-12-20T10:57:48.611Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/6e35bc7a-d83d-b9f7-3d81-25000d65a2d4> a
       skos:Concept;
@@ -8287,12 +8361,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/6e46d55a-6517-9c9f-a4b1-1803ebd5c153> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bar"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28517>, <http://vocab.getty.edu/aat/300004342>;
-    dcterms:modified "2023-07-20T15:30:27.121Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1da309e9-56e8-882f-b48d-b88bd69e3fab>,
+      <http://data.beeldengeluid.nl/gtaa/28517>, <http://vocab.getty.edu/aat/300004342>;
+    dcterms:modified "2023-12-20T10:56:54.730Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/6e510d76-3f33-17dc-c1a4-006668b8b9db> a
       skos:Concept;
@@ -8520,14 +8595,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/716595d3-8302-c8ce-3dd7-cc094a31a170> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "A group of people bundled together for a ceremony. This could be awards, flowers, or a medal."@en,
       "Ceremoniële situatie (of receptie) waarbij een prijs, certificaat of diploma uitgereikt en/of in ontvangst genomen wordt, meestal met toeschouwers / huldiging van één of meerdere personen door middel van een medaille, bloemen, formele onderscheiding  "@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Ceremony "@en, "Uitreiking huldiging"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28449>;
-    dcterms:modified "2023-10-27T13:05:06.553Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/36f39aa2-101f-3359-ad55-14ba0b4701e0>,
+      <http://data.beeldengeluid.nl/gtaa/28449>;
+    dcterms:modified "2023-12-20T10:57:10.400Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/13332dcf-dfa7-f15c-c057-282bc1135380.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/71b96243-c179-ceca-1154-9c411ff6f12d> a
@@ -8841,8 +8917,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bloesem"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300132399>;
-    dcterms:modified "2023-06-16T10:25:55.054Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/acde7e0b-44fd-2607-d8a3-e2888b4aacf2>,
+      <http://vocab.getty.edu/aat/300132399>;
+    dcterms:modified "2023-12-20T10:57:25.795Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/768413ca-bdf8-a3d7-59dc-d1bf201735b7> a
       skos:Concept;
@@ -8972,12 +9049,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/790bf38a-928e-76e5-f901-07bd64f0a8d9> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Standbeelden"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/e95b1b8c-c1e8-520c-928a-8bf9e6158ea8>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300047600>, <http://data.beeldengeluid.nl/gtaa/27898>;
-    dcterms:modified "2023-07-20T15:31:20.731Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1f83148f-2618-e653-12bf-7395f3496f23>,
+      <http://vocab.getty.edu/aat/300047600>, <http://data.beeldengeluid.nl/gtaa/27898>;
+    dcterms:modified "2023-12-20T10:56:56.438Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/791d0748-c430-ce68-8d9b-4b285900fef5> a
       skos:Concept;
@@ -9008,7 +9086,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:12.970Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Levende organismen"@nl, "Living Organisms"@en;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/ce36bdc3-256e-4f62-b4bb-18c885db88b6>;
@@ -9022,8 +9100,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/d42cc1d4-f396-c952-73bf-678f74fd7fd6>,
       <https://digitaalerfgoed.poolparty.biz/nha/dd91e0e9-76cd-a126-68cb-962cd6a64696>,
       <https://digitaalerfgoed.poolparty.biz/nha/e119f947-9a96-32da-27b3-ed3fdd0bd681>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300390503>, <http://vocab.getty.edu/aat/300265673>;
-    dcterms:modified "2023-10-27T13:11:07.390Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0aad4-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300390503>, <http://vocab.getty.edu/aat/300265673>;
+    dcterms:modified "2023-12-20T10:57:46.550Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/799ea625-2a72-15f6-d5dd-9b96c1c119ce> a
       skos:Concept;
@@ -9117,8 +9196,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Bloemen en bloemenmeisjes"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300132399>;
-    dcterms:modified "2023-06-16T10:24:28.566Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/acde7e0b-44fd-2607-d8a3-e2888b4aacf2>,
+      <http://vocab.getty.edu/aat/300132399>;
+    dcterms:modified "2023-12-20T10:57:23.476Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7a95a121-dd21-44b6-850e-e6c400043702> a
       skos:Concept;
@@ -9153,13 +9233,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/7ab5c31c-f58c-5305-d70b-74ee936db03c> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "picture with military personnel"@en, "Foto's van militairen / mensen met militaire uniformen / militaire voertuigen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Military"@en, "Militair"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/fd603119-f48c-43da-b084-fcc20598f8f5>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27782>;
-    dcterms:modified "2023-10-27T13:05:17.392Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0705b5de-5b35-0a2f-9adc-2f5f54c40c8b>,
+      <https://digitaalerfgoed.poolparty.biz/nha/cdee3b93-b4c5-1502-adf0-dc52971c1036>,
+      <http://data.beeldengeluid.nl/gtaa/27782>;
+    dcterms:modified "2023-12-20T10:57:11.815Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/bcbad312-8235-4097-d859-2f3bbd3791bf.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7aba89e5-4981-abae-d5f7-d7d3b29799e7> a
@@ -9290,13 +9372,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/7cc6deb8-3e98-1f09-0dce-e67f36e1f3c4> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's waarin één hond of meerdere honden centraal staan"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Dog"@en, "Hond"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300250130>, <http://data.beeldengeluid.nl/gtaa/25890>;
-    dcterms:modified "2023-10-27T13:11:07.789Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/7fa96af6-2922-0267-8f35-d46804bbef3d>,
+      <http://vocab.getty.edu/aat/300250130>, <http://data.beeldengeluid.nl/gtaa/25890>;
+    dcterms:modified "2023-12-20T10:57:12.624Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/32887823-c34e-50db-8967-fa162e1f8193.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7cd02384-0d7d-e4cc-1ff8-f2ec3df671b4> a
@@ -9445,23 +9528,25 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/7ef0d313-4b9e-6c15-fb3c-95790a3d65b4> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of people playing tennis"@en, "Foto's van mensen die aan het tennissen zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Tennis"@en, "Tennis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222793>, <http://data.beeldengeluid.nl/gtaa/28155>;
-    dcterms:modified "2023-10-27T13:14:27.850Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/2f4ae1b4-a84c-c633-4785-0c80b191e539>,
+      <http://vocab.getty.edu/aat/300222793>, <http://data.beeldengeluid.nl/gtaa/28155>;
+    dcterms:modified "2023-12-20T10:57:13.461Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/104917c3-de8e-b514-b56c-b54b8bc3f024.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7f08c13c-8f02-8659-5387-f8579d186202> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Turnen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/26979>;
-    dcterms:modified "2023-07-20T15:28:28.348Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/66d3272b-dc63-c875-b7a1-a15f38b87df4>,
+      <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/26979>;
+    dcterms:modified "2023-12-20T10:57:09.526Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7f25e416-6f2a-56da-5463-a67f1d56fd46> a
       skos:Concept;
@@ -9533,12 +9618,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/7fa96af6-2922-0267-8f35-d46804bbef3d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Honden"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/c9050676-0870-1222-a56e-b01509c68c25>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300250130>, <http://data.beeldengeluid.nl/gtaa/25890>;
-    dcterms:modified "2023-07-20T15:29:02.786Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/7cc6deb8-3e98-1f09-0dce-e67f36e1f3c4>,
+      <http://vocab.getty.edu/aat/300250130>, <http://data.beeldengeluid.nl/gtaa/25890>;
+    dcterms:modified "2023-12-20T10:57:12.626Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/7fc37d65-be80-b765-b8ee-285a972ca5d7> a
       skos:Concept;
@@ -9823,13 +9909,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/845ba975-4438-b010-20e6-acf985e09c2a> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vereeckenl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Schepen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/2d90eba1-5f3a-5ef9-4e01-d82498ebf14f>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/8be36f23-752a-69b4-b8e2-535f55fa87ce>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28142>, <http://vocab.getty.edu/aat/300082981>;
-    dcterms:modified "2023-08-17T13:20:20.537Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0988d5f4-bb6f-b657-7e61-630e9eeb5d04>,
+      <http://data.beeldengeluid.nl/gtaa/28142>, <http://vocab.getty.edu/aat/300082981>;
+    dcterms:modified "2023-12-20T10:56:48.804Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/84714e09-b9a7-ee4c-d5f6-46959d98c1dc> a
       skos:Concept;
@@ -10061,13 +10148,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/89d20b42-21b2-b79f-b494-53e0de5d176d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Depicting a marriage couple, marriage ceremony"@en, "Huwelijksfeest en/of -ceremonie / bruidspaar / bruidskinderen / bruidstaart"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Wedding"@en, "Bruiloft"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069158>, <http://data.beeldengeluid.nl/gtaa/25054>;
-    dcterms:modified "2023-10-27T13:11:10.961Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/b3c6e84f-4efa-e417-8976-1b42eebdfc99>,
+      <http://vocab.getty.edu/aat/300069158>, <http://data.beeldengeluid.nl/gtaa/25054>;
+    dcterms:modified "2023-12-20T10:57:14.460Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/9dc19d8c-b54f-8ab2-982a-383cbcb32fd0.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/89e2df87-be0d-4b06-b25d-8732ac2405f6> a
@@ -10832,13 +10920,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/94fefc39-1f7c-45af-2b52-c4daf0ff5f02> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People playing baseball"@en, "Mensen die honkbal of softbal spelen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Baseball"@en, "Honkbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
-    dcterms:modified "2023-10-27T13:11:13.828Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/50043426-3351-e935-7b5e-dd780f536c2f>,
+      <https://digitaalerfgoed.poolparty.biz/nha/c5763b1e-7e69-f9e9-fd5a-c3bcd2374481>,
+      <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
+    dcterms:modified "2023-12-20T10:57:16.341Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/73360f2d-429d-1ef6-4dbb-5c425ac1d2d5.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/956e98ea-19a0-2fca-7834-07c6bf57859d> a
@@ -10852,7 +10942,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9571146c-71de-7477-b892-3c6f0dba1d7e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Picture of a building"@en, "Foto's waarin een gebouw en diens architectuur centraal staat en waarop de labels 'fabriek', 'huisje', 'kerk_buiten', 'windmolen' en 'ziekenhuis' niet van toepassing is"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Building"@en, "Gebouw"@nl;
@@ -10863,8 +10953,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/84300011-c25a-abf9-05fe-9ac5b3ebcd59>,
       <https://digitaalerfgoed.poolparty.biz/nha/c7d7de0a-1aad-64b8-4208-0d188cacef9d>,
       <https://digitaalerfgoed.poolparty.biz/nha/ea81c655-a3aa-a8ee-b6dc-bac32fa65f5a>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300004792>, <http://data.beeldengeluid.nl/gtaa/28322>;
-    dcterms:modified "2023-10-27T13:11:14.324Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f351b8ce-7f62-d39e-be81-eba9fccc8713>,
+      <http://vocab.getty.edu/aat/300004792>, <http://data.beeldengeluid.nl/gtaa/28322>;
+    dcterms:modified "2023-12-20T10:57:17.151Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/9c7c7542-d8fa-50e9-3158-e4493dd1698a.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/958a8ff2-29d2-0d65-34a2-2bb2c9ffc6c0> a
@@ -10975,13 +11066,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/97a2afcc-7548-3055-09d9-adfbe7044cd1> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's van mensen die aan het tafeltennissen zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Table tennis"@en, "Tafel tennis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222758>, <http://data.beeldengeluid.nl/gtaa/26887>;
-    dcterms:modified "2023-10-27T13:13:05.201Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1fade391-ead1-d294-ccdb-10b3468ca01a>,
+      <http://vocab.getty.edu/aat/300222758>, <http://data.beeldengeluid.nl/gtaa/26887>;
+    dcterms:modified "2023-12-20T10:57:18.070Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/c205db36-18a6-b986-7a5f-a8374fbb2c15.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/97e1ba0a-fc39-76c8-9f61-8533e594a49d> a
@@ -11172,13 +11264,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9b260cc7-acd5-cb0d-e983-8b47147e03db> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s waarin een of meerdere katten centraal staan"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Cat"@en, "Kat"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28800>, <http://vocab.getty.edu/aat/300265960>;
-    dcterms:modified "2023-10-27T13:11:16.196Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a05b526b-7e0f-9162-4b78-3291a8a36a3d>,
+      <http://data.beeldengeluid.nl/gtaa/28800>, <http://vocab.getty.edu/aat/300265960>;
+    dcterms:modified "2023-12-20T10:57:18.959Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/5de4cd89-1b19-8d3b-b150-591e49568586.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9b4380ae-a140-b58b-f487-3fbea0df2831> a
@@ -11191,13 +11284,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9b975476-aa14-6e4d-1d71-e7db3d82285e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's met drie of meer personen die poseren voor de foto"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Group portait"@en, "Groepsportret"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/fd603119-f48c-43da-b084-fcc20598f8f5>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300124525>;
-    dcterms:modified "2023-10-27T13:11:16.663Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/437f50f5-ffa9-2eb6-676e-ce8629973086>,
+      <https://digitaalerfgoed.poolparty.biz/nha/fecf20f4-8e19-dfa0-3e6e-61bafdbacc17>,
+      <http://vocab.getty.edu/aat/300124525>;
+    dcterms:modified "2023-12-20T10:57:20.451Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/aea55d55-0317-05e9-a5ca-7be9ef097559.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9b9c50d3-5950-cec5-6ade-e0afa7048100> a
@@ -11362,12 +11457,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9d40eda5-1d86-c94e-f410-6d34dcb561a9> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Straten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27919>, <http://vocab.getty.edu/aat/300008247>;
-    dcterms:modified "2023-07-20T15:31:22.449Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d454f996-fd20-a1c2-16a8-3a0d7acd47b7>,
+      <http://data.beeldengeluid.nl/gtaa/27919>, <http://vocab.getty.edu/aat/300008247>;
+    dcterms:modified "2023-12-20T10:57:32.478Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9d4c7f9a-e014-f0ac-8b60-79ac54bdba79> a
       skos:Concept;
@@ -11380,12 +11476,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9d647912-9dbc-e0f7-aced-23b196bfb0c6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Geestelijken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/909fd2cb-67bd-42ca-ae83-59f9d9a2bc67>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300025747>, <http://data.beeldengeluid.nl/gtaa/28025>;
-    dcterms:modified "2023-07-20T15:28:59.522Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/43642043-b5da-888a-ccc7-f6715167a42a>,
+      <http://vocab.getty.edu/aat/300025747>, <http://data.beeldengeluid.nl/gtaa/28025>;
+    dcterms:modified "2023-12-20T10:57:03.427Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9d9652f5-9271-77c6-5bf9-b260c8210309> a
       skos:Concept;
@@ -11442,12 +11539,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9e4b86e3-f8c9-2beb-64c6-892eb583fb7d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Gymnastiek"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/28302>;
-    dcterms:modified "2023-07-20T15:27:41.810Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/66d3272b-dc63-c875-b7a1-a15f38b87df4>,
+      <http://vocab.getty.edu/aat/300222782>, <http://data.beeldengeluid.nl/gtaa/28302>;
+    dcterms:modified "2023-12-20T10:57:08.632Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9e5b33c5-1d03-f121-640e-d0fec3bf033d> a
       skos:Concept;
@@ -11601,12 +11699,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/a05b526b-7e0f-9162-4b78-3291a8a36a3d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Katten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/c9050676-0870-1222-a56e-b01509c68c25>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28800>;
-    dcterms:modified "2023-07-20T15:29:06.004Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9b260cc7-acd5-cb0d-e983-8b47147e03db>,
+      <http://data.beeldengeluid.nl/gtaa/28800>;
+    dcterms:modified "2023-12-20T10:57:18.961Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a0ac070d-2a1e-c937-9495-34172bafc0c2> a
       skos:Concept;
@@ -11680,24 +11779,26 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/a2c04c1b-b694-0bd1-00c3-9cf454601322> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of people playing rugby"@en, "Foto's van mensen die aan het rugbyen zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Rugby"@en, "Rugby"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222800>, <http://data.beeldengeluid.nl/gtaa/25227>;
-    dcterms:modified "2023-10-27T13:11:17.103Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/b19d0422-62ff-3204-58c2-8695b0836cd7>,
+      <http://vocab.getty.edu/aat/300222800>, <http://data.beeldengeluid.nl/gtaa/25227>;
+    dcterms:modified "2023-12-20T10:57:21.218Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/00e507d3-2fb2-3ae3-98a1-09ad8385af9b.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a2c47bdc-ae1f-8dd4-8e2d-3df8a28a03c6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "portrait of one or two people posing"@en, "Portret van één of twee mensen die poseren voor de foto"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Portrait"@en, "Portret"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/fd603119-f48c-43da-b084-fcc20598f8f5>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300015637>, <http://data.beeldengeluid.nl/gtaa/27140>;
-    dcterms:modified "2023-10-27T13:11:17.643Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a9208ebc-d5f7-3fe6-14c1-05a880ba0690>,
+      <http://vocab.getty.edu/aat/300015637>, <http://data.beeldengeluid.nl/gtaa/27140>;
+    dcterms:modified "2023-12-20T10:57:21.860Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/03b2a186-ed91-3ab2-97be-70578c2bddef.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a2f771b2-4454-b4b6-7af2-1c4387e36eb3> a
@@ -11730,12 +11831,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/a36695da-4357-f335-92aa-11f0cacdfe86> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Kerken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300007466>, <http://data.beeldengeluid.nl/gtaa/28215>;
-    dcterms:modified "2023-07-20T15:30:54.222Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c7d7de0a-1aad-64b8-4208-0d188cacef9d>,
+      <http://vocab.getty.edu/aat/300007466>, <http://data.beeldengeluid.nl/gtaa/28215>;
+    dcterms:modified "2023-12-20T10:57:31.481Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a36ea3cb-441c-2c3d-c62a-f0e742485584> a
       skos:Concept;
@@ -11987,23 +12089,25 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/a728702c-c80f-89bc-2f73-c81def1157da> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Herdenkingen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
     skos:exactMatch <https://digitaalerfgoed.poolparty.biz/nha/b2dd32ec-7e30-8de6-a0fb-fba6eb1315ab>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
-    dcterms:modified "2023-07-20T15:27:44.283Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/20f2779d-9c21-0052-9289-52040fb4d54e>,
+      <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
+    dcterms:modified "2023-12-20T10:56:57.267Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a74a8834-b7f6-c2b6-b27f-2be60d6e4fb6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "indoor/outdoor market/shopping fair"@en, "Markt of beurs met marktkramen, stands en/of kleedjes in een markthal (binnen) of in de buitenlucht (buiten)"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Market"@en, "Markt"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27763>, <http://vocab.getty.edu/aat/300005238>;
-    dcterms:modified "2023-10-27T13:11:18.718Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c13a547b-276a-e28c-5833-7c1889774181>,
+      <http://data.beeldengeluid.nl/gtaa/27763>, <http://vocab.getty.edu/aat/300005238>;
+    dcterms:modified "2023-12-20T10:57:22.622Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/3c165cfa-0e96-946e-10e3-c5f322c55220.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a777fd7a-f512-848d-6c65-9bed6f8ec161> a
@@ -12117,12 +12221,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/a9208ebc-d5f7-3fe6-14c1-05a880ba0690> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Portretten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300015637>, <http://data.beeldengeluid.nl/gtaa/27140>;
-    dcterms:modified "2023-07-20T15:31:11.475Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a2c47bdc-ae1f-8dd4-8e2d-3df8a28a03c6>,
+      <http://vocab.getty.edu/aat/300015637>, <http://data.beeldengeluid.nl/gtaa/27140>;
+    dcterms:modified "2023-12-20T10:57:21.863Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/a9257e49-776b-4909-5df2-71165b7d93cb> a
       skos:Concept;
@@ -12337,7 +12442,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/acde7e0b-44fd-2607-d8a3-e2888b4aacf2> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Picture in which one or more flowers are the central object"@en,
       "Foto's waarin één (snij)bloem of meerdere (snij)bloemen centraal staan. Heeft mogelijk overeenkomsten met het label 'bloementuin' "@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
@@ -12346,8 +12451,11 @@
       <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/19d24d3d-edf3-dceb-0182-0b1836a0ea4f>,
       <https://digitaalerfgoed.poolparty.biz/nha/ef89f068-ad28-5095-0edd-ca77be88e074>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300132399>, <http://data.beeldengeluid.nl/gtaa/25289>;
-    dcterms:modified "2023-10-27T13:11:19.590Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/06f2327c-71c1-1502-73c7-7ace0d63ed0d>,
+      <https://digitaalerfgoed.poolparty.biz/nha/7a4e52ea-6f82-d4be-ec4f-b6fc433f918f>,
+      <https://digitaalerfgoed.poolparty.biz/nha/768200cf-b092-f9b3-3224-42d4d580a850>,
+      <http://vocab.getty.edu/aat/300132399>, <http://data.beeldengeluid.nl/gtaa/25289>;
+    dcterms:modified "2023-12-20T10:57:26.739Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/71f78905-ed2f-f072-168f-9af6aed4f641.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ad0117bb-fe7c-0c73-49f0-f6510c047620> a
@@ -12456,12 +12564,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/adf12ad3-fdeb-fe84-3208-62948dbd129d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Theater"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300312332>, <http://data.beeldengeluid.nl/gtaa/28159>;
-    dcterms:modified "2023-07-20T15:31:26.153Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/169266ec-658f-c05e-7560-27327865a82f>,
+      <http://vocab.getty.edu/aat/300312332>, <http://data.beeldengeluid.nl/gtaa/28159>;
+    dcterms:modified "2023-12-20T10:56:51.161Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ae1ee599-e9cc-f5cd-fd36-1928117575cb> a
       skos:Concept;
@@ -12487,7 +12596,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:27.417Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Objecten"@nl;
@@ -12508,8 +12617,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/f36ab77c-57b7-7b27-fcf0-c4425ee4ddc6>,
       <https://digitaalerfgoed.poolparty.biz/nha/11b35fc3-43b3-5537-cc6d-fffa3929ca91>,
       <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300311889>, <http://vocab.getty.edu/aat/300264092>;
-    dcterms:modified "2023-12-20T10:34:57.643Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300311889>, <http://vocab.getty.edu/aat/300264092>;
+    dcterms:modified "2023-12-20T10:57:47.854Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ae9b93d2-e335-2bad-3e7e-5e115cdfa846> a
       skos:Concept;
@@ -12607,7 +12717,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:35:53.862Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Bebouwde Omgeving"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>;
@@ -12653,8 +12763,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/f6876290-a31d-be25-9f48-714bd581b8cb>,
       <https://digitaalerfgoed.poolparty.biz/nha/f6be45a0-f9b1-b8fb-4ece-1751cabe0550>,
       <https://digitaalerfgoed.poolparty.biz/nha/faa411ec-382f-26ad-ec27-5f8767bfb692>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264550>;
-    dcterms:modified "2023-12-20T10:37:17.793Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300264550>;
+    dcterms:modified "2023-12-20T10:57:44.582Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b0f67d71-438e-da95-e022-94d65887f15a> a
       skos:Concept;
@@ -12684,12 +12795,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/b19d0422-62ff-3204-58c2-8695b0836cd7> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Rugby"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222800>, <http://data.beeldengeluid.nl/gtaa/25227>;
-    dcterms:modified "2023-07-20T15:28:12.321Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a2c04c1b-b694-0bd1-00c3-9cf454601322>,
+      <http://vocab.getty.edu/aat/300222800>, <http://data.beeldengeluid.nl/gtaa/25227>;
+    dcterms:modified "2023-12-20T10:57:21.219Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b1ad1a4b-c824-8c24-cc62-7acd21a12ea3> a
       skos:Concept;
@@ -12879,13 +12991,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/b2dd32ec-7e30-8de6-a0fb-fba6eb1315ab> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Herdenkingen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
     skos:exactMatch <https://digitaalerfgoed.poolparty.biz/nha/a728702c-c80f-89bc-2f73-c81def1157da>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
-    dcterms:modified "2023-07-20T15:27:44.707Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/20f2779d-9c21-0052-9289-52040fb4d54e>,
+      <http://vocab.getty.edu/aat/300214143>, <http://data.beeldengeluid.nl/gtaa/28238>;
+    dcterms:modified "2023-12-20T10:56:58.071Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b2fead6c-ebd8-d43f-9781-270986eed081> a
       skos:Concept;
@@ -12987,8 +13100,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Trouwerij"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0bc22-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069158>;
-    dcterms:modified "2023-06-16T10:16:41.656Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/89d20b42-21b2-b79f-b494-53e0de5d176d>,
+      <http://vocab.getty.edu/aat/300069158>;
+    dcterms:modified "2023-12-20T10:57:14.462Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b3d7cb59-c3ed-58c7-2257-8ec1e4a5c20c> a
       skos:Concept;
@@ -13247,12 +13361,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/b9c8dd51-ba87-abf9-374d-acd89d819afe> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Vijvers"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008688>, <http://data.beeldengeluid.nl/gtaa/27261>;
-    dcterms:modified "2023-07-20T15:31:32.653Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/54b7e786-c900-f102-4ff0-3cf505bdef33>,
+      <http://vocab.getty.edu/aat/300008688>, <http://data.beeldengeluid.nl/gtaa/27261>;
+    dcterms:modified "2023-12-20T10:57:05.851Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b9f9fe90-413d-d57c-1070-14801837b852> a
       skos:Concept;
@@ -13486,14 +13601,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/bdc7a6c2-432f-cb2c-de8f-275265effcdc> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's van een huizenblok / foto's waarin meerdere woningen centraal staan. Heeft mogelijk overeenkomsten met het label 'straat'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Residential area"@en, "Woonwijk"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/b09d8593-5883-4e44-83ee-70e4cfd605f2>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/d454f996-fd20-a1c2-16a8-3a0d7acd47b7>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300000742>, <http://data.beeldengeluid.nl/gtaa/27423>;
-    dcterms:modified "2023-10-27T13:11:22.984Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1292566b-928c-5eaa-6116-47903b46025e>,
+      <http://vocab.getty.edu/aat/300000742>, <http://data.beeldengeluid.nl/gtaa/27423>;
+    dcterms:modified "2023-12-20T10:57:27.383Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/15dbbf64-3e12-cc99-c49f-e64949e2676a.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/bddc08ff-09bb-7115-07d9-c6aeb227733b> a
@@ -13676,7 +13792,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c047f6be-4061-8fec-7cd0-20b7bffa2c2e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of trains. Overlap with train station"@en, "Foto's waarin een trein centraal staat. Mogelijk overeenkomsten met het label 'trein_station' of 'trein_ongeluk'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Train"@en, "Trein"@nl;
@@ -13684,8 +13800,9 @@
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/84300011-c25a-abf9-05fe-9ac5b3ebcd59>,
       <https://digitaalerfgoed.poolparty.biz/nha/989f2e1f-d01f-c447-eac9-c9cf7b68d5a7>,
       <https://digitaalerfgoed.poolparty.biz/nha/f6be45a0-f9b1-b8fb-4ece-1751cabe0550>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212738>, <http://data.beeldengeluid.nl/gtaa/28226>;
-    dcterms:modified "2023-10-27T13:11:23.657Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d611e97b-9324-5366-86d9-c3e0b77054f3>,
+      <http://vocab.getty.edu/aat/300212738>, <http://data.beeldengeluid.nl/gtaa/28226>;
+    dcterms:modified "2023-12-20T10:57:27.984Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/84d6ff82-21b0-5027-a8b6-6acb6e0a23fa.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c0bcc735-3c90-25f4-9136-a18c30f91c6c> a
@@ -13706,7 +13823,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c13a547b-276a-e28c-5833-7c1889774181> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Markt"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
@@ -13714,8 +13831,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/8d4d66ba-a855-ea87-8c25-dbf7871eb265>,
       <https://digitaalerfgoed.poolparty.biz/nha/f2baccce-af2a-28d7-906c-2225d9b28843>,
       <https://digitaalerfgoed.poolparty.biz/nha/cb537b20-4dd5-0946-a8e3-dc03780177f7>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27763>;
-    dcterms:modified "2023-07-20T15:27:55.989Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a74a8834-b7f6-c2b6-b27f-2be60d6e4fb6>,
+      <http://data.beeldengeluid.nl/gtaa/27763>;
+    dcterms:modified "2023-12-20T10:57:22.623Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c13db3de-a3c1-d40f-b979-fdd805beff4c> a
       skos:Concept;
@@ -13882,12 +14000,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c38578e1-f85e-18fa-17d4-a74d818d76eb> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Vlaggen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28699>, <http://vocab.getty.edu/aat/300195678>;
-    dcterms:modified "2023-07-20T15:31:33.087Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/e89b0b76-7bc1-060b-46c5-39d412802d32>,
+      <http://data.beeldengeluid.nl/gtaa/28699>, <http://vocab.getty.edu/aat/300195678>;
+    dcterms:modified "2023-12-20T10:57:38.462Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c39c2efe-8e8b-67e3-176c-724c91a0a015> a
       skos:Concept;
@@ -14032,15 +14151,17 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c4db0acb-a485-a644-581f-ef8e352c3236> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "people playing soccer"@en, "Foto's van mensen die buiten voetbal spelen. Heeft mogelijk overeenkomsten met het label 'zaalvoetbal'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Soccer"@en, "Voetbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/e341a269-94d7-9fcf-2d5a-6d03f4b66392>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/2cb3db88-c09c-75da-8e3a-1e7fcf184a3c>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222801>, <http://data.beeldengeluid.nl/gtaa/27291>;
-    dcterms:modified "2023-10-27T13:11:24.094Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/59f6c55a-46bb-0d24-e0b9-fbfafe653be9>,
+      <https://digitaalerfgoed.poolparty.biz/nha/f1aaef5e-375f-db86-07bd-dd43f5526b2e>,
+      <http://vocab.getty.edu/aat/300222801>, <http://data.beeldengeluid.nl/gtaa/27291>;
+    dcterms:modified "2023-12-20T10:57:29.259Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/a2523318-1747-546e-4092-4c554cf7ae2e.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c4fed69a-a37e-a6f2-b744-9b1ac9d6897d> a
@@ -14080,13 +14201,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c5763b1e-7e69-f9e9-fd5a-c3bcd2374481> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Honkbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
     skos:exactMatch <https://digitaalerfgoed.poolparty.biz/nha/50043426-3351-e935-7b5e-dd780f536c2f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
-    dcterms:modified "2023-07-20T15:27:46.791Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/94fefc39-1f7c-45af-2b52-c4daf0ff5f02>,
+      <http://vocab.getty.edu/aat/300222760>, <http://data.beeldengeluid.nl/gtaa/28456>;
+    dcterms:modified "2023-12-20T10:57:16.343Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c57c2571-f33b-ae32-7df7-c7d2715569bd> a
       skos:Concept;
@@ -14111,13 +14233,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c5d5be73-6728-d8d2-2487-788fca9a3138> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People running in a sports event"@en, "Mensen die rennen en/of joggen in sportkleren"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Running"@en, "Hardlopen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300239496>, <http://data.beeldengeluid.nl/gtaa/29684>;
-    dcterms:modified "2023-10-27T13:11:25.017Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/5d102517-d1fa-cada-9782-d6119532b79c>,
+      <http://vocab.getty.edu/aat/300239496>, <http://data.beeldengeluid.nl/gtaa/29684>;
+    dcterms:modified "2023-12-20T10:57:29.893Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/cc0e62d7-29df-95b4-c02d-d583992d06ca.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c5da3199-1a97-414c-f366-f340a84c1d27> a
@@ -14141,13 +14264,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c5dbd797-e798-e24d-b0d6-e57f7c907d38> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of fishing industry"@en, "Foto's van vissers / viskwekerij / hengelsport / visboten"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Fishery"@en, "Visserij"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300239470>, <http://data.beeldengeluid.nl/gtaa/28706>;
-    dcterms:modified "2023-10-27T13:11:25.453Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/cc2f3ded-e357-116d-01ce-20d6228a8dc7>,
+      <http://vocab.getty.edu/aat/300239470>, <http://data.beeldengeluid.nl/gtaa/28706>;
+    dcterms:modified "2023-12-20T10:57:30.632Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/95ef3301-9073-a6ba-9cb1-34b8aee0ee55.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c5f35a6b-0841-7b49-7c90-b1f6bf32c727> a
@@ -14256,13 +14380,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/c7d7de0a-1aad-64b8-4208-0d188cacef9d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "a picture taken of the outside of a church"@en, "Buitenkant van een kerk"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Church outdoor"@en, "Kerk buiten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/9571146c-71de-7477-b892-3c6f0dba1d7e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300007466>, <http://data.beeldengeluid.nl/gtaa/28026>;
-    dcterms:modified "2023-12-20T10:35:56.764Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/a36695da-4357-f335-92aa-11f0cacdfe86>,
+      <http://vocab.getty.edu/aat/300007466>, <http://data.beeldengeluid.nl/gtaa/28026>;
+    dcterms:modified "2023-12-20T10:57:31.478Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/ecf29275-9946-ea04-987c-13016fb37a15.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/c86e079a-2616-0927-873c-ce00838fde18> a
@@ -14491,12 +14616,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/cb451e33-e25a-dd7a-00a2-792870d4d0c0> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Kermis"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069042>;
-    dcterms:modified "2023-07-13T11:15:47.261Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/4056b08f-b889-75fd-d809-b3f0ecf3c1d0>,
+      <http://vocab.getty.edu/aat/300069042>;
+    dcterms:modified "2023-12-20T10:57:02.559Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/cb4556dc-fd93-0d7e-e368-4a8e8fe22cf2> a
       skos:Concept;
@@ -14588,15 +14714,16 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/cc2f3ded-e357-116d-01ce-20d6228a8dc7> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Visserij e.a., vishandelaren, vissen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/6fbec23a-f957-433b-9059-6430d88c39a1>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/6c46d7da-e766-fe66-75ce-6f9662473c69>,
       <https://digitaalerfgoed.poolparty.biz/nha/f3b04aa4-bfac-4f79-ada6-a45c75ad2e26>,
       <https://digitaalerfgoed.poolparty.biz/nha/26c7e9ae-8270-9821-4f4f-9bf7d50bdf21>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300239470>;
-    dcterms:modified "2023-07-13T11:33:14.881Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c5dbd797-e798-e24d-b0d6-e57f7c907d38>,
+      <http://vocab.getty.edu/aat/300239470>;
+    dcterms:modified "2023-12-20T10:57:30.634Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/cc400738-e8fa-1123-c8f6-fe60c932d59e> a
       skos:Concept;
@@ -14711,12 +14838,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/cdee3b93-b4c5-1502-adf0-dc52971c1036> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Soldaten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/909fd2cb-67bd-42ca-ae83-59f9d9a2bc67>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27782>, <http://vocab.getty.edu/aat/300185678>;
-    dcterms:modified "2023-07-20T15:29:29.090Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/7ab5c31c-f58c-5305-d70b-74ee936db03c>,
+      <http://data.beeldengeluid.nl/gtaa/27782>, <http://vocab.getty.edu/aat/300185678>;
+    dcterms:modified "2023-12-20T10:57:11.816Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ce0807ce-171f-5ec9-c37a-c6e4ef0fd971> a
       skos:Concept;
@@ -14739,15 +14867,16 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-14T15:53:45.847Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Actoren"@nl;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>,
       <https://digitaalerfgoed.poolparty.biz/nha/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>,
       <https://digitaalerfgoed.poolparty.biz/nha/fd603119-f48c-43da-b084-fcc20598f8f5>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300264089>;
-    dcterms:modified "2023-10-27T13:11:27.541Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0b5ba-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300264089>;
+    dcterms:modified "2023-12-20T10:57:49.168Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ce385aa4-b0af-14df-e2c0-f33e5ebc3df8> a
       skos:Concept;
@@ -14901,7 +15030,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:06.757Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Gebeurtenissen"@nl, "Events"@en;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
@@ -14915,8 +15044,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/989f2e1f-d01f-c447-eac9-c9cf7b68d5a7>,
       <https://digitaalerfgoed.poolparty.biz/nha/e15f3c52-5da4-d870-00e8-a29b1f5045af>,
       <https://digitaalerfgoed.poolparty.biz/nha/e43a88db-3572-2ff8-b916-754e8df1f1bc>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069084>;
-    dcterms:modified "2023-12-20T10:33:10.613Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>,
+      <http://vocab.getty.edu/aat/300069084>;
+    dcterms:modified "2023-12-20T10:57:45.829Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d1fa4c81-53d0-f861-ed26-5d5ea50f5b7f> a
       skos:Concept;
@@ -15106,7 +15236,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/d454f996-fd20-a1c2-16a8-3a0d7acd47b7> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Depicting street sceneries."@en, "Foto's van een straat, met of zonder mensen. Heeft mogelijk overeenkomsten met de labels 'winkelstraat', 'woonwijk'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Street"@en, "Straat"@nl;
@@ -15114,8 +15244,9 @@
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/02f9b8eb-0589-ec17-0761-8169a98791f7>,
       <https://digitaalerfgoed.poolparty.biz/nha/9c838793-6993-d946-2f2d-16592a3bd6ac>,
       <https://digitaalerfgoed.poolparty.biz/nha/bdc7a6c2-432f-cb2c-de8f-275265effcdc>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27919>, <http://vocab.getty.edu/aat/300266559>;
-    dcterms:modified "2023-10-27T13:11:29.666Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9d40eda5-1d86-c94e-f410-6d34dcb561a9>,
+      <http://data.beeldengeluid.nl/gtaa/27919>, <http://vocab.getty.edu/aat/300266559>;
+    dcterms:modified "2023-12-20T10:57:32.476Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/335bf23d-cb90-2fb0-efa2-7215d2debc8f.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d45ee2fe-4b82-016a-d771-21e3151a8e93> a
@@ -15164,12 +15295,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/d522e73e-453c-1c9e-ce0e-25f574e4195d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Tuinen en parken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25261>;
-    dcterms:modified "2023-07-20T15:31:27.860Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0199e8d2-824a-b19a-be6a-5ee3beb624b5>,
+      <http://data.beeldengeluid.nl/gtaa/25261>;
+    dcterms:modified "2023-12-20T10:56:44.426Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d5406df6-e8a2-073c-8809-f331536264f7> a
       skos:Concept;
@@ -15213,21 +15345,23 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/d5cb1934-e6ac-63ce-582d-18d4a85be49d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Branden, brandweer"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d832fd57-043c-4316-8c61-7a19e5141dbf>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300068986>;
-    dcterms:modified "2023-07-13T11:14:27.310Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/38226bd1-158d-2be7-dd1e-154630710f05>,
+      <http://vocab.getty.edu/aat/300068986>;
+    dcterms:modified "2023-12-20T10:56:59.621Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d611e97b-9324-5366-86d9-c3e0b77054f3> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Treinen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/2d90eba1-5f3a-5ef9-4e01-d82498ebf14f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212738>, <http://data.beeldengeluid.nl/gtaa/28226>;
-    dcterms:modified "2023-07-20T15:31:27.440Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c047f6be-4061-8fec-7cd0-20b7bffa2c2e>,
+      <http://vocab.getty.edu/aat/300212738>, <http://data.beeldengeluid.nl/gtaa/28226>;
+    dcterms:modified "2023-12-20T10:57:27.985Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d63aad29-fa31-a2bb-845e-0344630cd556> a
       skos:Concept;
@@ -15369,7 +15503,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/d818ce63-45c9-31a8-3ee5-7b24db86536d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Photos inside bakery, baking bread, presenting bread indoor/outdoors"@en,
       "Binnen- of buitenkant van een bakkerswinkel / broodbakken / etalage van een bakkerij. Ook het presenteren van taarten binnen en buiten. Heeft mogelijk overeenkomsten met het label 'keuken' / 'etalage'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
@@ -15377,8 +15511,10 @@
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/6d9a49b4-2f27-4a6a-b964-fbd6179ce2e7>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/12ab16d1-2d0d-1e11-7cae-22a29ab9ce71>,
       <https://digitaalerfgoed.poolparty.biz/nha/cada4aaf-64c9-ac97-e443-be2eccb7f895>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300005291>, <http://data.beeldengeluid.nl/gtaa/25427>;
-    dcterms:modified "2023-10-27T13:11:30.747Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/5435fb8d-5ab9-2911-a6ea-c073e3072fc0>,
+      <https://digitaalerfgoed.poolparty.biz/nha/43e9680d-944c-db1a-9d7e-47ec761a4b3b>,
+      <http://vocab.getty.edu/aat/300005291>, <http://data.beeldengeluid.nl/gtaa/25427>;
+    dcterms:modified "2023-12-20T10:57:33.718Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/0f51f311-5a19-fa53-45ce-525a53abd965.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d82754ee-8f12-b68f-8b32-8cf5f5d8ff31> a
@@ -15394,7 +15530,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
     dcterms:created "2023-07-13T07:19:31.626Z"^^xsd:dateTime;
-    dcterms:contributor <https://cultureelerfgoed.poolparty.biz/user/vanderheidenj>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Gebeurtenissen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0bc22-0a96-11ee-be56-0242ac120002>;
@@ -15479,8 +15615,9 @@
       <https://digitaalerfgoed.poolparty.biz/nha/a4b05f00-565f-489c-bfe1-ae0e452a5408>,
       <https://digitaalerfgoed.poolparty.biz/nha/3de2980c-bbfe-47c8-959e-d1377202ffd5>,
       <https://digitaalerfgoed.poolparty.biz/nha/1f04690d-ed50-4deb-bf3f-0f735f540e30>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069084>;
-    dcterms:modified "2023-10-20T15:16:58.739Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>,
+      <http://vocab.getty.edu/aat/300069084>;
+    dcterms:modified "2023-12-20T10:57:45.830Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/d84767d1-d975-1958-1c34-f08d40984251> a
       skos:Concept;
@@ -15877,13 +16014,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/dd91e0e9-76cd-a126-68cb-962cd6a64696> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s van vogels. Betreft niet foto’s die onder het label 'eend' en 'zwaan'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Vogels"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300266506>, <http://data.beeldengeluid.nl/gtaa/27822>;
-    dcterms:modified "2023-10-27T13:11:31.220Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/55f17692-11e7-502d-20b4-d53f3fed6306>,
+      <http://vocab.getty.edu/aat/300266506>, <http://data.beeldengeluid.nl/gtaa/27822>;
+    dcterms:modified "2023-12-20T10:57:34.508Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/66bb98e1-ad02-b108-451a-edf3074bd54e.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ddc63be9-9270-fd92-5db6-ff155125948e> a
@@ -15941,25 +16079,27 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/dfda4e8b-b37e-63e8-7cd9-c560d66fe841> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "People performing music"@en, "Mensen die muziek maken / een instrument bespelen voor publiek. Heeft mogelijk overeenkomsten met het label 'dansende_mensen'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Musical performance"@en, "Muziek optreden"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/b489c7cd-763e-aee3-dc8b-1d569d3370cb>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069210>;
-    dcterms:modified "2023-12-20T10:12:33.049Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/ef09a7ee-bb8a-090d-322f-a002cd3c68bc>,
+      <http://vocab.getty.edu/aat/300069210>;
+    dcterms:modified "2023-12-20T10:57:35.312Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/3fb2d405-7743-1a70-bfb3-6df0f2c1c788.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e119f947-9a96-32da-27b3-ed3fdd0bd681> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto's waarin een paard of meerdere paarden centraal staan"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Horse"@en, "Paard"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/79936f47-1512-42cb-98d1-a11632e8bebd>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28775>, <http://vocab.getty.edu/aat/300250148>;
-    dcterms:modified "2023-10-27T13:11:32.057Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/38d88d94-0882-920e-fe91-8795470f5b45>,
+      <http://data.beeldengeluid.nl/gtaa/28775>, <http://vocab.getty.edu/aat/300250148>;
+    dcterms:modified "2023-12-20T10:57:36.052Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/7785735b-4447-7e96-6a25-4bce2544d194.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e11cad05-1fa5-ed8b-86d2-90e3b7e791a8> a
@@ -15989,14 +16129,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e15f3c52-5da4-d870-00e8-a29b1f5045af> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Room with artwork(s) and people."@en, "Ruimte waarin één kunstwerk of meerdere kunstwerken gepresenteerd worden, al dan niet met mensen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Exhibition"@en, "Tentoonstelling"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/5059b072-8b5c-827a-9424-d69e55eb1a91>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300054766>;
-    dcterms:modified "2023-10-27T13:11:32.492Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0a6565e5-5dc8-bf4c-dedb-a9e47e6c6858>,
+      <http://vocab.getty.edu/aat/300054766>;
+    dcterms:modified "2023-12-20T10:57:36.727Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/8ce83d16-2834-1748-a3b9-dff6a5a72426.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e1696ea2-da14-ac3b-9451-2d539ffe0917> a
@@ -16069,12 +16210,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e2c255af-e3ff-619f-530d-e64dee9f6bd2> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Interieur"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300124520>, <http://data.beeldengeluid.nl/gtaa/27417>;
-    dcterms:modified "2023-07-20T15:30:50.822Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0c304df9-a4c1-8f22-57bf-65b5e7edcbe6>,
+      <http://vocab.getty.edu/aat/300124520>, <http://data.beeldengeluid.nl/gtaa/27417>;
+    dcterms:modified "2023-12-20T10:56:50.223Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e2e4dd2a-e27f-3ef2-8fda-af0cb60e1436> a
       skos:Concept;
@@ -16166,14 +16308,15 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e43a88db-3572-2ff8-b916-754e8df1f1bc> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s waarin mensen die verkleed zijn voor carnaval centraal staan. Heeft mogelijk overeenkomsten met het label 'historisch_toneelstuk'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Carnaval"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d1fa2c79-08d7-4684-808e-6accfcbfd6d3>;
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/1047c920-6143-666f-7526-529d662fdfbc>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069281>;
-    dcterms:modified "2023-10-27T13:11:32.997Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/60d7accc-3502-6842-ed15-f08f8d247e4e>,
+      <http://vocab.getty.edu/aat/300069281>;
+    dcterms:modified "2023-12-20T10:57:37.560Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/5e540aa7-e1f9-a0d0-2cfe-388a75fb8b67.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e44dc12a-f9ae-7122-2955-b6bfdbfd188d> a
@@ -16300,12 +16443,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e6b222b6-462d-ae5e-6861-2b887f584ef3> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Optochten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0bc22-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069283>, <http://data.beeldengeluid.nl/gtaa/26446>;
-    dcterms:modified "2023-07-20T15:28:03.885Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0261181d-00de-fbd5-7889-882d29340de3>,
+      <http://vocab.getty.edu/aat/300069283>, <http://data.beeldengeluid.nl/gtaa/26446>;
+    dcterms:modified "2023-12-20T10:56:45.259Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e6bc9143-563c-cfa0-5aca-69c0cec7e178> a
       skos:Concept;
@@ -16506,13 +16650,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e89b0b76-7bc1-060b-46c5-39d412802d32> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "raising of a flag"@en, "Foto's waarbij een vlag aan een vlaggenmast omhoog gehesen wordt"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Flag"@en, "Vlag hijsen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/4bba001a-c927-4713-890c-8b59869b9e55>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/28699>;
-    dcterms:modified "2023-10-27T13:05:07.562Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c38578e1-f85e-18fa-17d4-a74d818d76eb>,
+      <http://data.beeldengeluid.nl/gtaa/28699>;
+    dcterms:modified "2023-12-20T10:57:38.461Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/03f774e1-dabc-9563-11c1-751ff48fd343.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e89c2cdd-af13-735f-6db7-9f8ab36a4d33> a
@@ -16542,13 +16687,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/e9228b5a-8ee7-012e-a672-39c0c4e5b414> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Pictures of people playing waterpolo"@en, "Foto's van mensen die waterpolo spelen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Waterpolo"@en, "Waterpolo"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/27357>;
-    dcterms:modified "2023-10-27T13:05:09.029Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1ca00c61-758e-bd5e-d2a3-1cb8daaa542a>,
+      <http://data.beeldengeluid.nl/gtaa/27357>;
+    dcterms:modified "2023-12-20T10:57:39.190Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/9d2294bd-e7ad-e0c6-65c7-bd5fbdb94834.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/e9267cb2-ae2c-69ec-6c31-a2a7c9c362bb> a
@@ -16623,13 +16769,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/eb2b3fd4-a99b-1309-bf51-8cb79555f3e4> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Professional cyclists"@en, "Foto's waarin professionele / sportieve fietsers op of met een racefiets centraal staan. Let op: alledaagse, recreatieve fietsers krijgen het label 'fietsend_mensen'"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Road biking"@en, "Wielrennen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300412175>, <http://data.beeldengeluid.nl/gtaa/27759>;
-    dcterms:modified "2023-10-27T13:11:33.491Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/1aaf54c6-54b1-a8e0-6b33-7ad9a8e658fb>,
+      <http://vocab.getty.edu/aat/300412175>, <http://data.beeldengeluid.nl/gtaa/27759>;
+    dcterms:modified "2023-12-20T10:57:39.853Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/6da06d6f-0f6a-13f5-d1d2-191c3bb95066.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/eb4448da-b5cb-d2a2-5075-2a239b47d56a> a
@@ -16824,12 +16971,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/ef09a7ee-bb8a-090d-322f-a002cd3c68bc> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Concerten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/69cb73a4-a230-a8ea-ba7c-5db5cca0eb1a>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300069210>, <http://data.beeldengeluid.nl/gtaa/25150>;
-    dcterms:modified "2023-07-20T15:27:31.436Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/dfda4e8b-b37e-63e8-7cd9-c560d66fe841>,
+      <http://vocab.getty.edu/aat/300069210>, <http://data.beeldengeluid.nl/gtaa/25150>;
+    dcterms:modified "2023-12-20T10:57:35.313Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ef389419-1bbc-a948-aa25-16df3f5ddf1b> a
       skos:Concept;
@@ -16853,12 +17001,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/ef62a9c3-88d4-73df-9894-bea84f67ac7d> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Biljarten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/3691ce7e-4321-4d91-8b0f-67c0dff29ffa>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25281>;
-    dcterms:modified "2023-07-20T15:27:27.206Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/3aa4807e-e06f-ea00-96b4-69f55fb450b3>,
+      <http://data.beeldengeluid.nl/gtaa/25281>;
+    dcterms:modified "2023-12-20T10:57:00.589Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/ef7e1cae-149b-d5af-1ee4-1df5cb30295b> a
       skos:Concept;
@@ -16901,13 +17050,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/efe13355-3612-9157-fe75-85d00b97e208> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "people playing hand ball"@en, "Foto's waarop mensen aan het handballen zijn"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Hand ball"@en, "Handbal"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300211517>, <http://data.beeldengeluid.nl/gtaa/25834>;
-    dcterms:modified "2023-10-27T13:11:35.067Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/643f2814-0b43-f02a-7de4-ece8590867c3>,
+      <http://vocab.getty.edu/aat/300211517>, <http://data.beeldengeluid.nl/gtaa/25834>;
+    dcterms:modified "2023-12-20T10:57:40.641Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/35fdae08-1ea7-0eb2-f5c1-c0dfcd679942.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/efff12bf-0d60-82e0-0181-48490cbea45c> a
@@ -17043,12 +17193,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f19e28a5-072a-34e4-c9ac-191c4ea5db2e> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Vliegtuigen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/2d90eba1-5f3a-5ef9-4e01-d82498ebf14f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212616>, <http://data.beeldengeluid.nl/gtaa/27800>;
-    dcterms:modified "2023-07-20T15:31:33.954Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f36ab77c-57b7-7b27-fcf0-c4425ee4ddc6>,
+      <http://vocab.getty.edu/aat/300212616>, <http://data.beeldengeluid.nl/gtaa/27800>;
+    dcterms:modified "2023-12-20T10:57:41.452Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f1aaef5e-375f-db86-07bd-dd43f5526b2e> a
       skos:Concept;
@@ -17056,8 +17207,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Voetbal Haarlem"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/59f6c55a-46bb-0d24-e0b9-fbfafe653be9>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222801>;
-    dcterms:modified "2023-06-16T10:13:25.267Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/c4db0acb-a485-a644-581f-ef8e352c3236>,
+      <http://vocab.getty.edu/aat/300222801>;
+    dcterms:modified "2023-12-20T10:57:29.259Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f1c89a25-332f-7e0d-6ebc-017775db7693> a
       skos:Concept;
@@ -17146,12 +17298,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f351b8ce-7f62-d39e-be81-eba9fccc8713> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Gebouwen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300004792>, <http://data.beeldengeluid.nl/gtaa/28322>;
-    dcterms:modified "2023-07-20T15:30:43.344Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9571146c-71de-7477-b892-3c6f0dba1d7e>,
+      <http://vocab.getty.edu/aat/300004792>, <http://data.beeldengeluid.nl/gtaa/28322>;
+    dcterms:modified "2023-12-20T10:57:17.154Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f35d7b9a-0361-d685-10c2-946afc0dd4c1> a
       skos:Concept;
@@ -17164,13 +17317,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f36ab77c-57b7-7b27-fcf0-c4425ee4ddc6> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s waarin een of meerdere vliegtuigen centraal staan"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Airplane"@en, "Vliegtuig"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/ae8a5ef5-121e-4a0a-9dc6-c7ea0de9b13e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300212616>, <http://data.beeldengeluid.nl/gtaa/27800>;
-    dcterms:modified "2023-10-27T13:11:35.541Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/f19e28a5-072a-34e4-c9ac-191c4ea5db2e>,
+      <http://vocab.getty.edu/aat/300212616>, <http://data.beeldengeluid.nl/gtaa/27800>;
+    dcterms:modified "2023-12-20T10:57:41.450Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/760e1e53-c569-e927-c286-015db67c4565.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f3b04aa4-bfac-4f79-ada6-a45c75ad2e26> a
@@ -18934,12 +19088,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f56fdd65-2265-79ec-c621-2dbf71b0a981> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Parken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/25261>, <http://vocab.getty.edu/aat/300254248>;
-    dcterms:modified "2023-07-20T15:31:07.878Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0199e8d2-824a-b19a-be6a-5ee3beb624b5>,
+      <http://data.beeldengeluid.nl/gtaa/25261>, <http://vocab.getty.edu/aat/300254248>;
+    dcterms:modified "2023-12-20T10:56:33.905Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f5c8638c-5cb5-6711-fadf-0464f2c7d56d> a
       skos:Concept;
@@ -19016,7 +19171,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f6be45a0-f9b1-b8fb-4ece-1751cabe0550> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Foto’s waarin een spoorweg en/of de treinbaan centraal staat. Heeft mogelijk overeenkomsten met de labels ‘trein’, 'trein_ongeluk' en ‘trein_station’"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Railroad"@en, "Spoorweg"@nl;
@@ -19024,8 +19179,9 @@
     skos:related <https://digitaalerfgoed.poolparty.biz/nha/84300011-c25a-abf9-05fe-9ac5b3ebcd59>,
       <https://digitaalerfgoed.poolparty.biz/nha/989f2e1f-d01f-c447-eac9-c9cf7b68d5a7>,
       <https://digitaalerfgoed.poolparty.biz/nha/c047f6be-4061-8fec-7cd0-20b7bffa2c2e>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300008591>, <http://data.beeldengeluid.nl/gtaa/25166>;
-    dcterms:modified "2023-10-27T13:11:37.008Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0238f05d-4980-4919-8546-636b0bfd6573>,
+      <http://vocab.getty.edu/aat/300008591>, <http://data.beeldengeluid.nl/gtaa/25166>;
+    dcterms:modified "2023-12-20T10:57:42.211Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/52a80930-8ca8-31a6-52a4-de3928452510.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f6c863a8-01f7-d77e-b7ce-3f9d1fe8a3cd> a
@@ -19147,13 +19303,14 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f8c85b25-dcf2-b36d-56ce-c3258c3ec853> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:definition "Mensen die cricket spelen"@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Cricket"@en, "Cricket"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/73462d2b-cd76-a85e-c17e-2b80387214d3>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300222761>, <http://data.beeldengeluid.nl/gtaa/25464>;
-    dcterms:modified "2023-10-27T13:11:37.533Z"^^xsd:dateTime;
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/642512e1-f596-ffde-8a17-620ba5408dd8>,
+      <http://vocab.getty.edu/aat/300222761>, <http://data.beeldengeluid.nl/gtaa/25464>;
+    dcterms:modified "2023-12-20T10:57:42.969Z"^^xsd:dateTime;
     foaf:depiction <https://images.memorix.nl/ranh/thumb/500x500/30a5bf27-fb0f-dceb-198f-ebc2362e560f.jpg> .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f902e9ce-785b-a79b-a419-b3afb1fc1cf6> a
@@ -19231,14 +19388,15 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     dcterms:created "2023-06-12T17:36:01.714Z"^^xsd:dateTime;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:topConceptOf <https://digitaalerfgoed.poolparty.biz/nha/7325bb27-69b0-4c36-9f0c-914ba5d49faf>;
     skos:prefLabel "Concepten"@nl, "Concepts"@en;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/0c304df9-a4c1-8f22-57bf-65b5e7edcbe6>,
       <https://digitaalerfgoed.poolparty.biz/nha/f0881540-bb3e-3755-dbac-735be0b40890>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300026932>, <http://vocab.getty.edu/aat/300264086>;
-    dcterms:modified "2023-12-20T10:33:16.394Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/11c0b902-0a96-11ee-be56-0242ac120002>,
+      <http://vocab.getty.edu/aat/300026932>, <http://vocab.getty.edu/aat/300264086>;
+    dcterms:modified "2023-12-20T10:57:45.217Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/faa1cbd1-8b2c-321a-fc74-23d647185452> a
       skos:Concept;
@@ -19311,12 +19469,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/fac79ab6-2b81-2401-d759-6097680890ba> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Boten"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/2d90eba1-5f3a-5ef9-4e01-d82498ebf14f>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300178749>, <http://data.beeldengeluid.nl/gtaa/28142>;
-    dcterms:modified "2023-07-20T15:30:31.402Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/0988d5f4-bb6f-b657-7e61-630e9eeb5d04>,
+      <http://vocab.getty.edu/aat/300178749>, <http://data.beeldengeluid.nl/gtaa/28142>;
+    dcterms:modified "2023-12-20T10:56:47.817Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/fae95f1d-3b40-0758-18f1-5f12b120eada> a
       skos:Concept;
@@ -19405,12 +19564,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/fcc58a23-d801-1b48-f0db-ff0f77cdc363> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Opgravingen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/d7e3c794-d3f7-48d6-a978-19edb18547df>;
-    skos:closeMatch <http://data.beeldengeluid.nl/gtaa/29237>;
-    dcterms:modified "2023-07-20T15:28:03.454Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/086db4c8-b874-7d48-1944-e81f0030d0d6>,
+      <http://data.beeldengeluid.nl/gtaa/29237>;
+    dcterms:modified "2023-12-20T10:56:47.016Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/fce365e8-16ed-0947-c5ec-2981dc4c68ee> a
       skos:Concept;
@@ -19547,8 +19707,9 @@
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Groepen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <http://vocab.getty.edu/aat/300124525>;
-    dcterms:modified "2023-06-16T10:24:32.176Z"^^xsd:dateTime .
+    skos:closeMatch <https://digitaalerfgoed.poolparty.biz/nha/9b975476-aa14-6e4d-1d71-e7db3d82285e>,
+      <http://vocab.getty.edu/aat/300124525>;
+    dcterms:modified "2023-12-20T10:57:20.453Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/fed306a0-377e-e7ca-f893-75fe7b4c15f5> a
       skos:Concept;
