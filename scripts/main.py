@@ -120,12 +120,14 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
             percentages = row["AI keyword (connected by AI)-Percentage"].split("|")
 
             for keyword, percentage in zip(keywords, percentages):
+                p = int(percentage) / 100
+                if p < 0.05:  # skip lower than 5%
+                    continue
+
                 role = Resource(g, BNode())
                 role.add(RDF.type, SDO.Role)
                 role.add(SDO.about, NHAT.term(keyword))
-                role.add(
-                    RICO.certainty, Literal(int(percentage) / 100, datatype=XSD.float)
-                )
+                role.add(RICO.certainty, Literal(p, datatype=XSD.float))
 
                 photo.add(SDO.about, role.identifier)
 
@@ -136,13 +138,12 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
             g.bind("nha", HANDLE)
             g.bind("ranh", RANH)
             g.bind("schema", SDO)
+            g.bind("rico", RICO)
 
             g.serialize(
                 f"nha_photos_{str(next(file_counter)).zfill(3)}.trig", format="trig"
             )
             g = Graph(identifier=graph_identifier)  # new empty graph
-
-            break
 
 
 def process_negatives(csv_path: str, g: Graph, g_reports: Graph):
@@ -224,6 +225,23 @@ def process_reports(csv_path: str, g: Graph):
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
 
+    organization = Resource(g, URIRef("https://noord-hollandsarchief.nl/"))  # ROR?
+    organization.add(RDF.type, SDO.ArchiveOrganization)
+    organization.add(SDO.name, Literal("Noord-Hollands Archief"))
+    organization.add(OWL.sameAs, URIRef("http://www.wikidata.org/entity/Q2200595"))
+
+    collection = Resource(g, HANDLE.term("collection/FotopersbureauDeBoer"))
+    collection.add(RDF.type, SDO.Collection)
+    collection.add(RDF.type, SDO.ArchiveComponent)
+    collection.add(SDO.name, Literal("Collectie Fotopersbureau De Boer"))
+    collection.add(
+        SDO.url,
+        URIRef(
+            "https://noord-hollandsarchief.nl/collecties/beeld/collectie-fotopersbureau-de-boer"
+        ),
+    )
+    collection.add(SDO.holdingArchive, collection.identifier)  # ROR?
+
     for _, row in df.iterrows():
         report = Resource(g, HANDLE.term("report/" + row["uuid"]))
         report.add(RDF.type, SDO.CreativeWork)  # Collection?
@@ -264,7 +282,9 @@ def process_reports(csv_path: str, g: Graph):
             print(row["Datum"])
 
         # Collection
-        report.add(SDO.isPartOf, Literal(row["Deelcollectie"]))  # TODO
+        report.add(SDO.isPartOf, BNode(row["Deelcollectie"]))  # TODO
+
+        g.add((BNode(row["Deelcollectie"]), SDO.isPartOf, collection))
 
     # Photos
     df = pd.read_csv(
