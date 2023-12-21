@@ -11665,12 +11665,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/9fae5dae-ca9e-b4cd-2ce1-469cb707b6bc> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/apiuser_nha>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Failliecement"@nl;
+    skos:altLabel "Faillissement"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b902-0a96-11ee-be56-0242ac120002>;
     skos:closeMatch <http://vocab.getty.edu/aat/300379082>;
-    dcterms:modified "2023-06-16T10:22:45.325Z"^^xsd:dateTime .
+    dcterms:modified "2023-12-20T15:29:33.377Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/9fb161dc-5c6f-0b63-e96d-f3a5d786f6e8> a
       skos:Concept;
