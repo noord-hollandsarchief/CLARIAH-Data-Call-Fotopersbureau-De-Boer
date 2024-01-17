@@ -32,6 +32,90 @@ NHAT = Namespace("https://digitaalerfgoed.poolparty.biz/nha/")
 RICO = Namespace("https://www.ica.org/standards/RiC/ontology#")
 AAT = Namespace("http://vocab.getty.edu/aat/")
 
+series2collection = {
+    "B": [
+        {
+            "@id": "vlakfilms",
+            "name": "Vlakfilms",
+            "genre": "http://vocab.getty.edu/aat/300127350",
+        }
+    ],
+    "BD": [
+        {
+            "@id": "vlakfilms",
+            "name": "Vlakfilms",
+            "genre": "http://vocab.getty.edu/aat/300127350",
+        }
+    ],
+    "BG": [
+        {
+            "@id": "vlakfilms",
+            "name": "Vlakfilms",
+            "genre": "http://vocab.getty.edu/aat/300127350",
+        }
+    ],
+    "C": [
+        {
+            "@id": "glasnegatieven",
+            "name": "Glasnegatieven",
+            "genre": "http://vocab.getty.edu/aat/300393160",
+        },
+        {
+            "@id": "vlakfilms-kleur",
+            "name": "Vlakfilms kleur",
+            "genre": "http://vocab.getty.edu/aat/300127350",
+        },
+    ],
+    "G": [
+        {
+            "@id": "glasnegatieven",
+            "name": "Glasnegatieven",
+            "genre": "http://vocab.getty.edu/aat/300393160",
+        },
+        {
+            "@id": "rolfilms",
+            "name": "6x9 rolfilms",
+            "genre": "http://vocab.getty.edu/aat/300127382",
+        },
+    ],
+    "L": [
+        {
+            "@id": "luchtfotos",
+            "name": "Luchtfoto's",
+            "genre": "http://vocab.getty.edu/aat/300128222",
+        }
+    ],
+    "K": [
+        {
+            "@id": "kleinbeeld",
+            "name": "Kleinbeeld",
+            "genre": "http://vocab.getty.edu/aat/300263816",
+        }
+    ],
+    "KC": [
+        {
+            "@id": "kleinbeeld",
+            "name": "Kleinbeeld",
+            "genre": "http://vocab.getty.edu/aat/300263816",
+        }
+    ],
+    "A": [
+        {
+            "@id": "rolfilms",
+            "name": "6x6 rolfilms",
+            "genre": "http://vocab.getty.edu/aat/300127382",
+        }
+    ],
+    "AC": [
+        {
+            "@id": "rolfilms-kleur",
+            "name": "6x6 rolfilms kleur",
+            "genre": "http://vocab.getty.edu/aat/300127382",
+        }
+    ],
+}
+
+
 location_type2concept = {
     "Adres": "https://vocab.getty.edu/aat/300386983",
     "Gemeente": "http://vocab.getty.edu/aat/300387330",
@@ -87,6 +171,21 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
     df = pd.merge(df_photos, df_assets, how="left", on="uuid")
     df = pd.merge(df, df_keywords, how="left", on="uuid")
 
+    # Reports
+    photo2reportuuid = dict()
+    df_reports = pd.read_csv(
+        "export/0_UUIDMetadataMetRepFotos20231204.csv",
+        sep=";",
+        encoding="utf-8",
+        low_memory=False,
+    )
+    for _, row in df_reports.iterrows():
+        if pd.isna(row["Reportage fotos-uuid"]):
+            continue
+
+        for i in row["Reportage fotos-uuid"].split("|"):
+            photo2reportuuid[i] = row["uuid"]
+
     for n, row in df.iterrows():
         n += 1
         if pd.isna(row["Objectnummer"]) or "test" in row["Objectnummer"]:
@@ -95,6 +194,13 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
         photo = Resource(g, HANDLE.term(row["uuid"]))
         photo.add(RDF.type, SDO.Photograph)
         photo.add(SDO.identifier, Literal(row["Objectnummer"]))
+
+        # Report (photo isPartOf report)
+        if row["uuid"] in photo2reportuuid:
+            photo.add(
+                SDO.isPartOf,
+                HANDLE.term("report/" + photo2reportuuid[row["uuid"]]),
+            )
 
         # OCR
         # if not pd.isna(row["OCR"]):
@@ -225,10 +331,10 @@ def process_reports(csv_path: str, g: Graph):
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
 
-    organization = Resource(g, URIRef("https://noord-hollandsarchief.nl/"))  # ROR?
+    organization = Resource(g, URIRef("https://ror.org/03fsb6681"))  # ROR
     organization.add(RDF.type, SDO.ArchiveOrganization)
     organization.add(SDO.name, Literal("Noord-Hollands Archief"))
-    organization.add(OWL.sameAs, URIRef("http://www.wikidata.org/entity/Q2200595"))
+    organization.add(SDO.url, URIRef("https://noord-hollandsarchief.nl/"))
 
     collection = Resource(g, HANDLE.term("collection/FotopersbureauDeBoer"))
     collection.add(RDF.type, SDO.Collection)
@@ -240,7 +346,17 @@ def process_reports(csv_path: str, g: Graph):
             "https://noord-hollandsarchief.nl/collecties/beeld/collectie-fotopersbureau-de-boer"
         ),
     )
-    collection.add(SDO.holdingArchive, collection.identifier)  # ROR?
+    collection.add(SDO.holdingArchive, organization.identifier)
+
+    # Deelcollecties
+    for values in series2collection.values():
+        for value in values:
+            deelcollectie = Resource(g, collection.identifier + "#" + value["@id"])
+            deelcollectie.add(RDF.type, SDO.Collection)
+            deelcollectie.add(RDF.type, SDO.ArchiveComponent)
+            deelcollectie.add(SDO.name, Literal(value["name"], lang="nl"))
+            deelcollectie.add(SDO.isPartOf, collection.identifier)
+            deelcollectie.add(SDO.genre, URIRef(value["genre"]))
 
     for _, row in df.iterrows():
         report = Resource(g, HANDLE.term("report/" + row["uuid"]))
@@ -282,29 +398,9 @@ def process_reports(csv_path: str, g: Graph):
             print(row["Datum"])
 
         # Collection
-        report.add(SDO.isPartOf, BNode(row["Deelcollectie"]))  # TODO
-
-        g.add((BNode(row["Deelcollectie"]), SDO.isPartOf, collection))
-
-    # Photos
-    df = pd.read_csv(
-        "export/2_UUIDMetadataMetRepFotos20231204.csv",
-        sep=";",
-        encoding="utf-8",
-        low_memory=False,
-    )
-    for _, row in df.iterrows():
-        if pd.isna(row["Reportage fotos-uuid"]):
-            continue
-
-        for i in row["Reportage fotos-uuid"].split("|"):
-            g.add(
-                (
-                    HANDLE.term("report/" + row["uuid"]),
-                    SDO.hasPart,
-                    HANDLE.term(i),
-                )
-            )
+        if not pd.isna(row["Deelcollectie"]):
+            for i in series2collection[row["Deelcollectie"]]:
+                report.add(SDO.isPartOf, collection.identifier + "#" + i["@id"])
 
     # Catalogus kaart scan
     # Code
