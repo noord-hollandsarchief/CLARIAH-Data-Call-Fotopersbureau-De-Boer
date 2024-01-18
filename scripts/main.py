@@ -113,6 +113,13 @@ series2collection = {
             "genre": "http://vocab.getty.edu/aat/300127382",
         }
     ],
+    "AL": [
+        {
+            "@id": "rolfilms",
+            "name": "6x6 rolfilms",
+            "genre": "http://vocab.getty.edu/aat/300127382",
+        }
+    ],
 }
 
 
@@ -250,60 +257,6 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
                 f"nha_photos_{str(next(file_counter)).zfill(3)}.trig", format="trig"
             )
             g = Graph(identifier=graph_identifier)  # new empty graph
-
-
-def process_negatives(csv_path: str, g: Graph, g_reports: Graph):
-    """
-
-    Columns:
-        - uuid
-        - modified_time
-        - Logboeknummer
-        - Kaartnummer
-        - Deelcollectie
-        - Serienaam
-        - metadata de Boer-metadata De Boer-uuid
-    """
-
-    df = pd.read_csv(
-        csv_path,
-        sep=";",
-        encoding="utf-8",
-        low_memory=False,
-    )
-
-    for _, row in df.iterrows():
-        negative_number = row["Logboeknummer"] + row["Kaartnummer"]
-        negative = Resource(g, HANDLE.term(negative_number))
-        negative.add(RDF.type, SDO.CreativeWork)
-
-        negative.add(SDO.identifier, Literal(negative_number))
-
-        # Collection
-        collection = Resource(g, HANDLE.term("collection/" + row["Deelcollectie"]))
-        collection.add(RDF.type, SDO.Collection)
-        collection.add(SDO.name, Literal(row["Deelcollectie"]))
-
-        # Serie  #TODO
-        series = Resource(
-            g, HANDLE.term("series/" + row["Serienaam"].replace(" ", "").lower())
-        )
-        series.add(RDF.type, SDO.Collection)
-        series.add(SDO.name, Literal(row["Serienaam"]))
-        series.add(SDO.isPartOf, collection.identifier)
-
-        negative.add(SDO.isPartOf, series)
-
-        # Logboek
-        logbook = Resource(g, HANDLE.term(row["Logboeknummer"]))
-        logbook.add(RDF.type, SDO.CreativeWork)
-
-        # Reports
-        if not pd.isna(row["metadata de Boer-metadata De Boer-uuid"]):
-            for i in row["metadata de Boer-metadata De Boer-uuid"].split("|"):
-                g_reports.add(
-                    (HANDLE.term("report/" + i), SDO.result, negative.identifier)
-                )
 
 
 def process_reports(csv_path: str, g: Graph):
@@ -838,15 +791,7 @@ def main():
     # 0. Foto's
     g_identifier = HANDLE.term("photos/")
     print("Processing photos...")
-    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
-
-    # # 1. Negatiefvellen
-    # g = ds.graph(identifier=HANDLE.term("negatives/"))
-    # g_reports = ds.graph(identifier=HANDLE.term("reports/"))
-    # print("Processing negatives...")
-    # process_negatives(
-    #     "export/1_NegatiefvellenAndUUIDMetadata20231211.csv", g, g_reports
-    # )
+    # process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
 
     # 2. Metadata De Boer (reportages)
     g = ds.graph(identifier=HANDLE.term("reports/"))
