@@ -791,7 +791,7 @@ def main():
     # 0. Foto's
     g_identifier = HANDLE.term("photos/")
     print("Processing photos...")
-    # process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
+    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
 
     # 2. Metadata De Boer (reportages)
     g = ds.graph(identifier=HANDLE.term("reports/"))
