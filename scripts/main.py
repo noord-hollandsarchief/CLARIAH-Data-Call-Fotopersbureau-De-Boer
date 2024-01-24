@@ -1,27 +1,28 @@
 import json
 from itertools import count
 
-
+import pandas as pd
 from rdflib import (
-    Dataset,
-    Graph,
-    Namespace,
-    Literal,
-    URIRef,
-    RDF,
-    RDFS,
-    SKOS,
-    XSD,
-    SDO,
     OWL,
     PROV,
+    RDF,
+    RDFS,
+    SDO,
+    SKOS,
+    XSD,
     BNode,
+    Dataset,
+    Graph,
+    Literal,
+    Namespace,
+    URIRef,
 )
 from rdflib.resource import Resource
 
-import pandas as pd
-
 HANDLE = Namespace("https://hdl.handle.net/21.12102/")
+NHA = Namespace(
+    "https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/"
+)
 RANH = Namespace("https://maior-images.memorix.nl/ranh/iiif/")
 PNV = Namespace("https://w3id.org/pnv#")
 WD = Namespace("http://www.wikidata.org/entity/")
@@ -32,96 +33,8 @@ NHAT = Namespace("https://digitaalerfgoed.poolparty.biz/nha/")
 RICO = Namespace("https://www.ica.org/standards/RiC/ontology#")
 AAT = Namespace("http://vocab.getty.edu/aat/")
 
-series2collection = {
-    "B": [
-        {
-            "@id": "vlakfilms",
-            "name": "Vlakfilms",
-            "genre": "http://vocab.getty.edu/aat/300127350",
-        }
-    ],
-    "BD": [
-        {
-            "@id": "vlakfilms",
-            "name": "Vlakfilms",
-            "genre": "http://vocab.getty.edu/aat/300127350",
-        }
-    ],
-    "BG": [
-        {
-            "@id": "vlakfilms",
-            "name": "Vlakfilms",
-            "genre": "http://vocab.getty.edu/aat/300127350",
-        }
-    ],
-    "C": [
-        {
-            "@id": "glasnegatieven",
-            "name": "Glasnegatieven",
-            "genre": "http://vocab.getty.edu/aat/300393160",
-        },
-        {
-            "@id": "vlakfilms-kleur",
-            "name": "Vlakfilms kleur",
-            "genre": "http://vocab.getty.edu/aat/300127350",
-        },
-    ],
-    "G": [
-        {
-            "@id": "glasnegatieven",
-            "name": "Glasnegatieven",
-            "genre": "http://vocab.getty.edu/aat/300393160",
-        },
-        {
-            "@id": "rolfilms",
-            "name": "6x9 rolfilms",
-            "genre": "http://vocab.getty.edu/aat/300127382",
-        },
-    ],
-    "L": [
-        {
-            "@id": "luchtfotos",
-            "name": "Luchtfoto's",
-            "genre": "http://vocab.getty.edu/aat/300128222",
-        }
-    ],
-    "K": [
-        {
-            "@id": "kleinbeeld",
-            "name": "Kleinbeeld",
-            "genre": "http://vocab.getty.edu/aat/300263816",
-        }
-    ],
-    "KC": [
-        {
-            "@id": "kleinbeeld",
-            "name": "Kleinbeeld",
-            "genre": "http://vocab.getty.edu/aat/300263816",
-        }
-    ],
-    "A": [
-        {
-            "@id": "rolfilms",
-            "name": "6x6 rolfilms",
-            "genre": "http://vocab.getty.edu/aat/300127382",
-        }
-    ],
-    "AC": [
-        {
-            "@id": "rolfilms-kleur",
-            "name": "6x6 rolfilms kleur",
-            "genre": "http://vocab.getty.edu/aat/300127382",
-        }
-    ],
-    "AL": [
-        {
-            "@id": "rolfilms",
-            "name": "6x6 rolfilms",
-            "genre": "http://vocab.getty.edu/aat/300127382",
-        }
-    ],
-}
-
+with open("scripts/series2collection.json") as infile:
+    series2collection = json.load(infile)
 
 location_type2concept = {
     "Adres": "https://vocab.getty.edu/aat/300386983",
@@ -195,7 +108,11 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
 
     for n, row in df.iterrows():
         n += 1
-        if pd.isna(row["Objectnummer"]) or "test" in row["Objectnummer"]:
+        if (
+            pd.isna(row["Objectnummer"])
+            or "test" in row["Objectnummer"]
+            or row["Toon op web"] == ""
+        ):
             continue
 
         photo = Resource(g, HANDLE.term(row["uuid"]))
@@ -206,14 +123,14 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
         if row["uuid"] in photo2reportuuid:
             photo.add(
                 SDO.isPartOf,
-                HANDLE.term("report/" + photo2reportuuid[row["uuid"]]),
+                NHA.term("report/" + photo2reportuuid[row["uuid"]]),
             )
 
-        # OCR
+        # OCR, let's leave this for a more IIIF Prezi approach
         # if not pd.isna(row["OCR"]):
         #     photo.add(SDO.text, Literal(row["OCR"]))
 
-        # IIIF
+        # IIIF Image API
         if pd.isna(row["Linked media-uuid"]):
             continue
         full_image_uri = RANH.term(row["Linked media-uuid"] + "/full/max/0/default.jpg")
@@ -289,7 +206,7 @@ def process_reports(csv_path: str, g: Graph):
     organization.add(SDO.name, Literal("Noord-Hollands Archief"))
     organization.add(SDO.url, URIRef("https://noord-hollandsarchief.nl/"))
 
-    collection = Resource(g, HANDLE.term("collection/FotopersbureauDeBoer"))
+    collection = Resource(g, NHA.term(""))
     collection.add(RDF.type, SDO.Collection)
     collection.add(RDF.type, SDO.ArchiveComponent)
     collection.add(SDO.name, Literal("Collectie Fotopersbureau De Boer"))
@@ -304,16 +221,28 @@ def process_reports(csv_path: str, g: Graph):
     # Deelcollecties
     for values in series2collection.values():
         for value in values:
-            deelcollectie = Resource(g, collection.identifier + "#" + value["@id"])
+            deelcollectie = Resource(g, NHA.term("series/" + value["@id"]))
             deelcollectie.add(RDF.type, SDO.Collection)
             deelcollectie.add(RDF.type, SDO.ArchiveComponent)
             deelcollectie.add(SDO.name, Literal(value["name"], lang="nl"))
             deelcollectie.add(SDO.isPartOf, collection.identifier)
             deelcollectie.add(SDO.genre, URIRef(value["genre"]))
 
+    g.add((URIRef("http://data.beeldengeluid.nl/gtaa/30294"), RDF.type, SKOS.Concept))
+    g.add(
+        (
+            URIRef("http://data.beeldengeluid.nl/gtaa/30294"),
+            SKOS.prefLabel,
+            Literal("Reportage", lang="nl"),
+        )
+    )
+
     for _, row in df.iterrows():
-        report = Resource(g, HANDLE.term("report/" + row["uuid"]))
+        report = Resource(g, NHA.term("report/" + row["uuid"]))
         report.add(RDF.type, SDO.CreativeWork)  # Collection?
+        report.add(
+            SDO.additionalType, URIRef("http://data.beeldengeluid.nl/gtaa/30294")
+        )
 
         if not pd.isna(row["Invoernummer onderwerpskaarten"]):
             for i in row["Invoernummer onderwerpskaarten"].split("|"):
@@ -372,9 +301,9 @@ def process_reports(csv_path: str, g: Graph):
         for i in row["Persoon observaties-uuid"].split("|"):
             g.add(
                 (
-                    HANDLE.term("report/" + row["uuid"]),
+                    NHA.term("report/" + row["uuid"]),
                     SDO.about,
-                    HANDLE.term("person/observation/" + i),
+                    NHA.term("person/observation/" + i),
                 )
             )
 
@@ -392,9 +321,9 @@ def process_reports(csv_path: str, g: Graph):
         for i in row["Locaties-Locatie-uuid"].split("|"):
             g.add(
                 (
-                    HANDLE.term("report/" + row["uuid"]),
+                    NHA.term("report/" + row["uuid"]),
                     SDO.about,
-                    HANDLE.term("location/" + i),
+                    NHA.term("location/" + i),
                 )
             )
 
@@ -409,7 +338,13 @@ def process_reports(csv_path: str, g: Graph):
         if pd.isna(row["Catalogus kaart-Catalogus kaart-uuid"]):
             continue
         for i in row["Catalogus kaart-Catalogus kaart-uuid"].split("|"):
-            g.add((HANDLE.term("report/" + row["uuid"]), SDO.about, NHAT.term(i)))
+            g.add(
+                (
+                    NHA.term("report/" + row["uuid"]),
+                    SDO.about,
+                    NHAT.term(i),
+                )
+            )
 
 
 def process_catalog_cards(csv_path: str, g: Graph):
@@ -435,9 +370,19 @@ def process_catalog_cards(csv_path: str, g: Graph):
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
 
+    g.add((URIRef("http://vocab.getty.edu/aat/300026769"), RDF.type, SKOS.Concept))
+    g.add(
+        (
+            URIRef("http://vocab.getty.edu/aat/300026769"),
+            SKOS.prefLabel,
+            Literal("Cataloguskaart", lang="nl"),
+        )
+    )
+
     for _, row in df.iterrows():
-        card = Resource(g, HANDLE.term("catalog/" + row["uuid"]))
+        card = Resource(g, NHA.term("catalog/" + row["uuid"]))
         card.add(RDF.type, SDO.CreativeWork)
+        card.add(SDO.additionalType, URIRef("http://vocab.getty.edu/aat/300026769"))
 
         card.add(SDO.name, Literal(row["Titel"]))
 
@@ -521,7 +466,7 @@ def process_locations(g: Graph):
     )
 
     for _, row in df.iterrows():
-        location = Resource(g, HANDLE.term("location/" + row["uuid"]))
+        location = Resource(g, NHA.term("location/" + row["uuid"]))
         location.add(RDF.type, SDO.Place)
         location.add(SDO.additionalType, URIRef(location_type2concept[row["Soort"]]))
 
@@ -602,7 +547,10 @@ def process_person_observations(g: Graph, g_reconstructions: Graph):
         low_memory=False,
     )
     for _, row in df.iterrows():
-        person = Resource(g, HANDLE.term("person/observation/" + row["uuid"]))
+        person = Resource(
+            g,
+            NHA.term("person/observation/" + row["uuid"]),
+        )
         person.add(RDF.type, ROAR.PersonObservation)
         person.add(SDO.name, Literal(row["Label observatie"]))
         person.add(RDFS.label, Literal(row["prefLabel"]))
@@ -658,11 +606,11 @@ def process_person_observations(g: Graph, g_reconstructions: Graph):
         for i in row["Persoon reconstructie-uuid"].split("|"):
             g_reconstructions.add(
                 (
-                    HANDLE.term(
+                    NHA.term(
                         "person/reconstruction/" + row["Persoon reconstructie-uuid"]
                     ),
                     PROV.wasDerivedFrom,
-                    HANDLE.term("person/observation/" + row["uuid"]),
+                    NHA.term("person/observation/" + row["uuid"]),
                 )
             )
 
@@ -706,7 +654,10 @@ def process_person_reconstructions(g: Graph):
         low_memory=False,
     )
     for _, row in df.iterrows():
-        person = Resource(g, HANDLE.term("person/reconstruction/" + row["uuid"]))
+        person = Resource(
+            g,
+            NHA.term("person/reconstruction/" + row["uuid"]),
+        )
         person.add(RDF.type, ROAR.PersonReconstruction)
         person.add(RDF.type, SDO.Person)
         person.add(SDO.name, Literal(row["Label"]))
@@ -789,39 +740,36 @@ def main():
     ds = Dataset()
 
     # 0. Foto's
-    g_identifier = HANDLE.term("photos/")
+    g_identifier = NHA.term("photos/")
     print("Processing photos...")
     process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
 
     # 2. Metadata De Boer (reportages)
-    g = ds.graph(identifier=HANDLE.term("reports/"))
+    g = ds.graph(identifier=NHA.term("report/"))
     print("Processing reports...")
     process_reports("export/2_MetadataDeBoer20231128.csv", g)
 
     # 3. Cataloguskaarten
-    g = ds.graph(identifier=HANDLE.term("catalogs/"))
+    g = ds.graph(identifier=NHA.term("catalogs/"))
     print("Processing catalog cards...")
     process_catalog_cards("export/3_Cataloguskaarten20231128.csv", g)
 
     # 4. Locaties
-    g = ds.graph(identifier=HANDLE.term("locations/"))
+    g = ds.graph(identifier=NHA.term("location/"))
     print("Processing locations...")
     process_locations(g)
+    process_gtaa(g, "scripts/wd2gtaa.json")
 
     # 5. Personen (observaties)
-    g = ds.graph(identifier=HANDLE.term("persons/observations/"))
-    g_reconstructions = ds.graph(identifier=HANDLE.term("persons/reconstructions/"))
+    g = ds.graph(identifier=NHA.term("person/observation/"))
+    g_reconstructions = ds.graph(identifier=NHA.term("person/reconstruction/"))
     print("Processing person observations...")
     process_person_observations(g, g_reconstructions)
 
     # 6. Personen (reconstructies)
-    g = ds.graph(identifier=HANDLE.term("persons/reconstructions/"))
+    g = ds.graph(identifier=NHA.term("person/reconstruction/"))
     print("Processing person reconstructions...")
     process_person_reconstructions(g)
-
-    # 8. GTAA
-    g = ds.graph(identifier=HANDLE.term("reports/"))  # same graph as reports
-    print("Processing gtaa...")
     process_gtaa(g, "scripts/wd2gtaa.json")
 
     ds.bind("pnv", PNV)
@@ -836,12 +784,18 @@ def main():
     ds.bind("skos", SKOS)
     ds.bind("xsd", XSD)
     ds.bind("nhat", NHAT)
-    ds.bind("report", HANDLE.term("report/"))
-    ds.bind("catalog", HANDLE.term("catalog/"))
-    ds.bind("location", HANDLE.term("location/"))
-    ds.bind("personobservation", HANDLE.term("person/observation/"))
-    ds.bind("personreconstruction", HANDLE.term("person/reconstruction/"))
-    ds.bind("subject", HANDLE.term("subject/"))
+    ds.bind("report", NHA.term("report/"))
+    ds.bind("catalog", NHA.term("catalog/"))
+    ds.bind("location", NHA.term("location/"))
+    ds.bind(
+        "personobservation",
+        NHA.term("person/observation/"),
+    )
+    ds.bind(
+        "personreconstruction",
+        NHA.term("person/reconstruction/"),
+    )
+    ds.bind("subject", NHA.term("subject/"))
     ds.bind("gtaa", GTAA)
     ds.bind("geo", GEO)
     ds.bind("aat", AAT)
@@ -852,7 +806,7 @@ def main():
     for g in ds.graphs():
         if str(g.identifier) == "urn:x-rdflib:default":
             continue
-        name = g.identifier.split(HANDLE.term(""))[1].replace("/", "")
+        name = g.identifier.split(NHA.term(""))[1].replace("/", "")
 
         print(f"Serializing {name}...")
         g.serialize(f"nha_{name}.trig", format="trig")
