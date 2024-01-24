@@ -1,0 +1,35 @@
+PREFIX roar: <https://w3id.org/roar#>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pnv: <https://w3id.org/pnv#>
+
+SELECT 
+    ?personobservation_uuid
+    ?personobservation_label
+    ?personobservation_name
+    ?personobservation_prefix
+    ?personobservation_initials
+    ?personobservation_givenname
+    ?personobservation_infixtitle
+    ?personobservation_surnameprefix
+    ?personobservation_basesurname
+    ?personobservation_patronym
+    ?personobservation_disambiguatingdescription
+WHERE {
+    ?personobservation_uri a roar:PersonObservation ;
+                           rdfs:label ?personobservation_label ;
+                           schema:name ?personobservation_name ;
+                           pnv:hasName ?personname .
+    
+    BIND(STRAFTER(STR(?personobservation_uri), "/person/observation/") AS ?personobservation_uuid)
+
+    OPTIONAL { ?personname pnv:prefix ?personobservation_prefix . }
+    OPTIONAL { ?personname pnv:initials ?personobservation_initials . }
+    OPTIONAL { ?personname pnv:givenName ?personobservation_givenname . }
+    OPTIONAL { ?personname pnv:infixTitle ?personobservation_infixtitle . }
+    OPTIONAL { ?personname pnv:surnamePrefix ?personobservation_surnameprefix . }
+    OPTIONAL { ?personname pnv:baseSurname ?personobservation_basesurname . }
+    OPTIONAL { ?personname pnv:patronym ?personobservation_patronym . }
+    OPTIONAL { ?personname pnv:disambiguatingDescription ?personobservation_disambiguatingdescription . }
+
+}

@@ -1,0 +1,41 @@
+PREFIX roar: <https://w3id.org/roar#>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pnv: <https://w3id.org/pnv#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT 
+    ?personreconstruction_uuid
+    ?personreconstruction_name
+    ?personreconstruction_prefix
+    ?personreconstruction_initials
+    ?personreconstruction_givenname
+    ?personreconstruction_infixtitle
+    ?personreconstruction_surnameprefix
+    ?personreconstruction_basesurname
+    ?personreconstruction_patronym
+    ?personreconstruction_disambiguatingdescription
+    (GROUP_CONCAT(DISTINCT ?personobservation_uuid; SEPARATOR="; ") AS ?personobservations_uuid)
+    (GROUP_CONCAT(DISTINCT ?personobservation_name; SEPARATOR="; ") AS ?personobservations_name)
+WHERE {
+    ?personreconstruction_uri a roar:PersonReconstruction ;
+                              schema:name ?personreconstruction_name ;
+                              pnv:hasName ?personname ;
+                              prov:wasDerivedFrom ?personobservation_uri .
+
+    BIND(STRAFTER(STR(?personreconstruction_uri), "/person/reconstruction/") AS ?personreconstruction_uuid)
+
+    ?personobservation_uri a roar:PersonObservation ;
+                           schema:name ?personobservation_name .
+    BIND(STRAFTER(STR(?personobservation_uri), "/person/observation/") AS ?personobservation_uuid)
+
+    OPTIONAL { ?personname pnv:prefix ?personreconstruction_prefix . }
+    OPTIONAL { ?personname pnv:initials ?personreconstruction_initials . }
+    OPTIONAL { ?personname pnv:givenName ?personreconstruction_givenname . }
+    OPTIONAL { ?personname pnv:infixTitle ?personreconstruction_infixtitle . }
+    OPTIONAL { ?personname pnv:surnamePrefix ?personreconstruction_surnameprefix . }
+    OPTIONAL { ?personname pnv:baseSurname ?personreconstruction_basesurname . }
+    OPTIONAL { ?personname pnv:patronym ?personreconstruction_patronym . }
+    OPTIONAL { ?personname pnv:disambiguatingDescription ?personreconstruction_disambiguatingdescription . }
+
+} GROUP BY ?personreconstruction_uuid ?personreconstruction_label ?personreconstruction_name ?personreconstruction_prefix ?personreconstruction_initials ?personreconstruction_givenname ?personreconstruction_infixtitle ?personreconstruction_surnameprefix ?personreconstruction_basesurname ?personreconstruction_patronym ?personreconstruction_disambiguatingdescription

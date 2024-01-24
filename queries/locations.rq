@@ -1,0 +1,34 @@
+PREFIX schema: <https://schema.org/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT
+    ?location_uuid
+    ?location_name
+    ?location_type_aat
+    ?location_type_name
+    ?location_geometry_wkt
+    ?location_wikidata
+    ?location_gtaa
+WHERE {
+    ?location_uri a schema:Place ;
+                  schema:name ?location_name ;
+                  schema:additionalType ?location_type_aat ;
+                  geo:hasGeometry/geo:asWKT ?location_geometry_wkt .
+    
+    ?location_type_aat a skos:Concept ;
+                       skos:prefLabel ?location_type_name .
+    
+    OPTIONAL {
+        ?location_uri owl:sameAs ?location_wikidata .
+        FILTER(CONTAINS(STR(?location_wikidata), 'wikidata'))
+    }
+    
+    OPTIONAL {
+        ?location_uri owl:sameAs ?location_gtaa .
+        FILTER(CONTAINS(STR(?location_gtaa), 'gtaa'))
+    }
+    
+    BIND(STRAFTER(STR(?location_uri), "/location/") AS ?location_uuid)
+}

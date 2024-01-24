@@ -1,0 +1,61 @@
+PREFIX schema: <https://schema.org/>
+PREFIX roar: <https://w3id.org/roar#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT 
+    ?photograph_uri
+    ?photograph_identifier
+    ?photograph_thumbnail
+    ?report_uuid
+    ?report_name
+    ?report_date 
+    (GROUP_CONCAT(DISTINCT ?personobservation_uuid; SEPARATOR="; ") AS ?personobservations_uuid)
+    (GROUP_CONCAT(DISTINCT ?personobservation_name; SEPARATOR="; ") AS ?personobservations_name)
+    (GROUP_CONCAT(DISTINCT ?location_uuid; SEPARATOR="; ") AS ?locations_uuid)
+    (GROUP_CONCAT(DISTINCT ?location_name; SEPARATOR="; ") AS ?locations_name)
+    (GROUP_CONCAT(DISTINCT ?concept_uri; SEPARATOR="; ") AS ?concepts_uri)
+    (GROUP_CONCAT(DISTINCT ?concept_name; SEPARATOR="; ") AS ?concepts_name)
+
+WHERE {
+    # Photograph
+    ?photograph_uri a schema:Photograph ;
+                    schema:identifier ?photograph_identifier ;
+                    schema:image/schema:thumbnailUrl ?photograph_thumbnail ;
+                    schema:isPartOf ?report .
+    
+    # Report
+    ?report a schema:CreativeWork .
+    
+    BIND(STRAFTER(STR(?report), "/report/") AS ?report_uuid)
+    
+    OPTIONAL { 
+        ?report a schema:CreativeWork ;
+                schema:name ?report_name . 
+    }
+
+    OPTIONAL { 
+        ?report a schema:CreativeWork ;
+                schema:dateCreated ?report_date . 
+    }    
+
+    # About
+    OPTIONAL { 
+        ?report schema:about ?personobservation_uri . 
+        ?personobservation_uri a roar:PersonObservation ;
+                               schema:name ?personobservation_name .
+        BIND(STRAFTER(STR(?personobservation_uri), "/person/observation/") AS ?personobservation_uuid)
+    }
+    OPTIONAL { 
+        ?report schema:about ?location_uri . 
+        ?location_uri a schema:Place ;
+                      schema:name ?location_name .
+        BIND(STRAFTER(STR(?location_uri), "/location/") AS ?location_uuid)
+    }
+    OPTIONAL { 
+        ?report schema:about ?concept_uri . 
+        ?concept_uri a skos:Concept ;
+                     skos:prefLabel ?concept_name .
+    }
+            
+} GROUP BY ?photograph_uri ?photograph_identifier ?photograph_thumbnail ?report_uuid ?report_name ?report_date 
+LIMIT 1000
