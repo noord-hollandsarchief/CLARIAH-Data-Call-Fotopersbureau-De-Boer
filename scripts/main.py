@@ -221,7 +221,7 @@ def process_reports(csv_path: str, g: Graph):
     # Deelcollecties
     for values in series2collection.values():
         for value in values:
-            deelcollectie = Resource(g, NHA.term("series/" + value["@id"]))
+            deelcollectie = Resource(g, NHA.term("serie/" + value["@id"]))
             deelcollectie.add(RDF.type, SDO.Collection)
             deelcollectie.add(RDF.type, SDO.ArchiveComponent)
             deelcollectie.add(SDO.name, Literal(value["name"], lang="nl"))
@@ -282,7 +282,7 @@ def process_reports(csv_path: str, g: Graph):
         # Collection
         if not pd.isna(row["Deelcollectie"]):
             for i in series2collection[row["Deelcollectie"]]:
-                report.add(SDO.isPartOf, collection.identifier + "#" + i["@id"])
+                report.add(SDO.isPartOf, NHA.term("serie/" + i["@id"]))
 
     # Catalogus kaart scan
     # Code
@@ -740,9 +740,9 @@ def main():
     ds = Dataset()
 
     # 0. Foto's
-    g_identifier = NHA.term("photos/")
+    g_identifier = NHA.term("photograph/")
     print("Processing photos...")
-    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
+    # process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
 
     # 2. Metadata De Boer (reportages)
     g = ds.graph(identifier=NHA.term("report/"))
@@ -750,7 +750,7 @@ def main():
     process_reports("export/2_MetadataDeBoer20231128.csv", g)
 
     # 3. Cataloguskaarten
-    g = ds.graph(identifier=NHA.term("catalogs/"))
+    g = ds.graph(identifier=NHA.term("catalog/"))
     print("Processing catalog cards...")
     process_catalog_cards("export/3_Cataloguskaarten20231128.csv", g)
 

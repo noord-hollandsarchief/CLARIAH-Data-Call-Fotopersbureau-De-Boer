@@ -58,4 +58,4 @@ WHERE {
     }
             
 } GROUP BY ?photograph_uri ?photograph_identifier ?photograph_thumbnail ?report_uuid ?report_name ?report_date 
-LIMIT 1000
+ORDER BY ?report_date ?report_uuid

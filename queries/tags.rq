@@ -12,7 +12,9 @@ SELECT
     ?concept_broader
     ?concept_broaderLabelNL
     ?concept_broaderLabelEN
+    (GROUP_CONCAT(DISTINCT ?concept_related; SEPARATOR="; ") AS ?concept_relateds)
     (GROUP_CONCAT(DISTINCT ?concept_closeMatch; SEPARATOR="; ") AS ?concept_closeMatches)
+    (GROUP_CONCAT(DISTINCT ?concept_exactMatch; SEPARATOR="; ") AS ?concept_exactMatches)
     (GROUP_CONCAT(DISTINCT ?definitionNL; SEPARATOR="; ") AS ?definitionsNL)
     (GROUP_CONCAT(DISTINCT ?definitionEN; SEPARATOR="; ") AS ?definitionsEN)
 WHERE {  
@@ -53,9 +55,17 @@ WHERE {
     FILTER(LANG(?altLabelEN) = 'en')
   }
   
-  # Any external link, such as AAT or GTAA
+  # Any external link, such as AAT or GTAA, or related internal links
   OPTIONAL {
-    ?concept skos:closeMatch ?concept_closeMatch .
+    ?concept_uri skos:exactMatch ?concept_exactMatch .
+  }
+
+  OPTIONAL {
+    ?concept_uri skos:related ?concept_related .
+  }
+  
+  OPTIONAL {
+    ?concept_uri skos:closeMatch ?concept_closeMatch .
   }
   
   # Definition

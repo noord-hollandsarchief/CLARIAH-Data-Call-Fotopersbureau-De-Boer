@@ -4,7 +4,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT 
-    ?concept
+    ?concept_uri
     ?prefLabelNL
     ?prefLabelEN
     (GROUP_CONCAT(DISTINCT ?altLabelNL; SEPARATOR="; ") AS ?altLabelsNL)
@@ -12,49 +12,59 @@ SELECT
     ?concept_broader
     ?concept_broaderLabelNL
     ?concept_broaderLabelEN
+    (GROUP_CONCAT(DISTINCT ?concept_related; SEPARATOR="; ") AS ?concept_relateds)
     (GROUP_CONCAT(DISTINCT ?concept_closeMatch; SEPARATOR="; ") AS ?concept_closeMatches)
+    (GROUP_CONCAT(DISTINCT ?concept_exactMatch; SEPARATOR="; ") AS ?concept_exactMatches)
 WHERE {  
-  ?concept a skos:Concept ;
+  ?concept_uri a skos:Concept ;
       skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9> .  
   
   # Position of the concept in hierarchy (broader/narrower)
   OPTIONAL {
-    ?concept skos:broader ?concept_broader .
+    ?concept_uri skos:broader ?concept_broader .
     ?concept_broader skos:prefLabel ?concept_broaderLabelNL .
     FILTER(LANG(?concept_broaderLabelNL) = 'nl')
   }
   
   OPTIONAL {
-    ?concept skos:broader ?concept_broader .
+    ?concept_uri skos:broader ?concept_broader .
     ?concept_broader skos:prefLabel ?concept_broaderLabelEN .
     FILTER(LANG(?concept_broaderLabelEN) = 'en')
   }
   
   # Preferred and alternative labels
   OPTIONAL { 
-    ?concept skos:prefLabel ?prefLabelNL .
+    ?concept_uri skos:prefLabel ?prefLabelNL .
     FILTER(LANG(?prefLabelNL) = 'nl')
   }
   
   OPTIONAL { 
-    ?concept skos:prefLabel ?prefLabelEN .
+    ?concept_uri skos:prefLabel ?prefLabelEN .
     FILTER(LANG(?prefLabelEN) = 'en')
   }
   
   OPTIONAL { 
-    ?concept skos:altLabel ?altLabelNL .
+    ?concept_uri skos:altLabel ?altLabelNL .
     FILTER(LANG(?altLabelNL) = 'nl')
   }
   
   OPTIONAL { 
-    ?concept skos:altLabel ?altLabelEN .
+    ?concept_uri skos:altLabel ?altLabelEN .
     FILTER(LANG(?altLabelEN) = 'en')
   }
   
-  # Any external link, such as AAT or GTAA
+  # Any external link, such as AAT or GTAA, or related internal links
   OPTIONAL {
-    ?concept skos:closeMatch ?concept_closeMatch .
+    ?concept_uri skos:exactMatch ?concept_exactMatch .
+  }
+
+  OPTIONAL {
+    ?concept_uri skos:related ?concept_related .
+  }
+  
+  OPTIONAL {
+    ?concept_uri skos:closeMatch ?concept_closeMatch .
   }
       
-} GROUP BY ?concept ?prefLabelNL ?prefLabelEN ?concept_broader ?concept_broaderLabelNL ?concept_broaderLabelEN 
+} GROUP BY ?concept_uri ?prefLabelNL ?prefLabelEN ?concept_broader ?concept_broaderLabelNL ?concept_broaderLabelEN 
 ORDER BY ?concept_broaderLabelNL ?concept_broaderLabelEN

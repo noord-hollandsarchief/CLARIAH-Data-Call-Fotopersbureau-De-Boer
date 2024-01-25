@@ -4,6 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX pnv: <https://w3id.org/pnv#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT 
     ?personreconstruction_uuid
     ?personreconstruction_name
@@ -17,6 +18,8 @@ SELECT
     ?personreconstruction_disambiguatingdescription
     (GROUP_CONCAT(DISTINCT ?personobservation_uuid; SEPARATOR="; ") AS ?personobservations_uuid)
     (GROUP_CONCAT(DISTINCT ?personobservation_name; SEPARATOR="; ") AS ?personobservations_name)
+    ?personreconstruction_wikidata
+    ?personreconstruction_gtaa
 WHERE {
     ?personreconstruction_uri a roar:PersonReconstruction ;
                               schema:name ?personreconstruction_name ;
@@ -38,4 +41,14 @@ WHERE {
     OPTIONAL { ?personname pnv:patronym ?personreconstruction_patronym . }
     OPTIONAL { ?personname pnv:disambiguatingDescription ?personreconstruction_disambiguatingdescription . }
 
-} GROUP BY ?personreconstruction_uuid ?personreconstruction_label ?personreconstruction_name ?personreconstruction_prefix ?personreconstruction_initials ?personreconstruction_givenname ?personreconstruction_infixtitle ?personreconstruction_surnameprefix ?personreconstruction_basesurname ?personreconstruction_patronym ?personreconstruction_disambiguatingdescription
+    OPTIONAL {
+        ?personreconstruction_uri owl:sameAs ?personreconstruction_wikidata .
+        FILTER(CONTAINS(STR(?personreconstruction_wikidata), 'wikidata'))
+    }
+    
+    OPTIONAL {
+        ?personreconstruction_uri owl:sameAs ?personreconstruction_gtaa .
+        FILTER(CONTAINS(STR(?personreconstruction_gtaa), 'gtaa'))
+    }
+
+} GROUP BY ?personreconstruction_uuid ?personreconstruction_label ?personreconstruction_name ?personreconstruction_prefix ?personreconstruction_initials ?personreconstruction_givenname ?personreconstruction_infixtitle ?personreconstruction_surnameprefix ?personreconstruction_basesurname ?personreconstruction_patronym ?personreconstruction_disambiguatingdescription ?personreconstruction_wikidata ?personreconstruction_gtaa
