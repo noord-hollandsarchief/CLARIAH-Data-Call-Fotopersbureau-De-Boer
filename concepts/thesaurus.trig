@@ -6315,7 +6315,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
     dcterms:created "2023-07-19T08:59:12.484Z"^^xsd:dateTime;
-    dcterms:contributor <https://cultureelerfgoed.poolparty.biz/user/vanderheidenj>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Overheidsorganen"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0acbe-0a96-11ee-be56-0242ac120002>;
@@ -6339,8 +6339,8 @@
       <https://digitaalerfgoed.poolparty.biz/nha/86e42180-1ff4-43d7-2565-25400102f2fd>,
       <https://digitaalerfgoed.poolparty.biz/nha/76691dde-7c77-cef1-85c0-4533b07270d5>,
       <https://digitaalerfgoed.poolparty.biz/nha/f93e32b4-3e66-fb5f-ad46-3de6bc228fe5>;
-    skos:closeMatch <https://vocab.getty.edu/aat/300386363>;
-    dcterms:modified "2023-10-20T15:17:02.484Z"^^xsd:dateTime .
+    skos:closeMatch <http://vocab.getty.edu/aat/300386363>;
+    dcterms:modified "2024-01-25T18:56:32.574Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5175128e-f4bb-d220-a725-6f1c18115325> a
       skos:Concept;
@@ -6937,12 +6937,12 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/597dfad8-78db-6d3a-daf3-2b8a6ea50502> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Fabrieken, fabricage, ateliers"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0a8d6-0a96-11ee-be56-0242ac120002>;
-    skos:closeMatch <https://vocab.getty.edu/aat/300006231>;
-    dcterms:modified "2023-07-19T06:28:23.984Z"^^xsd:dateTime .
+    skos:closeMatch <http://vocab.getty.edu/aat/300006231>;
+    dcterms:modified "2024-01-25T18:56:09.528Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/5984855c-d3bd-e9fc-4c65-7151993b545a> a
       skos:Concept;
@@ -7679,7 +7679,7 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/63b8163d-6b66-0a35-d4db-4517b11577d7> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/vriendn>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:scopeNote "Ceremonies die aangeven dat de eerste paal is geslagen bij een nieuw bouwproject."@nl;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Eerste paal"@nl;
@@ -7689,8 +7689,8 @@
       <https://digitaalerfgoed.poolparty.biz/nha/40642b18-cb30-6ef1-26e4-f43b7eeeab50>,
       <https://digitaalerfgoed.poolparty.biz/nha/9e5b33c5-1d03-f121-640e-d0fec3bf033d>;
     skos:exactMatch <https://digitaalerfgoed.poolparty.biz/nha/d4e24d2c-0928-7556-c03a-e7a00bcbe046>;
-    skos:closeMatch <https://vocab.getty.edu/aat/300251861>;
-    dcterms:modified "2023-10-27T16:31:01.664Z"^^xsd:dateTime .
+    skos:closeMatch <http://vocab.getty.edu/aat/300251861>;
+    dcterms:modified "2024-01-25T18:55:45.738Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/640ad04b-c195-0619-ab6f-6096480ed835> a
       skos:Concept;
@@ -13066,7 +13066,7 @@
       skos:Concept;
     dcterms:creator <https://digitaalerfgoed.poolparty.biz/user/engelsemden>;
     dcterms:created "2023-07-19T07:55:31.526Z"^^xsd:dateTime;
-    dcterms:contributor <https://cultureelerfgoed.poolparty.biz/user/vanderheidenj>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Non-profit organisaties"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0acbe-0a96-11ee-be56-0242ac120002>;
@@ -13092,8 +13092,8 @@
       <https://digitaalerfgoed.poolparty.biz/nha/420e76d4-7f96-3219-5df3-7dadffe5678d>,
       <https://digitaalerfgoed.poolparty.biz/nha/1363cae2-dba6-2698-7412-26e8385ae62e>,
       <https://digitaalerfgoed.poolparty.biz/nha/10ea9f9f-50b6-cd19-8840-1fbf6173d62a>;
-    skos:closeMatch <https://vocab.getty.edu/aat/300253162>;
-    dcterms:modified "2023-10-20T15:17:02.356Z"^^xsd:dateTime .
+    skos:closeMatch <http://vocab.getty.edu/aat/300253162>;
+    dcterms:modified "2024-01-25T18:55:24.222Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/b3c6e84f-4efa-e417-8976-1b42eebdfc99> a
       skos:Concept;
@@ -17248,13 +17248,13 @@
   
   <https://digitaalerfgoed.poolparty.biz/nha/f281b7d5-5a9d-b628-06a1-6b52929dd992> a
       skos:Concept;
-    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/nijssena>;
+    dcterms:contributor <https://digitaalerfgoed.poolparty.biz/user/wissenvanl>;
     skos:inScheme <https://digitaalerfgoed.poolparty.biz/nha/01617d03-bcd9-4720-9392-bf6bd92227b9>;
     skos:prefLabel "Machines en fabrieken"@nl;
     skos:broader <https://digitaalerfgoed.poolparty.biz/nha/11c0b2f4-0a96-11ee-be56-0242ac120002>;
     skos:narrower <https://digitaalerfgoed.poolparty.biz/nha/d109c140-f0a3-fda3-2b2b-afb673a5f395>;
-    skos:closeMatch <https://vocab.getty.edu/aat/300379148>;
-    dcterms:modified "2023-07-19T14:54:41.138Z"^^xsd:dateTime .
+    skos:closeMatch <http://vocab.getty.edu/aat/300379148>;
+    dcterms:modified "2024-01-25T18:54:23.182Z"^^xsd:dateTime .
   
   <https://digitaalerfgoed.poolparty.biz/nha/f2baccce-af2a-28d7-906c-2225d9b28843> a
       skos:Concept;
