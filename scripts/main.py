@@ -772,7 +772,7 @@ def process_person_reconstructions(csv_path: str, g: Graph):
         person.add(PNV.hasName, pn)
 
 
-def process_gtaa(g: Graph, mapping_file: str):
+def process_gtaa(mapping_file: str, g: Graph):
     """
     Add extra GTAA links to person and location resources.
 
@@ -834,10 +834,8 @@ def main():
     # 6. Personen (reconstructies)
     g = ds.graph(identifier=NHA.term("person/reconstruction/"))
     print("Processing person reconstructions...")
-    process_person_reconstructions(g)
-    process_gtaa(
-        "export/6_PersoonReconstructies20231128.csv", g, "scripts/wd2gtaa.json"
-    )
+    process_person_reconstructions("export/6_PersoonReconstructies20231128.csv", g)
+    process_gtaa("scripts/wd2gtaa.json", g)
 
     ds.bind("pnv", PNV)
     ds.bind("wd", WD)
