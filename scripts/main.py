@@ -783,8 +783,8 @@ def process_gtaa(mapping_file: str, g: Graph):
     Wikidata to the GTAA.
 
     Args:
-        g (Graph): A graph with person or location resources
         mapping_file (str): Filepath to the mapping file (json)
+        g (Graph): A graph with person or location resources
     """
     with open(mapping_file) as f:
         mapping = json.load(f)
@@ -818,7 +818,7 @@ def main():
     g = ds.graph(identifier=NHA.term("location/"))
     print("Processing locations...")
     process_locations("export/4_LocatiesMetCoordinaten20231213.csv", g)
-    process_gtaa(g, "scripts/wd2gtaa.json")
+    process_gtaa("scripts/wd2gtaa.json", g)
 
     # 5. Personen (observaties)
     g = ds.graph(identifier=NHA.term("person/observation/"))
