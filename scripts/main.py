@@ -37,7 +37,7 @@ with open("scripts/series2collection.json") as infile:
     series2collection = json.load(infile)
 
 location_type2concept = {
-    "Adres": "https://vocab.getty.edu/aat/300386983",
+    "Adres": "http://vocab.getty.edu/aat/300386983",
     "Gemeente": "http://vocab.getty.edu/aat/300387330",
     "Land": "http://vocab.getty.edu/aat/300387392",
     "Object": "http://vocab.getty.edu/aat/300422821",
@@ -53,21 +53,40 @@ location_type2concept = {
 
 def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000):
     """
-    Columns:
-        - uuid
-        - Objectnummer
-        - Omschrijving
-        - Gepubliceerde foto
-        - Expliciete foto
-        - Geïmporteerd vanuit VH (Project 1)
-        - Export naar VH (Project 2)
-        - Geëxporteerd naar VH (Project 2)
-        - Serienaam VH (Project 2)
-        - OCR
-        - OCR origineel
-        - Aanbieden voor OCR
-        - Naar krant-en-fotos.nl
-        - Toon op web
+    Process photograph data from a CSV file.
+
+    Every photo is modelled as a SDO.Photograph. A file is created for
+    every 60k (or a different 'split_by' argument value) resources.
+    Incorporated are mappings from photo to HisVis AI concepts, reports,
+    and the IIIF Image API description.
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://hdl.handle.net/21.12102/a55d7380-e5b6-aaee-94ae-8f03096b77a4> a schema:Photograph ;
+        schema:about [ a schema:Role ;
+                schema:about <https://digitaalerfgoed.poolparty.biz/nha/a2c47bdc-ae1f-8dd4-8e2d-3df8a28a03c6> ;
+                rico:certainty "0.45"^^xsd:float ],
+            [ a schema:Role ;
+                schema:about <https://digitaalerfgoed.poolparty.biz/nha/f0881540-bb3e-3755-dbac-735be0b40890> ;
+                rico:certainty "1.0"^^xsd:float ],
+            [ a schema:Role ;
+                schema:about <https://digitaalerfgoed.poolparty.biz/nha/c7d7de0a-1aad-64b8-4208-0d188cacef9d> ;
+                rico:certainty "0.4"^^xsd:float ] ;
+        schema:identifier "NL-HlmNHA_1478_13925B00_01" ;
+        schema:image <https://maior-images.memorix.nl/ranh/iiif/9bc8e0c5-b530-2354-a20a-92ea12cf2f85> ;
+        schema:isPartOf <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/report/c9a72d42-5843-b781-264c-632a381f9a1f> .
+
+    <https://maior-images.memorix.nl/ranh/iiif/9bc8e0c5-b530-2354-a20a-92ea12cf2f85> a schema:ImageObject ;
+        schema:contentUrl <https://maior-images.memorix.nl/ranh/iiif/9bc8e0c5-b530-2354-a20a-92ea12cf2f85/full/max/0/default.jpg> ;
+        schema:thumbnailUrl <https://maior-images.memorix.nl/ranh/iiif/9bc8e0c5-b530-2354-a20a-92ea12cf2f85/full/,250/0/default.jpg> .
+
+    ```
+
+    Args:
+        csv_path (str): Path to the CSV file
+        graph_identifier (str): URI of the graph
+        split_by (int, optional): Number of resources per file, defaults to 50_000.
     """
 
     file_counter = count(1)
@@ -178,25 +197,47 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
 
 def process_reports(csv_path: str, g: Graph):
     """
+    Process report data from a CSV file.
 
-    Table: Metadata De Boer
+    Every report is modelled as a SDO.CreativeWork, with a
+    schema:additionalType of <http://data.beeldengeluid.nl/gtaa/30294> (Reportage).
+    Extra information is given on the subcollection (deelcollectie) and the embedding
+    in the overal collection.
 
-    Columns:
-        - uuid
-        - modified_time
-        - ordering
-        - Invoernummer onderwerpskaarten
-        - Beschrijving
-        - Catalogus kaart scan
-        - Datum
-        - Logboek pagina ID
-        - Invoernummer VH
-        - Gemaakt in VeleHanden
-        - Deelcollectie
-        - Code
+    Individual mapping files (CSV) are used to link the report to persons, locations,
+    and concepts (through the schema:about property).
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/report/c9a72d42-5843-b781-264c-632a381f9a1f> a schema:CreativeWork ;
+        schema:about <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/location/0d7a7fe6-acd6-594b-b552-27e28fb46db1>,
+            <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/person/observation/fa906ea0-8d10-11ee-9aac-ac1f6ba5b082>,
+            <https://digitaalerfgoed.poolparty.biz/nha/a9208ebc-d5f7-3fe6-14c1-05a880ba0690>,
+            <https://digitaalerfgoed.poolparty.biz/nha/acd4a20a-ec61-bc6e-01f0-412a54c37524> ;
+        schema:additionalType gtaa:30294 ;
+        schema:dateCreated "1957-03-11"^^xsd:date ;
+        schema:identifier "18948" ;
+        schema:isPartOf <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/serie/vlakfilms> ;
+        schema:name "Romanschrijver Harry Mulisch op het dak van de Sint-Bavokerk in Haarlem" .
+
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/serie/vlakfilms> a schema:ArchiveComponent,
+        schema:Collection ;
+        schema:genre aat:300127350 ;
+        schema:isPartOf <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/> ;
+        schema:name "Vlakfilms"@nl .
+
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/> a schema:ArchiveComponent,
+        schema:Collection ;
+        schema:holdingArchive <https://ror.org/03fsb6681> ;
+        schema:name "Collectie Fotopersbureau De Boer" ;
+        schema:url <https://noord-hollandsarchief.nl/collecties/beeld/collectie-fotopersbureau-de-boer> .
+    ```
 
     Args:
-        g (Graph): _description_
+        csv_path (str): Path to the CSV file
+        g (Graph): A (named) graph
+
     """
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
@@ -284,9 +325,6 @@ def process_reports(csv_path: str, g: Graph):
             for i in series2collection[row["Deelcollectie"]]:
                 report.add(SDO.isPartOf, NHA.term("serie/" + i["@id"]))
 
-    # Catalogus kaart scan
-    # Code
-
     ## Persons
     df = pd.read_csv(
         "export/2_UUIDMetadataMetPersonenObs20231128.csv",
@@ -349,23 +387,27 @@ def process_reports(csv_path: str, g: Graph):
 
 def process_catalog_cards(csv_path: str, g: Graph):
     """
+    Process catalog card data from a CSV file.
 
-    Columns:
-        - uuid
-        - modified_time
-        - ordering
-        - Titel
-        - Link NHA Thesaurus-identifier
-        - Link NHA Thesaurus-term
-        - Beschrijving
-        - Bestandsnaam
-        - Mapnaam
-        - Export naar VH
-        - Geëxporteerd naar VH
-        - Onderwerpen
-        - Verwijzingen
-        - Beginjaar
-        - Eindjaar
+    Every catalog card (the origin of concepts in the thesaurus)
+    is modelled as a SDO.CreativeWork, with a schema:additionalType
+    pointing to <http://vocab.getty.edu/aat/300026769> (Cataloguskaart).
+    The link with the concept is made through the schema:about property.
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/catalog/a9208ebc-d5f7-3fe6-14c1-05a880ba0690> a schema:CreativeWork ;
+        schema:about <https://digitaalerfgoed.poolparty.biz/nha/a9208ebc-d5f7-3fe6-14c1-05a880ba0690> ;
+        schema:additionalType aat:300026769 ;
+        schema:name "Portretten" ;
+        schema:temporalCoverage "1947/1989" .
+    ```
+
+    Args:
+        csv_path (str): Path to the CSV file
+        g (Graph): A (named) graph
+
     """
 
     df = pd.read_csv(csv_path, sep=";", encoding="utf-8", low_memory=False)
@@ -404,54 +446,32 @@ def process_catalog_cards(csv_path: str, g: Graph):
         card.add(SDO.about, pp_uri)
 
 
-def process_locations(g: Graph):
+def process_locations(csv_path, g: Graph):
     """
-    Columns:
-        - uuid
-        - modified_time
-        - ordering
-        - Soort
-        - Land
-        - Gemeente
-        - Plaats
-        - Straat
-        - Huisnummer
-        - Huisletter
-        - Huisnummertoevoeging
-        - Postcode
-        - Object
-        - Wijk
-        - Water
-        - Regio
-        - Park
-        - Wegen
-        - WikiData ID
-        - WikiData URL
-        - Wikipedia URL
-        - BAG Pand ID
-        - BAG Pand URL
-        - BAG OpenbareRuimte ID
-        - BAG OpenbareRuimte URL
-        - BAG Nummeraanduiding ID
-        - BAG Nummeraanduiding URL
-        - Coordinates-uuid
-        - Coordinates-modified_by-uuid
-        - Coordinates-modified_by-username
-        - Coordinates-modified_by-displayname
-        - Coordinates-modified_by-email
-        - Coordinates-modified_by-active
-        - Coordinates-modified_by-admin
-        - Coordinates-modified_time
-        - Coordinates-ordering
-        - Coordinates-address
-        - Coordinates-lat
-        - Coordinates-lng
-        - Coordinates-zoom
-        - Coordinates-wkt
-        - Coordinates-geodata
+    Process location data from a CSV file.
+
+    Every location is modelled as a SDO.Place. An additional type
+    is added with a link to the AAT. The geometry is added as a
+    geosparql Geometry in WKT.
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/location/0d7a7fe6-acd6-594b-b552-27e28fb46db1> a schema:Place ;
+        geo:hasGeometry [ a geo:Geometry ;
+                geo:asWKT "POINT(4.6359055555556 52.381366666667)"^^geo:wktLiteral ] ;
+        owl:sameAs wd:Q1083850 ;
+        schema:additionalType aat:300008247 ;
+        schema:name "Grote Markt" .
+
+    aat:300008247 a skos:Concept ;
+        skos:prefLabel "Straat" .
+    ```
 
     Args:
-        g (Graph): _description_
+        csv_path (str): Path to the CSV file
+        g (Graph): A (named) graph
+
     """
     for key, value in location_type2concept.items():
         concept = Resource(g, URIRef(value))
@@ -459,7 +479,7 @@ def process_locations(g: Graph):
         concept.add(SKOS.prefLabel, Literal(key))
 
     df = pd.read_csv(
-        "export/4_LocatiesMetCoordinaten20231213.csv",
+        csv_path,
         sep=";",
         encoding="utf-8",
         low_memory=False,
@@ -513,40 +533,50 @@ def process_locations(g: Graph):
             location.add(GEO.hasGeometry, geo)
 
 
-def process_person_observations(g: Graph, g_reconstructions: Graph):
+def process_person_observations(
+    csv_path: str, csv_path_mapping: str, g: Graph, g_reconstructions: Graph
+):
     """
-    _summary_
+    Process person observation data from a CSV file.
 
-    Columns:
-        - uuid
-        - modified_time
-        - ordering
-        - prefLabel
-        - Label observatie
-        - Type
-        - Prefix (pnv:prefix)
-        - Initialen (pnv:initials)
-        - Voornaam (pnv:givenName)
-        - Infix (pnv:infixTitle)
-        - Tussenvoegsel (pnv:surnamePrefix)
-        - Achternaam (pnv:baseSurname)
-        - Patroniem (pnv:patronym)
-        - Onderscheidend achtervoegsel (pnv:disambiguatingDescription)
-        - Volledige naam (pnv:literalName)
-        - Publiek persoon
-        - Wikidata ID"
+    Every person observation is modelled as a ROAR.PersonObservation and
+    only if the person is a 'public person' (agreed upon by the NHA during
+    the project). The observation contains information on how the person was
+    mentioned in the report. For name elements, the PNV properties are used
+    in a PNV.PersonName resource.
+
+    The person observation is linked to a person reconstruction through a
+    PROV.wasDerivedFrom property. This mapping comes from a separate CSV file
+    and is added to the named graph with person reconstructions.
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/person/observation/fa906ea0-8d10-11ee-9aac-ac1f6ba5b082> a roar:PersonObservation ;
+        rdfs:label "Mulisch, Harry" ;
+        schema:name "Harry Mulisch" ;
+        pnv:hasName [ a pnv:PersonName ;
+                pnv:baseSurname "Mulisch" ;
+                pnv:givenName "Harry" ;
+                pnv:literalName "Harry Mulisch" ] .
+    ```
 
     Args:
-        g (Graph): _description_
+        csv_path (str): Path to the CSV file
+        csv_path_mapping (str): Path to the CSV file with the mapping to reconstructions
+        g (Graph): A (named) graph for the person observations
+        g_reconstructions (Graph): A (named) graph for the person reconstructions
     """
 
     df = pd.read_csv(
-        "export/5_PersoonObservaties20231128.csv",
+        csv_path,
         sep=";",
         encoding="utf-8",
         low_memory=False,
     )
-    for _, row in df.iterrows():
+
+    # Only for 'public persons'
+    for _, row in df[df["Publiek persoon"] == 1].iterrows():
         person = Resource(
             g,
             NHA.term("person/observation/" + row["uuid"]),
@@ -593,67 +623,84 @@ def process_person_observations(g: Graph, g_reconstructions: Graph):
 
         person.add(PNV.hasName, pn)
 
-    # Reconstructions
-    df = pd.read_csv(
-        "export/5_UUIDPersoonObsMetRec20231128.csv",
+    # Mapping to observations
+    df_mapping = pd.read_csv(
+        csv_path_mapping,
         sep=";",
         encoding="utf-8",
         low_memory=False,
     )
-    for _, row in df.iterrows():
+
+    publieke_personen = df[df["Publiek persoon"] == 1]["uuid"].values
+
+    for _, row in df_mapping.iterrows():
         if pd.isna(row["Persoon reconstructie-uuid"]):
             continue
-        for i in row["Persoon reconstructie-uuid"].split("|"):
-            g_reconstructions.add(
-                (
-                    NHA.term(
-                        "person/reconstruction/" + row["Persoon reconstructie-uuid"]
-                    ),
-                    PROV.wasDerivedFrom,
-                    NHA.term("person/observation/" + row["uuid"]),
-                )
+        elif row["uuid"] not in publieke_personen:  # only public persons
+            continue
+        g_reconstructions.add(
+            (
+                NHA.term("person/reconstruction/" + row["Persoon reconstructie-uuid"]),
+                PROV.wasDerivedFrom,
+                NHA.term("person/observation/" + row["uuid"]),
             )
+        )
 
 
-def process_person_reconstructions(g: Graph):
+def process_person_reconstructions(csv_path: str, g: Graph):
     """
-    Columns:
-    - uuid
-    - modified_time
-    - ordering
-    - Label
-    - Type
-    - Prefix (pnv:prefix)
-    - Initialen (pnv:initials)
-    - Voornaam (pnv:givenName)
-    - Infix (pnv:infixTitle)
-    - Tussenvoegsel (pnv:surnamePrefix)
-    - Achternaam (pnv:baseSurname)
-    - Patroniem (pnv:patronym)
-    - Onderscheidend achtervoegsel (pnv:disambiguatingDescription)
-    - Volledige naam (pnv:literalName)
-    - Beschrijving
-    - Geboortedatum
-    - Geboorteplaats
-    - Overlijdensdatum
-    - Overlijdensplaats
-    - Beroep
-    - Publiek persoon
-    - Wikidata ID
-    - Wikidata URI
-    - Wikipedia URL
+    Process person reconstruction data from a CSV file.
+
+    Every person reconstruction is modelled as a ROAR.PersonReconstruction.
+    The person reconstruction contains information on the person, such as
+    (preferred) name, birth and death dates and places, occupation, and an
+    external identifier (Wikidata). The reconstruction is only modelled if
+    the person is a 'public person' (agreed upon by the NHA during the project).
+
+    When running this function after the person observation function, the person
+    reconstructions are already linked to the person observations through a
+    PROV.wasDerivedFrom property.
+
+    Example output, serialized as RDF Turtle:
+
+    ```turtle
+    <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/person/reconstruction/67688614-5a70-5835-87a5-67b63ee56ee6> a schema:Person,
+            roar:PersonReconstruction ;
+        owl:sameAs gtaa:134822,
+            wd:Q927 ;
+        prov:wasDerivedFrom <https://data.noord-hollandsarchief.nl/collection/FotopersbureauDeBoer/person/observation/fa906ea0-8d10-11ee-9aac-ac1f6ba5b082> ;
+        schema:birthDate "1927-07-29"^^xsd:date ;
+        schema:birthPlace "Haarlem" ;
+        schema:deathDate "2010-10-30"^^xsd:date ;
+        schema:deathPlace "Amsterdam" ;
+        schema:description "Nederlands schrijver (1927–2010)" ;
+        schema:hasOccupation "dichter",
+            "essayist",
+            "romanschrijver",
+            "scenarioschrijver",
+            "schrijver",
+            "toneelschrijver" ;
+        schema:name "Harry Mulisch" ;
+        pnv:hasName [ a pnv:PersonName ;
+                pnv:baseSurname "Mulisch" ;
+                pnv:givenName "Harry" ;
+                pnv:literalName "Harry Mulisch" ] .
+    ```
 
     Args:
-        g (Graph): _description_
+        csv_path (str): Path to the CSV file
+        g (Graph): A (named) graph for the person reconstructions
     """
 
     df = pd.read_csv(
-        "export/6_PersoonReconstructies20231128.csv",
+        csv_path,
         sep=";",
         encoding="utf-8",
         low_memory=False,
     )
-    for _, row in df.iterrows():
+
+    # Only for 'public persons'
+    for _, row in df[df["Publiek persoon"] == 1].iterrows():
         person = Resource(
             g,
             NHA.term("person/reconstruction/" + row["uuid"]),
@@ -725,7 +772,20 @@ def process_person_reconstructions(g: Graph):
         person.add(PNV.hasName, pn)
 
 
-def process_gtaa(g: Graph, mapping_file):
+def process_gtaa(g: Graph, mapping_file: str):
+    """
+    Add extra GTAA links to person and location resources.
+
+    Since we, for locations and person reconstructions, only linked
+    to Wikidata, a GTAA link is missing in the original data. And
+    since we _did_ link to the GTAA in the thesaurus, this function
+    adds the GTAA link to the resources, based on a mapping from
+    Wikidata to the GTAA.
+
+    Args:
+        g (Graph): A graph with person or location resources
+        mapping_file (str): Filepath to the mapping file (json)
+    """
     with open(mapping_file) as f:
         mapping = json.load(f)
 
@@ -742,7 +802,7 @@ def main():
     # 0. Foto's
     g_identifier = NHA.term("photograph/")
     print("Processing photos...")
-    # process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=50_000)
+    process_photos("export/0_Reportagefotos20231128.csv", g_identifier, split_by=60_000)
 
     # 2. Metadata De Boer (reportages)
     g = ds.graph(identifier=NHA.term("report/"))
@@ -757,20 +817,27 @@ def main():
     # 4. Locaties
     g = ds.graph(identifier=NHA.term("location/"))
     print("Processing locations...")
-    process_locations(g)
+    process_locations("export/4_LocatiesMetCoordinaten20231213.csv", g)
     process_gtaa(g, "scripts/wd2gtaa.json")
 
     # 5. Personen (observaties)
     g = ds.graph(identifier=NHA.term("person/observation/"))
     g_reconstructions = ds.graph(identifier=NHA.term("person/reconstruction/"))
     print("Processing person observations...")
-    process_person_observations(g, g_reconstructions)
+    process_person_observations(
+        "export/5_PersoonObservaties20231128.csv",
+        "export/5_UUIDPersoonObsMetRec20231128.csv",
+        g,
+        g_reconstructions,
+    )
 
     # 6. Personen (reconstructies)
     g = ds.graph(identifier=NHA.term("person/reconstruction/"))
     print("Processing person reconstructions...")
     process_person_reconstructions(g)
-    process_gtaa(g, "scripts/wd2gtaa.json")
+    process_gtaa(
+        "export/6_PersoonReconstructies20231128.csv", g, "scripts/wd2gtaa.json"
+    )
 
     ds.bind("pnv", PNV)
     ds.bind("wd", WD)
@@ -803,6 +870,7 @@ def main():
     print()
     print("Serializing...")
 
+    # Serialize with a nice name
     for g in ds.graphs():
         if str(g.identifier) == "urn:x-rdflib:default":
             continue
