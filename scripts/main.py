@@ -1,3 +1,12 @@
+"""
+Pipeline to process the data from the Fotopersbureau De Boer
+collection of the Noord-Hollands Archief to RDF. Data are 
+exported from Memorix Maior and are not included in any data
+deposit.
+
+Leon van Wissen, 2024-01-31
+"""
+
 import json
 from itertools import count
 
