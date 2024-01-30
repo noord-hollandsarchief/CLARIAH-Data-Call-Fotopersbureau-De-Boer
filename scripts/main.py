@@ -134,13 +134,10 @@ def process_photos(csv_path: str, graph_identifier: str, split_by: int = 50_000)
         for i in row["Reportage fotos-uuid"].split("|"):
             photo2reportuuid[i] = row["uuid"]
 
-    for n, row in df.iterrows():
+    # Only public photos
+    for n, row in df[df["Toon op web"] == 1].iterrows():
         n += 1
-        if (
-            pd.isna(row["Objectnummer"])
-            or "test" in row["Objectnummer"]
-            or row["Toon op web"] == ""
-        ):
+        if pd.isna(row["Objectnummer"]) or "test" in row["Objectnummer"]:
             continue
 
         photo = Resource(g, HANDLE.term(row["uuid"]))
