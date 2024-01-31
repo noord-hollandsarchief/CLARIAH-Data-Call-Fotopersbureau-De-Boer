@@ -1,0 +1,99 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": "https://doi.org/10.17026/SS/7VD3ME",
+    "name": "FAIR Photos - CLARIAH FAIR Data Call 2023",
+    "description": "The collection of Fotopersbureau De Boer (1945-2005) consists of over two million press photos of about 250 thousand events and is unique, at least in the Netherlands, for its extensive metadata. Its importance lies in its breadth. In addition to well-known images of major national events, numerous photographs depict regional events, including construction sites, sports events, openings of restaurants, dramatic car accidents, and parades. These images of seemingly mundane events can function as historical sources to study everyday life, fashion, or other forms of cultural expression or identity. This dataset contains the metadata of this collection as Linked Open Data and spreadsheets. External links to Wikidata, the AAT, and the GTAA are included.",
+    "creator": [
+        {
+            "@id": "https://orcid.org/0000-0001-8672-025X",
+            "@type": "Person",
+            "givenName": "Leon",
+            "familyName": "van Wissen",
+            "affiliation": {
+                "@id": "https://ror.org/04dkp9463",
+                "@type": "Organization",
+                "name": "University of Amsterdam"
+            },
+            "name": "Leon van Wissen"
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-6260-6441",
+            "@type": "Person",
+            "givenName": "Nico",
+            "familyName": "Vriend",
+            "affiliation": {
+                "@id": "https://ror.org/03fsb6681",
+                "@type": "Organization",
+                "name": "Noord-Hollands Archief"
+            },
+            "name": "Nico Vriend"
+        },
+        {
+            "@id": "https://orcid.org/0009-0002-7196-3114",
+            "@type": "Person",
+            "givenName": "Antoinet",
+            "familyName": "Nijssen",
+            "affiliation": {
+                "@id": "https://ror.org/03fsb6681",
+                "@type": "Organization",
+                "name": "Noord-Hollands Archief"
+            },
+            "name": "Antoinet Nijssen"
+        },
+        {
+            "@id": "https://orcid.org/0009-0006-4602-5563",
+            "@type": "Person",
+            "givenName": "Lars",
+            "familyName": "Vereecken",
+            "affiliation": {
+                "@id": "https://ror.org/03fsb6681",
+                "@type": "Organization",
+                "name": "Noord-Hollands Archief"
+            },
+            "name": "Lars Vereecken"
+        },
+        {
+            "@id": "http://gendata.denengelse.nl/pr6",
+            "@type": "Person",
+            "givenName": "Menno",
+            "familyName": "den Engelse",
+            "affiliation": {
+                "@id": "https://islandsofmeaning.nl/",
+                "@type": "Organization",
+                "name": "Islands of Meaning"
+            },
+            "name": "Menno den Engelse"
+        }
+    ],
+    "datePublished": "2024-01-31",
+    "dateModified": "2024-01-31",
+    "version": "V1",
+    "keywords": [
+        "Fotopersbureau De Boer",
+        "Linked Open Data",
+        "CLARIAH",
+        "Heritage Data",
+        "GTAA",
+        "AAT",
+        "Wikidata",
+        "Persfoto's"
+    ],
+    "license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "DANS Data Station Social Sciences and Humanities",
+        "url": "https://ssh.datastations.nl"
+    },
+    "publisher": {
+        "@id": "https://ror.org/03fsb6681",
+        "@type": "Organization",
+        "name": "Noord-Hollands Archief"
+    },
+    "provider": {
+        "@id": "https://ror.org/008pnp284",
+        "@type": "Organization",
+        "name": "DANS Data Station Social Sciences and Humanities"
+    },
+    "distribution": []
+}
