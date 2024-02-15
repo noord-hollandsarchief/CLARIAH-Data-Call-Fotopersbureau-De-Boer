@@ -81,9 +81,21 @@
     ],
     "license": "http://creativecommons.org/publicdomain/zero/1.0",
     "includedInDataCatalog": {
+        "@id": "https://ssh.datastations.nl",
         "@type": "DataCatalog",
         "name": "DANS Data Station Social Sciences and Humanities",
-        "url": "https://ssh.datastations.nl"
+        "publisher": {
+            "@id": "https://ror.org/008pnp284",
+            "@type": "Organization",
+            "name": "DANS Data Station Social Sciences and Humanities"
+        },
+        "dataset": [
+            {
+                "@id": "https://doi.org/10.17026/SS/7VD3ME",
+                "@type": "Dataset",
+                "name": "FAIR Photos - CLARIAH FAIR Data Call 2023"
+            }
+        ]
     },
     "publisher": {
         "@id": "https://ror.org/03fsb6681",
@@ -95,5 +107,419 @@
         "@type": "Organization",
         "name": "DANS Data Station Social Sciences and Humanities"
     },
-    "distribution": []
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "name": "example.ttl",
+            "encodingFormat": "text/turtle",
+            "contentSize": 9472,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210191"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "README.md",
+            "encodingFormat": "text/markdown",
+            "contentSize": 17196,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210170"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "concepts.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 406953,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210194"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "locations.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 876772,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210162"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "personobservations.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 1726824,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210174"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "personreconstructions.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 1037841,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210183"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "photographs.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 771248069,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210171"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "tags.tab",
+            "encodingFormat": "text/tab-separated-values",
+            "contentSize": 78723,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210152"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "concepts.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 2241,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210164"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "locations.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 1022,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210181"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "personobservations.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 1520,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210178"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "personreconstructions.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 2904,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210155"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "photographs.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 2237,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210189"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "tags.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 2626,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210188"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_catalog.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 425782,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210168"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_location.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 2978006,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210173"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_personobservation.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 6335429,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210193"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_personreconstruction.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 2699398,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210169"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_001.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93312682,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210160"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_002.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93043692,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210179"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_003.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93048309,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210144"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_004.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92917305,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210141"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_005.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93028333,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210175"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_006.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93024975,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210148"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_007.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93113508,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210163"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_008.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92984791,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210145"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_009.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93038854,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210195"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_010.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93021540,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210151"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_011.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93091544,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210156"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_012.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93236354,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210140"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_013.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92904440,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210172"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_014.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93359805,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210165"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_015.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93125525,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210142"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_016.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93247512,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210186"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_017.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93138072,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210190"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_018.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93083240,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210153"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_019.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92875655,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210184"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_020.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93047417,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210196"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_021.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93056330,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210157"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_022.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93245723,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210167"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_023.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92849028,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210159"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_024.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92931727,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210139"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_025.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93080167,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210180"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_026.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93093365,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210146"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_027.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92832092,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210187"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_028.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93112242,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210161"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_029.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93314771,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210182"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_030.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93220170,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210177"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_031.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93023545,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210158"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_032.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92881215,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210197"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_033.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 92982584,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210166"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_034.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 93073370,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210192"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_photos_035.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 83325417,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210149"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_report.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 142447336,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210143"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "nha_thesaurus.trig",
+            "encodingFormat": "application/octet-stream",
+            "contentSize": 1214125,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210176"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "main.py",
+            "encodingFormat": "text/x-python",
+            "contentSize": 32639,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210147"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "series2collection.json",
+            "encodingFormat": "application/json",
+            "contentSize": 2151,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210154"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "wd2gtaa.json",
+            "encodingFormat": "application/json",
+            "contentSize": 63251,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210150"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "wd2gtaa.rq",
+            "encodingFormat": "application/sparql-query",
+            "contentSize": 99568,
+            "contentUrl": "https://ssh.datastations.nl/api/access/datafile/210185"
+        }
+    ]
 }
