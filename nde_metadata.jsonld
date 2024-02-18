@@ -4,7 +4,7 @@
     "@id": "https://doi.org/10.17026/SS/7VD3ME",
     "name": "FAIR Photos - CLARIAH FAIR Data Call 2023",
     "description": "The collection of Fotopersbureau De Boer (1945-2005) consists of over two million press photos of about 250 thousand events and is unique, at least in the Netherlands, for its extensive metadata. Its importance lies in its breadth. In addition to well-known images of major national events, numerous photographs depict regional events, including construction sites, sports events, openings of restaurants, dramatic car accidents, and parades. These images of seemingly mundane events can function as historical sources to study everyday life, fashion, or other forms of cultural expression or identity. This dataset contains the metadata of this collection as Linked Open Data and spreadsheets. External links to Wikidata, the AAT, and the GTAA are included.",
-    "language": [
+    "inLanguage": [
         "nl",
         "en"
     ],
