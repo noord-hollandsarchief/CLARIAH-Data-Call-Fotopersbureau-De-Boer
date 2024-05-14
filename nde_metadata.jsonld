@@ -104,7 +104,12 @@
     "publisher": {
         "@id": "https://ror.org/03fsb6681",
         "@type": "Organization",
-        "name": "Noord-Hollands Archief"
+        "name": "Noord-Hollands Archief",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Contact",
+            "email": "info@noord-hollandsarchief.nl"
+        }
     },
     "provider": {
         "@id": "https://ror.org/008pnp284",
