@@ -68,6 +68,11 @@
                 "name": "Islands of Meaning"
             },
             "name": "Menno den Engelse"
+        },
+        {
+            "@id": "https://ror.org/03fsb6681",
+            "@type": "Organization",
+            "name": "Noord-Hollands Archief"
         }
     ],
     "datePublished": "2024-01-31",
